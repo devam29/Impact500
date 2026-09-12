@@ -280,7 +280,7 @@ for whatever's left after all 11 batches are genuinely attempted.
 ## Current status (as of 2026-09-12, this update)
 
 - Batches 04, 05, and 06 are fully attempted (150 companies). Batch 09 is
-  partially attempted through PGR (20 companies); resume at PLD. Batches 07,
+  partially attempted through PLD (21 companies); resume at PRU. Batches 07,
   08, 10, and 11 remain untouched.
 - Master file: `data/environmental_emissions_master.csv`, **273 companies**
   after merging the partial Batch 09 output (cdp_pdf 90,
