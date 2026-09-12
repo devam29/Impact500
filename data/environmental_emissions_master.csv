@@ -307,3 +307,6 @@ PTC,PTC Inc.,sustainability_report,https://ptc-p-001.sitecorecontenthub.cloud/ap
 PSA,Public Storage,sustainability_report,https://s1.q4cdn.com/588671402/files/doc_downloads/2025/06/2025-Sustainability-Report-Public-Storage.pdf,,,,,,,False,no_fields_extracted
 PHM,PulteGroup,sustainability_report,https://s204.q4cdn.com/680895981/files/doc_downloads/2024/2024_Sustainability_Report-FINAL.pdf,,,,,,,False,no_fields_extracted
 PWR,Quanta Services,sustainability_report,https://investors.quantaservices.com/_assets/_6ace16eea66ede551a7ae3abb19fb65e/quantaservices/db/989/10363/pdf/2023-Quanta-Sustainability-Report.pdf,,,,,,,False,no_fields_extracted
+QCOM,Qualcomm,epa_ghgrp,,48566.816,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+DGX,Quest Diagnostics,cdp_pdf,https://www.questdiagnostics.com/content/dam/corporate/documents/Quest_Diagnostics_Incorporated_-_CDP_Climate_Change_Questionnaire_2023.pdf,288624.0,104080.0,94474.0,,,,old,
+Q,Qnity Electronics,none,,,,,,,,,no_public_report_found

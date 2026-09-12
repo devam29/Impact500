@@ -1,6 +1,3 @@
-QCOM,Qualcomm
-DGX,Quest Diagnostics
-Q,Qnity Electronics
 RL,Ralph Lauren Corporation
 RJF,Raymond James Financial
 RDDT,Reddit
