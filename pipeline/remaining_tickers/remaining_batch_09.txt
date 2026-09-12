@@ -1,6 +1,3 @@
-PSA,Public Storage
-PHM,PulteGroup
-PWR,Quanta Services
 QCOM,Qualcomm
 DGX,Quest Diagnostics
 Q,Qnity Electronics

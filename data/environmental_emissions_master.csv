@@ -304,3 +304,6 @@ PLD,Prologis,cdp_pdf,https://prologis.getbynder.com/m/e6c514f5f0efa6b/original/P
 PRU,Prudential Financial,cdp_pdf,https://s204.q4cdn.com/830623074/files/doc_financials/2022/ar/2023-prudential-financial-cdp-climate-change-questionnaire_public.pdf,,,,,,,,download_error: 403 Client Error: Forbidden for url: https://s204.q4cdn.com/830623074/files/doc_financials/2022/ar/2023-prudential-financial-cdp-climate-change-questionnaire_public.pdf
 PEG,Public Service Enterprise Group,epa_ghgrp,,146.3,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
 PTC,PTC Inc.,sustainability_report,https://ptc-p-001.sitecorecontenthub.cloud/api/public/content/PTC-Impact-Report-2023?v=3eacd641,,,,,,,False,no_fields_extracted
+PSA,Public Storage,sustainability_report,https://s1.q4cdn.com/588671402/files/doc_downloads/2025/06/2025-Sustainability-Report-Public-Storage.pdf,,,,,,,False,no_fields_extracted
+PHM,PulteGroup,sustainability_report,https://s204.q4cdn.com/680895981/files/doc_downloads/2024/2024_Sustainability_Report-FINAL.pdf,,,,,,,False,no_fields_extracted
+PWR,Quanta Services,sustainability_report,https://investors.quantaservices.com/_assets/_6ace16eea66ede551a7ae3abb19fb65e/quantaservices/db/989/10363/pdf/2023-Quanta-Sustainability-Report.pdf,,,,,,,False,no_fields_extracted
