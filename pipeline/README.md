@@ -6,6 +6,24 @@ before doing anything. It exists because the WebSearch budget is capped
 gets worked on across many short-lived sessions, and each one needs the
 same context the last one had.
 
+## Who's working on which batch right now (avoid duplicate work)
+
+Two people are running sessions on this repo in parallel. **Stick to your
+assigned batch(es) below** — working someone else's batch wastes WebSearch
+budget re-researching companies they're already covering, and risks both
+of you writing to the same batch CSV at once.
+
+- **devam29 (repo owner): batch_07, batch_08**
+- **Teammate: batch_09, batch_10, batch_11**
+
+When done, commit your updated `data/batches/batch_NN.csv` and
+`pipeline/remaining_tickers/remaining_batch_NN.txt`, push, and let the other
+person know so they can `git pull` before running `merge_batches.py` (that
+script rebuilds the master file from every batch file, so pulling first
+avoids a conflict on `data/environmental_emissions_master.csv` — if you do
+hit a conflict on that one file specifically, don't hand-merge it, just
+re-run `py merge_batches.py` after pulling).
+
 ## What this is actually for
 
 This is **one piece** of a larger hackathon project (see
