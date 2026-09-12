@@ -1,22 +1,3 @@
-PKG,Packaging Corporation of America
-PLTR,Palantir Technologies
-PANW,Palo Alto Networks
-PSKY,Paramount Skydance Corporation
-PH,Parker Hannifin
-PAYX,Paychex
-PYPL,PayPal
-PNR,Pentair
-PEP,PepsiCo
-PFE,Pfizer
-PCG,PG&E Corporation
-PM,Philip Morris International
-PSX,Phillips 66
-PNW,Pinnacle West Capital
-PNC,PNC Financial Services
-PPG,PPG Industries
-PPL,PPL Corporation
-PFG,Principal Financial Group
-PG,Procter & Gamble
 PGR,Progressive Corporation
 PLD,Prologis
 PRU,Prudential Financial

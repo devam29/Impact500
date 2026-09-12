@@ -1,0 +1,20 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+PKG,Packaging Corporation of America,sustainability_report,https://www.packagingcorp.com/filebin/pdf/ResponsibilityReports/PCA_2024_Responsibility_Report_TCFD_Index.pdf,,,,,,,False,no_fields_extracted
+PLTR,Palantir Technologies,sustainability_report,https://www.palantir.com/assets/xrfr7uokpv1b/H5tHWWq0298OBDCgRmKv1/b9528d25f643e8698323881c3e045b3a/2025.06.16_-_Palantir_UK_-_2025_Carbon_Reduction_Plan_Signed.pdf,,,,,,,False,no_fields_extracted
+PANW,Palo Alto Networks,cdp_pdf,https://corporate.justcapital.com/uploads/PANW/2023%20CDP%20Climate%20Disclosure-FINAL-public%20v1.0.pdf,2020.0,11073.0,13385.0,,,,old,
+PSKY,Paramount Skydance Corporation,none,,,,,,,,,no_public_report_found
+PH,Parker Hannifin,cdp_pdf,https://www.parker.com/content/dam/parker/na/united-states/sustainability/Parker-Hannifin%20Corporation%20CDP%20Climate%20Change%20Questionnaire%202023.pdf,173066.0,,522886.0,,,,old,
+PAYX,Paychex,cdp_pdf,https://www.paychex.com/sites/default/files/2025-11/2025-cdp-corporate-questionnaire-response.pdf,,4431.248,4501.358,,,5571700000.0,new,
+PYPL,PayPal,cdp_pdf,https://s205.q4cdn.com/210152132/files/doc_downloads/global-impact/2025/2025-PayPal-CDP-Response-Final.pdf,,79000.0,8800.0,,,31797000000.0,new,
+PNR,Pentair,sustainability_report,https://flowandfiltrationsolutions.pentair.com/content/dam/extranet/enterprise/digital/enterprise-pages/pentair-sustainability-report-2025.pdf,,,,,,,False,no_fields_extracted
+PEP,PepsiCo,epa_ghgrp,,317942.602,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PFE,Pfizer,epa_ghgrp,,225796.40999999997,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PCG,PG&E Corporation,epa_ghgrp,,340079.538,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PM,Philip Morris International,cdp_pdf,https://www.pmi.com/content/dam/pmicom/global/docs/sustainability-cdp-submissions/Philip%20Morris%20International%20CDP%20Disclosure%202025.pdf,285071.33,384000.33,62802.17,,,37878000000.0,new,
+PSX,Phillips 66,epa_ghgrp,,31454319.53000001,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PNW,Pinnacle West Capital,epa_ghgrp,,13239664.866,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PNC,PNC Financial Services,cdp_pdf,https://www.pnc.com/content/dam/es/pnc-com/pdf/aboutpnc/CorporateResponsibilityReports/PNC_CDP_Response_2024.pdf,,,,,,,,"download_error: HTTPSConnectionPool(host='www.pnc.com', port=443): Read timed out. (read timeout=30)"
+PPG,PPG Industries,epa_ghgrp,,198602.998,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PPL,PPL Corporation,epa_ghgrp,,26771409.22,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PFG,Principal Financial Group,sustainability_report,https://brandassets.principal.com/m/578f3c503d494ecf/original/2023-Sustainability-Report.pdf,,,,,,,False,no_fields_extracted
+PG,Procter & Gamble,epa_ghgrp,,1676103.744,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered

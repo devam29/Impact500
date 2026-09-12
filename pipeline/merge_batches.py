@@ -5,7 +5,7 @@ import glob
 import os
 import sys
 
-DATA_DIR = r"C:\ETH_Zurich\ETH Zurich\ETHack\data"
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 OUT_PATH = os.path.join(DATA_DIR, "environmental_emissions_master.csv")
 
 FIELDNAMES = ["ticker", "security", "data_source", "report_url",

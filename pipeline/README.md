@@ -279,12 +279,12 @@ for whatever's left after all 11 batches are genuinely attempted.
 
 ## Current status (as of 2026-09-12, this update)
 
-- Batches 04, 05, and 06 are now fully attempted (150 companies).
-  Remaining: batch_07 through batch_11 (~249 companies), untouched.
-- Master file: `data/environmental_emissions_master.csv`, **254
-  companies, 118 with real usable data** (cdp_pdf 84, sustainability_report
-  62, epa_ghgrp 37 — some overlap since epa_ghgrp only fills the gap when
-  the other two found nothing; 71 confirmed no public disclosure).
+- Batches 04, 05, and 06 are fully attempted (150 companies). Batch 09 is
+  partially attempted through PG (19 companies); resume at PGR. Batches 07,
+  08, 10, and 11 remain untouched.
+- Master file: `data/environmental_emissions_master.csv`, **273 companies**
+  after merging the partial Batch 09 output (cdp_pdf 90,
+  sustainability_report 66, epa_ghgrp 45, none 72).
 - **EPA GHGRP backfill** (`epa_ghgrp/`, see section above): real,
   government-reported Scope-1-only data used whenever CDP/sustainability-
   report search comes up empty. Check `epa_ghgrp/epa_ghgrp_matches.csv`
