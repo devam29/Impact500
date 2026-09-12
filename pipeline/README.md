@@ -283,11 +283,11 @@ for whatever's left after all 11 batches are genuinely attempted.
   is partially attempted: 27/50 done (ICE through KVUE alphabetically),
   23 remaining (LHX through MA)** — session hit the 200-call WebSearch
   cap mid-batch, stopped per the hard rule rather than guessing on the
-  rest. **batch_09 is partially attempted through PLD (21 companies);
-  resume at PRU.** Batches 08, 10, and 11 remain untouched.
+  rest. **batch_09 is partially attempted through PTC (24 companies);
+  resume at PSA.** Batches 08, 10, and 11 remain untouched.
 - **Repo is now on GitHub, split for parallel work**: devam29 has
   batch_07 (finish the remaining 23) + batch_08; teammate has batch_09
-  (resume at PRU), 10, 11. See "Who's working on which batch" at the top
+  (resume at PSA), 10, 11. See "Who's working on which batch" at the top
   of this file.
 - Master file: `data/environmental_emissions_master.csv` — run
   `py merge_batches.py` after pulling to get the current combined count;

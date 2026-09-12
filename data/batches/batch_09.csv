@@ -20,3 +20,6 @@ PFG,Principal Financial Group,sustainability_report,https://brandassets.principa
 PG,Procter & Gamble,epa_ghgrp,,1676103.744,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
 PGR,Progressive Corporation,sustainability_report,https://s202.q4cdn.com/605347829/files/doc_downloads/2024/10/progressive_2023corporatesustainabilityreport_a.pdf,,,,,,,False,no_fields_extracted
 PLD,Prologis,cdp_pdf,https://prologis.getbynder.com/m/e6c514f5f0efa6b/original/Prologis-Climate-Change-2021.pdf,2472.0,3343.0,539.0,,,,old,
+PRU,Prudential Financial,cdp_pdf,https://s204.q4cdn.com/830623074/files/doc_financials/2022/ar/2023-prudential-financial-cdp-climate-change-questionnaire_public.pdf,,,,,,,,download_error: 403 Client Error: Forbidden for url: https://s204.q4cdn.com/830623074/files/doc_financials/2022/ar/2023-prudential-financial-cdp-climate-change-questionnaire_public.pdf
+PEG,Public Service Enterprise Group,epa_ghgrp,,146.3,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
+PTC,PTC Inc.,sustainability_report,https://ptc-p-001.sitecorecontenthub.cloud/api/public/content/PTC-Impact-Report-2023?v=3eacd641,,,,,,,False,no_fields_extracted

@@ -1,6 +1,3 @@
-PRU,Prudential Financial
-PEG,Public Service Enterprise Group
-PTC,PTC Inc.
 PSA,Public Storage
 PHM,PulteGroup
 PWR,Quanta Services
