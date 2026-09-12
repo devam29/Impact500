@@ -346,6 +346,35 @@ def extract_generic_fields(text):
             if v is not None:
                 out[key] = v
 
+    # Some "Key data and frameworks" / performance-summary tables abbreviate
+    # the unit to "(MTCO2e)" right in the row label instead of spelling out
+    # "metric tons CO2e" -- confirmed real case: Lam Research's 2024 Impact
+    # Frameworks report, e.g. "Scope 1 emissions (MTCO2e) \n 91,681 \n -52%
+    # \n 189,537 \n 457,174" (current year, YoY%, then two prior years).
+    # Deliberately using _last_of_number_run, NOT _first_number_after, even
+    # though Lam's own table is current-year-first: tested against every
+    # cached PDF and found a second company (Incyte) using the exact same
+    # "(MTCO2e)" label style for a table that is oldest-year-first instead
+    # ("Scope 1 emissions (MTCO2e) Total \n 4,775 \n 8,062 \n 9,351 \n
+    # 9,576" for 2019/2022/2023/2024) -- first-number would have silently
+    # grabbed 2019's figure there. _last_of_number_run gets both right: for
+    # Incyte's plain ascending run it correctly returns the last (most
+    # recent) value, and for Lam's table the run still terminates after
+    # just one number anyway, since "-52%" isn't a bare numeric line -- so
+    # the "last of the run" is the same single current-year value either
+    # way. No way to tell the two table orderings apart from the label
+    # alone, so lean on the run-termination behavior instead of guessing.
+    mtco2e_labels = [
+        (r"Scope\s*1 emissions\s*\(MTCO2e\)", "scope1_tco2e"),
+        (r"Scope\s*2 emissions location-based\s*\(MTCO2e\)", "scope2_location_tco2e"),
+        (r"Scope\s*2 emissions market-based\s*\(MTCO2e\)", "scope2_market_tco2e"),
+    ]
+    for pattern, key in mtco2e_labels:
+        if key not in out:
+            v = _last_of_number_run(text, pattern)
+            if v is not None:
+                out[key] = v
+
     # Inline colon-sentence form, e.g. "Scope 1 Direct GHG Emissions:
     # 4,259,842 Metric Tons CO2 Eq" -- confirmed real case: CSX's 2024
     # Sustainability Data Supplement. Highest confidence of the generic

@@ -26,3 +26,26 @@ KKR,KKR & Co.,sustainability_report,https://www.kkr.com/content/dam/kkr/sustaina
 KLAC,KLA Corporation,cdp_pdf,https://www.kla.com/wp-content/uploads/KLA-2025-CDP-Report.pdf,4698.0,69057.0,43623.0,12/31/2021,4698.0,10846957000.0,new,
 KHC,Kraft Heinz,sustainability_report,https://www.kraftheinzcompany.com/sustainability/pdf/KraftHeinz-2024-ESG-Report.pdf,,,,,,,False,no_fields_extracted
 KR,Kroger,sustainability_report,https://www.thekrogerco.com/wp-content/uploads/2025/10/Kroger-Co-2025-Summary-Performance-Tables.pdf,,,,,,,False,no_fields_extracted
+LMT,Lockheed Martin,epa_ghgrp,,95794.13399999999,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'LOCKHEED MARTIN CORP' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+L,Loews Corporation,epa_ghgrp,,1937140.4660000002,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'LOEWS CORP' (41 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+MPC,Marathon Petroleum,epa_ghgrp,,28964593.374,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MARATHON PETROLEUM CORP' (26 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+MLM,Martin Marietta Materials,epa_ghgrp,,3999044.162,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MARTIN MARIETTA MATERIALS INC' (4 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+LHX,L3Harris,cdp_pdf,https://www.l3harris.com/sites/default/files/2025-04/2024-CDP-Corporate-Questionnaire_0.pdf,49788.0,180668.0,93061.0,12/31/2019,109574.0,19400000.0,new,
+LH,Labcorp,sustainability_report,https://www.labcorp.com/content/dam/labcorp/files/about/2001700-0326-1_BRO_Corporate%20responsibility%20report%202025_FINAL.pdf,,,,,,,False,no_fields_extracted
+LRCX,Lam Research,sustainability_report,https://www.lamresearch.com/wp-content/uploads/2025/07/Lam-Research-2024-Impact-Frameworks.pdf,91681.0,128580.0,50832.0,,,,new,
+LVS,Las Vegas Sands,sustainability_report,https://www.sands.com/content/uploads/2026/04/Sands-2025-ESG-Report.pdf,,,,,,,new,no_fields_extracted
+LDOS,Leidos,cdp_pdf,https://www.leidos.com/sites/leidos/files/2022-12/Leidos-CDP-Climate-Change-Questionnaire.pdf,37243.0,86657.0,83937.0,,,,old,
+LEN,Lennar,none,,,,,,,,,no_public_report_found
+LII,Lennox International,sustainability_report,https://www.lennox.com/dA/eeb983e368/fileAsset/2023%20Lennox%20Sustainability%20Report.pdf,,,,,,,False,no_fields_extracted
+LLY,Lilly (Eli),cdp_pdf,https://assets.ctfassets.net/1o78rkhl3da6/73jxNnAGnflGGc1Uw0Nnk5/a4b09421604d9296b0cc8d83c1f452b9/Lilly_CDP_Climate_Change_Questionnaire_2023.pdf,171000.0,415000.0,374000.0,,,,old,
+LYV,Live Nation Entertainment,none,,,,,,,,,no_public_report_found
+LOW,Lowe's,cdp_pdf,https://corporate.lowes.com/sites/lowes-corp/files/2025-05/Lowe's%202024%20CDP%20Submission.pdf,413268.0,867575.0,784972.0,,,86377000000.0,new,
+LULU,Lululemon Athletica,cdp_pdf,https://corporate.lululemon.com/~/media/Files/L/Lululemon/our-impact/reporting-and-disclosure/lululemon-cdp-cc-2023.pdf,3164.0,24923.0,27.0,,,,old,
+LITE,Lumentum,cdp_pdf,https://www.lumentum.com/sites/default/files/2026-01/cdp-2025-corporate-questionnaire.pdf,8683.0,67523.0,30598.0,,,1358100000.0,new,
+LYB,LyondellBasell,cdp_pdf,https://www.lyondellbasell.com/globalassets/lyb/sustainability/reporting/reports/report-docs/2025-cdp-corporate-questionnaire.pdf,15000000.0,7200000.0,7100000.0,12/31/2020,15600000.0,40302000000.0,new,
+MTB,M&T Bank,none,,,,,,,,,no_public_report_found
+MAR,Marriott International,cdp_pdf,http://serve360.marriott.com/wp-content/uploads/2026/03/marriott-2025-CDP-response.pdf,1273630.0,5370293.0,5364156.0,12/31/2019,1313062.0,25100000000.0,new,
+MRSH,Marsh McLennan,sustainability_report,https://www.corporate.marsh.com/assets/v3/esg-report-2023/6014128-MM-Marsh-McLennan-ESG-report_V19.pdf,,,,,,,False,no_fields_extracted
+MRVL,Marvell Technology,cdp_pdf,https://www.marvell.com/content/dam/marvell/en/company/assets/marvell-2024-cdp-disclosure.pdf,4433.0,28721.0,22203.0,01/31/2022,4320.0,5507700000.0,new,
+MAS,Masco,sustainability_report,https://masco.com/wp-content/uploads/2025/07/Collateral_ESG_Report_2024.pdf,,,,,,,False,no_fields_extracted
+MA,Mastercard,sustainability_report,https://s25.q4cdn.com/479285134/files/doc_downloads/2026/07/Mastercard-2025-Impact-Report.pdf,,,,,,,False,no_fields_extracted

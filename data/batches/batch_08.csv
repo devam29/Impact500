@@ -1,0 +1,51 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+MRK,Merck & Co.,epa_ghgrp,,365529.704,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MERCK & CO INC' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+MGM,MGM Resorts,epa_ghgrp,,110103.336,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MGM RESORTS INTERNATIONAL' (1 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+MCHP,Microchip Technology,epa_ghgrp,,472938.201976,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MICROCHIP TECHNOLOGY INC' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+MU,Micron Technology,epa_ghgrp,,303884.3484487,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MICRON TECHNOLOGY INC' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TAP,Molson Coors Beverage Company,epa_ghgrp,,414577.044,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'MOLSON COORS BEVERAGE CO' (6 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+NEM,Newmont,epa_ghgrp,,1474699.396,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'NEWMONT CORP' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+NI,NiSource,epa_ghgrp,,4456754.266,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'NISOURCE INC' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+NOC,Northrop Grumman,epa_ghgrp,,110192.27799999999,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'NORTHROP GRUMMAN CORP' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+NRG,NRG Energy,epa_ghgrp,,22878264.123999998,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'NRG ENERGY INC' (16 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+NUE,Nucor,epa_ghgrp,,5761770.626,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'NUCOR CORP' (26 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+OXY,Occidental Petroleum,epa_ghgrp,,8112721.41,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'OCCIDENTAL PETROLEUM CORP' (36 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+OKE,Oneok,epa_ghgrp,,3005177.0679999995,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ONEOK INC' (32 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+MKC,McCormick & Company,cdp_pdf,https://www.mccormickcorporation.com/responsibility/-/media/caa540e768264e89aa63d6e439e26a3f.ashx,36927.0,40487.0,41497.0,,,,old,
+MCD,McDonald's,cdp_pdf,https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/pdf/McDonalds_CDP_Climate_2022.pdf,113991.0,521720.0,469236.0,,,,old,
+MCK,McKesson Corporation,none,,,,,,,,,no_public_report_found
+MDT,Medtronic,none,,,,,,,,,no_public_report_found
+META,Meta Platforms,cdp_pdf,https://sustainability.atmeta.com/wp-content/uploads/2024/02/2023_Meta_CDP_Climate-Change-Survey.pdf,66934.0,3921611.0,273.0,,,,old,
+MET,MetLife,cdp_pdf,https://sustainabilityreport.metlife.com/content/dam/metlifecom/us/sustainability/Sustainability-2024/sustainability-evergreen-microsite/pdf/MetLife-2023-CDP-Climate-Change-Report.pdf,12464.0,47108.0,7667.0,,,,old,
+MTD,Mettler Toledo,sustainability_report,https://www.mt.com/dam/sustainability/crr-2026/METTLER_TOLEDO_Corporate_Responsibility_Report_2026.pdf,,,,,,,False,no_fields_extracted
+MSFT,Microsoft,cdp_pdf,https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-2025-CDP-response.pdf,143510.0,9955368.0,259090.0,06/30/2020,118100.0,245122000000.0,new,
+MAA,Mid-America Apartment Communities,sustainability_report,http://s1.q4cdn.com/498755859/files/doc_downloads/sustainability/2024/MAA-CSR2024-Final.pdf,,,,,,,False,no_fields_extracted
+MRNA,Moderna,sustainability_report,https://assets.modernatx.com/m/5cc10007e5a806e6/original/Moderna_ESG_2022.pdf,,,,,,,False,no_fields_extracted
+MDLZ,Mondelez International,none,,,,,,,,,no_public_report_found
+MPWR,Monolithic Power Systems,cdp_pdf,https://media.monolithicpower.com/mps_cms_document/m/p/mps_2023_climate_report.pdf,38.0,25698.0,25567.0,,,,old,
+MNST,Monster Beverage,cdp_pdf,https://www.monsterbevcorp.com/media/Monster_Beverage_Corporation-2024_CDP_Questionnaire.pdf,10647.0,8025.0,10019.0,12/31/2023,15232.0,7140027000.0,new,
+MCO,Moody's Corporation,cdp_pdf,https://www.moodys.com/web/en/us/site-assets/cdp-report.pdf,1744.0,14035.0,13591.0,12/31/2019,1744.0,7088000000.0,new,
+MS,Morgan Stanley,sustainability_report,https://www.morganstanley.com/content/dam/msdotcom/en/assets/pdfs/Morgan_Stanley_2023_ESG_Report.pdf,,,,,,,False,no_fields_extracted
+MOS,Mosaic Company (The),cdp_pdf,https://mosaicco.com/fileLibrary/publicFiles/0-mosaic-2023-response.pdf,3192707.0,1196633.0,1290002.0,,,,old,
+MSI,Motorola Solutions,none,,,,,,,,,no_public_report_found
+MSCI,MSCI,cdp_pdf,https://www.msci.com/downloads/web/msci-com/discover-msci/corporate-responsbility/sustainability-reports-and-policies/msci-2025-cdp-corporate-questionnaire-2025.pdf,543.18,7140.02,97.08,12/31/2019,272.0,2856128000.0,new,
+NDAQ,"Nasdaq, Inc.",none,,,,,,,,,no_public_report_found
+NTAP,NetApp,sustainability_report,https://webobjects2.cdw.com/is/content/CDW/cdw/on-domain-cdw/brands/netapp/netapp-2024-esg-impact-report.pdf?ci=2676,,,,,,,False,no_fields_extracted
+NFLX,Netflix,none,,,,,,,,,no_public_report_found
+NWSA,News Corp (Class A),none,,,,,,,,,no_public_report_found
+NWS,News Corp (Class B),none,,,,,,,,,no_public_report_found
+NKE,"Nike, Inc.",sustainability_report,"https://media.about.nike.com/files/460d3198-9609-4f5b-b18c-d4e7aa570bff/FY24_NIKE,-Inc.-Sustainability-Data.pdf",57390,211322,12120,,,,False,"Manually entered (not parser-automated): NIKE's FY24 Sustainability Data report uses a facility-type breakdown (Air MI/Distribution Centers/HQs/Retail/Corporate Jets/HQ Fleet) rather than a single labelled Scope 1/2 row, not a generalizable layout. Cross-verified across three independent tables in the document: (1) explicit 'FY24 Emissions Summary Scope 1, 2, and 3' table states Scope 1=57,390, Scope 2 market-based=12,120; (2) 'Energy and Emissions by Business Function' table's NIKE, Inc. total row matches both figures exactly; (3) 'Fuel Consumption and Scope 1 Emissions' table's NIKE, Inc. row also shows 57,390 (also independently matches a by-gas breakdown total). Scope 2 location-based (211,322) is the document's own stated NIKE, Inc. total in the 'Electricity Consumption and Scope 2 Emissions' table, which also matches summing the four facility rows (26,273+59,563+42,199+83,287=211,322) independently."
+NDSN,Nordson Corporation,none,,,,,,,,,no_public_report_found
+NSC,Norfolk Southern,cdp_pdf,https://www.norfolksouthern.com/content/dam/nscorp/pdf/NS%202023%20CDP%20Report.pdf,4127658.0,150491.0,152460.0,,,,old,
+NTRS,Northern Trust,none,,,,,,,,,no_public_report_found
+NCLH,Norwegian Cruise Line Holdings,sustainability_report,https://www.ncl.com/sites/default/files/2023_NCLH_Sail_and_Sustain_Report-compressed.pdf,,,,,,,False,no_fields_extracted
+NVDA,Nvidia,cdp_pdf,https://www.nvidia.com/content/dam/en-zz/Solutions/csr/NVIDIA_Corporation_CDP_Climate_Change_Questionnaire_2023.pdf,12346.0,142909.0,60671.0,,,,old,
+NVR,"NVR, Inc.",none,,,,,,,,,no_public_report_found
+NXPI,NXP Semiconductors,sustainability_report,https://www.nxp.com/docs/en/supporting-information/Corporate-Sustainability-Report-2025.pdf,,,,,,,False,no_fields_extracted
+ORLY,O'Reilly Automotive,none,,,,,,,,,no_public_report_found
+ODFL,Old Dominion,sustainability_report,https://d1io3yog0oux5.cloudfront.net/_76a618a359278fc569741fd58cb55174/odfl/db/515/4099/pdf/ODFL_2022_ESG+Report.pdf,,,,,,,False,no_fields_extracted
+OMC,Omnicom Group,none,,,,,,,,,no_public_report_found
+ON,ON Semiconductor,cdp_pdf,https://www.onsemi.com/site/pdf/CDP_Climate_Change_Disclosure.pdf,,,,,,,False,no_fields_extracted
+ORCL,Oracle Corporation,cdp_pdf,https://www.oracle.com/a/ocom/docs/cdp-climate-change-questionnaire.pdf,29930.0,1234873.0,271188.0,12/31/2020,15272.0,57399000000.0,new,
+OTIS,Otis Worldwide,sustainability_report,https://s203.q4cdn.com/227649559/files/doc_downloads/resources/Otis-ESG-Report-2023.pdf,,,,,,,False,no_fields_extracted
+PCAR,Paccar,cdp_pdf,https://s202.q4cdn.com/173635405/files/doc_downloads/ESG/2024/tcfd-cdp-climate-report-feb-2024.pdf,121140.0,149503.0,164645.0,,,,old,

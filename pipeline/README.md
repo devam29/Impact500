@@ -13,8 +13,9 @@ assigned batch(es) below** — working someone else's batch wastes WebSearch
 budget re-researching companies they're already covering, and risks both
 of you writing to the same batch CSV at once.
 
-- **devam29 (repo owner): batch_07, batch_08**
-- **Teammate: batch_09, batch_10, batch_11**
+- **devam29 (repo owner): batch_07, batch_08 — both fully attempted as of
+  2026-09-13, nothing left to pick up here.**
+- **Teammate: batch_09 (in progress), batch_10, batch_11**
 
 When done, commit your updated `data/batches/batch_NN.csv` and
 `pipeline/remaining_tickers/remaining_batch_NN.txt`, push, and let the other
@@ -279,22 +280,56 @@ for whatever's left after all 11 batches are genuinely attempted.
 
 ## Current status (as of 2026-09-13, this update)
 
-- Batches 04, 05, and 06 are fully attempted (150 companies). **batch_07
-  is partially attempted: 27/50 done (ICE through KVUE alphabetically),
-  23 remaining (LHX through MA)** — session hit the 200-call WebSearch
-  cap mid-batch, stopped per the hard rule rather than guessing on the
-  rest. **batch_09 is partially attempted through Q (30 companies);
-  resume at RL.** Batches 08, 10, and 11 remain untouched.
-- **Repo is now on GitHub, split for parallel work**: devam29 has
-  batch_07 (finish the remaining 23) + batch_08; teammate has batch_09
-  (resume at RL), 10, 11. See "Who's working on which batch" at the top
-  of this file.
+- **batch_07 and batch_08 are now both fully attempted (100 companies)** —
+  devam29's full assignment is done. batch_07's remaining 23 (LHX through
+  MA) were finished this session; batch_08 (50 companies, MKC through
+  PCAR) was completed from scratch. Batches 04, 05, and 06 remain fully
+  attempted from before. **batch_09 is partially attempted (30 companies);
+  resume where teammate left off.** Batches 10 and 11 remain untouched.
 - Master file: `data/environmental_emissions_master.csv` — run
   `py merge_batches.py` after pulling to get the current combined count;
   don't trust a number written here, it goes stale the moment either of
-  you pushes a new batch. As of this merge: cdp_pdf 92, sustainability_report
-  76, epa_ghgrp 40 (some overlap — epa_ghgrp only fills gaps the other two
-  didn't already cover), none 73.
+  you pushes a new batch. As of this merge (384 companies total):
+  cdp_pdf 125, sustainability_report 102, epa_ghgrp 66 (some overlap —
+  epa_ghgrp only fills gaps the other two didn't already cover), none 91.
+- **EPA GHGRP saved 16 searches this session**: batch_07 had matches for
+  LMT, L, MPC, MLM; batch_08 had matches for MRK, MGM, MCHP, MU, TAP, NEM,
+  NI, NOC, NRG, NUE, OXY, OKE. All entered directly with real Scope 1
+  figures, zero WebSearch cost.
+- **New parser fallback added and verified** (`extract_emissions.py`,
+  `mtco2e_labels` in `extract_generic_fields`): some "Key data and
+  frameworks" tables abbreviate the unit to `(MTCO2e)` in the row label
+  itself instead of spelling out "metric tons CO2e" — confirmed real case:
+  Lam Research (LRCX). Caught a real ambiguity while adding this: Incyte
+  (INCY) uses the identical `(MTCO2e)` label style but an oldest-year-first
+  table, where naively taking the first number after the label would have
+  silently grabbed 2019's figure instead of 2024's. Used
+  `_last_of_number_run` instead of `_first_number_after` specifically
+  because it resolves both conventions correctly (Lam Research's table
+  still degenerates to one number since a "-52%" YoY line isn't numeric).
+  Verified zero regressions via `rescan_all_cached.py` before trusting it.
+- **One manual (non-generalizable) entry this session**: Nike (NKE) — its
+  FY24 Sustainability Data report breaks emissions out by facility type
+  (Air MI/Distribution/HQs/Retail/Corporate Jets/HQ Fleet) rather than a
+  single labelled Scope 1/2 row, so not a parser-worthy pattern. Entered
+  manually after cross-verifying the NIKE, Inc. totals across three
+  independent tables in the same document (an explicit "FY24 Emissions
+  Summary" table, the "Energy and Emissions by Business Function" table,
+  and the "Fuel/Electricity Consumption" tables) — all agreed exactly:
+  Scope 1 = 57,390, Scope 2 location-based = 211,322, market-based =
+  12,120 tCO2e.
+- Also noted, not fixed: `extract_emissions.py`'s `is_new_cdp` detection
+  has a false-positive path — it flags a document as CDP-format on a bare
+  mention of the phrase "CDP Corporate Questionnaire" anywhere in the
+  text, which fired on LRCX's report (a GRI index citing "the 2024 CDP
+  Corporate Questionnaire, Section C7" as a cross-reference, not an actual
+  CDP export). Harmless here since `data_source` is set by the caller
+  argument, not by this detection, and the true CDP-format extractors
+  found nothing to conflict with — but the `is_cdp_format` column will
+  read "new" on that row despite the document not actually being one.
+  Not worth tightening without a second confirmed case, since the fix
+  risks breaking legitimately-detected CDP PDFs whose title doesn't
+  literally contain "CDP Corporate Questionnaire".
 - Two more manual (non-generalizable) extractions this session, both
   cross-checked before entry rather than parser-automated: J.B. Hunt
   (current-year-first table with a footnote digit stuck to the label,
@@ -323,7 +358,6 @@ for whatever's left after all 11 batches are genuinely attempted.
   (composite scores not raw emissions, or in Mycelium's case a confirmed
   wrong-entity risk: its "Apple" record was a small UK subsidiary, not
   the global parent). Not worth re-investigating without new information.
->>>>>>> c670a79 (batch_07: 27/50 companies (ICE-KVUE), stopped at WebSearch cap)
 - **EPA GHGRP backfill** (`epa_ghgrp/`, see section above): real,
   government-reported Scope-1-only data used whenever CDP/sustainability-
   report search comes up empty. Check `epa_ghgrp/epa_ghgrp_matches.csv`
