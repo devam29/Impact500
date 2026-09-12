@@ -277,14 +277,53 @@ real-data collection has run its course, not something to do instead of
 searching. Keep searching for real data first; only fall back to Tier 2
 for whatever's left after all 11 batches are genuinely attempted.
 
-## Current status (as of 2026-09-12, this update)
+## Current status (as of 2026-09-13, this update)
 
-- Batches 04, 05, and 06 are fully attempted (150 companies). Batch 09 is
-  partially attempted through PLD (21 companies); resume at PRU. Batches 07,
-  08, 10, and 11 remain untouched.
-- Master file: `data/environmental_emissions_master.csv`, **273 companies**
-  after merging the partial Batch 09 output (cdp_pdf 90,
-  sustainability_report 66, epa_ghgrp 45, none 72).
+- Batches 04, 05, and 06 are fully attempted (150 companies). **batch_07
+  is partially attempted: 27/50 done (ICE through KVUE alphabetically),
+  23 remaining (LHX through MA)** — session hit the 200-call WebSearch
+  cap mid-batch, stopped per the hard rule rather than guessing on the
+  rest. **batch_09 is partially attempted through PLD (21 companies);
+  resume at PRU.** Batches 08, 10, and 11 remain untouched.
+- **Repo is now on GitHub, split for parallel work**: devam29 has
+  batch_07 (finish the remaining 23) + batch_08; teammate has batch_09
+  (resume at PRU), 10, 11. See "Who's working on which batch" at the top
+  of this file.
+- Master file: `data/environmental_emissions_master.csv` — run
+  `py merge_batches.py` after pulling to get the current combined count;
+  don't trust a number written here, it goes stale the moment either of
+  you pushes a new batch. As of this merge: cdp_pdf 92, sustainability_report
+  76, epa_ghgrp 40 (some overlap — epa_ghgrp only fills gaps the other two
+  didn't already cover), none 73.
+- Two more manual (non-generalizable) extractions this session, both
+  cross-checked before entry rather than parser-automated: J.B. Hunt
+  (current-year-first table with a footnote digit stuck to the label,
+  opposite convention from other companies seen — automating risks wrong
+  year elsewhere) and JPMorgan Chase (mixed table layouts in one PDF,
+  verified via the document's own combined-total consistency check:
+  100,024 + 6,806 = 106,830 matched exactly).
+- **New root-level files discovered this session, not yet integrated,
+  worth a look next**: `cdp_global500_2013.csv` (real 2013 CDP Scope 1/2
+  data, ~500 global companies, **63 exact-ticker matches against our
+  current gap** — Costco, AT&T, Allstate, JPMorgan, Target, ADP, Dollar
+  General among them) and a smaller `cdp_industry_emission_ranking.csv`
+  (35 companies, Food & Beverage sector, same 2013 vintage) — plan is to
+  fold both in as a `data_source=cdp_2013_historical` tier, clearly aged.
+  Also present but lower priority: `wikirate_coverage.csv` (a coverage
+  audit only, no actual values, 31 tickers/1 year — low yield for the
+  effort) and `environmental_data_clean.csv` / `preprocessed_content.csv`
+  (the NLP-derived e/s/g **score** dataset from CLAUDE.md, 263 companies
+  2014-2023 — a different pillar's input, not raw Scope 1/2 tonnage; ~2%
+  of its rows are non-US-exchange tickers that collide with S&P 500
+  symbols, e.g. ASX-listed "BSX" ≠ Boston Scientific — filter by exchange
+  prefix before using).
+- Checked several third-party aggregator platforms this session (CDP's
+  own scores page, S&P Global CSA, Mycelium) as possible shortcuts to
+  full coverage — none pan out; see git history / conversation for why
+  (composite scores not raw emissions, or in Mycelium's case a confirmed
+  wrong-entity risk: its "Apple" record was a small UK subsidiary, not
+  the global parent). Not worth re-investigating without new information.
+>>>>>>> c670a79 (batch_07: 27/50 companies (ICE-KVUE), stopped at WebSearch cap)
 - **EPA GHGRP backfill** (`epa_ghgrp/`, see section above): real,
   government-reported Scope-1-only data used whenever CDP/sustainability-
   report search comes up empty. Check `epa_ghgrp/epa_ghgrp_matches.csv`

@@ -253,6 +253,33 @@ IR,Ingersoll Rand,none,,,,,,,,,no_public_report_found
 PODD,Insulet Corporation,sustainability_report,https://www.insulet.com/sites/insulet/files/2026-05/Insulet-2025-Sustainability-Report.pdf,,,,,,,False,no_fields_extracted
 INTC,Intel,epa_ghgrp,,790768.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'INTEL CORP' (4 facilities). CDP search inconclusive; used EPA. Scope 1 only."
 IBKR,Interactive Brokers,none,,,,,,,,,no_public_report_found
+ICE,Intercontinental Exchange,sustainability_report,https://www.ice.com/publicdocs/2023_Sustainability_Report.pdf,,,,,,,False,no_fields_extracted
+IFF,International Flavors & Fragrances,epa_ghgrp,,307088.216,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'INTERNATIONAL FLAVORS & FRAGRANCES INC' (7 facilities). CDP search inconclusive; used EPA. Scope 1 only."
+IP,International Paper,epa_ghgrp,,5404387.698,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'INTERNATIONAL PAPER CO' (28 facilities). CDP search inconclusive; used EPA. Scope 1 only."
+INTU,Intuit,cdp_pdf,https://digitalasset.intuit.com/render/content/dam/intuit/ic/en_us/content/2025-CDP-Climate-Change-Response.pdf,4340.0,15874.0,0.0,07/31/2022,4680.0,16285000000.0,new,
+ISRG,Intuitive Surgical,cdp_pdf,https://www.intuitive.com/en-us/-/media/ISI/Intuitive/Pdf/Intuitive-Surgical-Inc-CDP-Corporate-Questionnaire-2025.pdf,7409.0,18578.0,18578.0,12/31/2021,7409.0,8352100000.0,new,
+IVZ,Invesco,sustainability_report,https://www.invesco.com/content/dam/invesco/crr/en/pdfs/invesco-2022-corporate-responsibility-report.pdf,,,,,,,,download_error: 406 Client Error: Not Acceptable for url: https://www.invesco.com/content/dam/invesco/crr/en/pdfs/invesco-2022-corporate-responsibility-report.pdf
+INVH,Invitation Homes,none,,,,,,,,,no_public_report_found
+IQV,IQVIA,sustainability_report,https://www.iqvia.com/-/media/iqvia/pdfs/about-us/esg/iqvia_-2024_ghg-emissions-assurance.pdf,,,,,,,False,no_fields_extracted
+IRM,Iron Mountain,sustainability_report,https://s204.q4cdn.com/148941814/files/doc_downloads/sustan/2023-corporate-responsibility-report.pdf,,,,,,,False,no_fields_extracted
+JBHT,J.B. Hunt,sustainability_report,https://www.jbhunt.com/content/dam/jbhunt/company/esg/docs/2023-Sustainability-Data-Supplement.pdf,1739774.0,23095.0,,,,,,"Manually verified from p.14 data table (2023 column, confirmed by header order 2023/2022/2021); parser missed it because the label carries an attached footnote digit (""Direct (Scope 1)5"") and this report uses current-year-first ordering, opposite of other companies seen -- not safely generalizable without risking wrong-year picks elsewhere, left as manual entry."
+JBL,Jabil,sustainability_report,https://jabil.com/dam/jcr:33d1968c-f744-413b-a5d7-717f3235da03/Jabil_FY25%20Sustainability%20Fact%20Sheet.pdf,,,,,,,False,no_fields_extracted
+JKHY,Jack Henry & Associates,none,,,,,,,,,no_public_report_found
+J,Jacobs Solutions,sustainability_report,https://s205.q4cdn.com/384284279/files/doc_downloads/Annual-ESG-Disclosures/fy23-esg-disclosures-update_final.pdf,,,,,,,False,no_fields_extracted
+JNJ,Johnson & Johnson,cdp_pdf,https://healthforhumanityreport.jnj.com/2024/_assets/downloads/jnj-2024-cdp-climate-change.pdf,,,,,,,,not_a_pdf
+JCI,Johnson Controls,cdp_pdf,https://www.johnsoncontrols.com/-/media/project/jci-global/johnson-controls/us-region/united-states-johnson-controls/corporate-sustainability/reporting-and-policies/2025/johnson-controls-international-plc-2024-cdp-disclosure.pdf,451311.0,212918.0,300725.0,09/30/2017,682761.0,26793000000.0,new,
+JPM,JPMorgan Chase,sustainability_report,https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf,100024.0,773852.0,6806.0,,,,,"Manually verified: Scope1 100,024 + Scope2(market) 6,806 = 106,830, matches document own combined Scope1+2(market) total exactly. Parser missed it due to mixed table layouts (unit-inline vs paired-year-no-unit) in the same doc, not safely generalizable."
+KVUE,Kenvue,cdp_pdf,https://www.kenvue.com/cdp-corporate-questionnaire-2025,73841.0,158307.0,136832.0,12/31/2020,73841.0,15455000000.0,new,
+KDP,Keurig Dr Pepper,cdp_pdf,https://www.keurigdrpepper.com/wp-content/uploads/2025/06/2024-cdp-climate-submission-fy-2023-reporting.pdf,286787.0,174778.0,36721.0,,,14814000000.0,new,
+KEY,KeyCorp,sustainability_report,https://www.key.com/content/dam/kco/documents/about/esg-reports/2024-keycorp-cr-report-planet.pdf,,,,,,,,"download_error: HTTPSConnectionPool(host='www.key.com', port=443): Read timed out. (read timeout=30)"
+KEYS,Keysight Technologies,sustainability_report,https://www.keysight.com/us/en/assets/3126-1338/corporate-reports/2025-Corporate-Social-Responsibility-Data-Report.pdf,,,,,,,False,no_fields_extracted
+KMB,Kimberly-Clark,epa_ghgrp,,1030421.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'KIMBERLY-CLARK CORP' (8 facilities). CDP search inconclusive; used EPA. Scope 1 only."
+KIM,Kimco Realty,sustainability_report,https://s1.q4cdn.com/944058265/files/doc_news/2024/Jun/06-27-24-kim-2023-cr-report.pdf,,,,,,,False,no_fields_extracted
+KMI,Kinder Morgan,cdp_pdf,https://www.kindermorgan.com/WWWKM/media/Safety-Environmental/documents/2025-CDP-Climate-Response.pdf,15400000.0,3000000.0,3200000.0,,,15100000000.0,new,
+KKR,KKR & Co.,sustainability_report,https://www.kkr.com/content/dam/kkr/sustainability/pdf/2025-corporate-sustainability-disclosures.pdf,,,,,,,False,no_fields_extracted
+KLAC,KLA Corporation,cdp_pdf,https://www.kla.com/wp-content/uploads/KLA-2025-CDP-Report.pdf,4698.0,69057.0,43623.0,12/31/2021,4698.0,10846957000.0,new,
+KHC,Kraft Heinz,sustainability_report,https://www.kraftheinzcompany.com/sustainability/pdf/KraftHeinz-2024-ESG-Report.pdf,,,,,,,False,no_fields_extracted
+KR,Kroger,sustainability_report,https://www.thekrogerco.com/wp-content/uploads/2025/10/Kroger-Co-2025-Summary-Performance-Tables.pdf,,,,,,,False,no_fields_extracted
 PKG,Packaging Corporation of America,sustainability_report,https://www.packagingcorp.com/filebin/pdf/ResponsibilityReports/PCA_2024_Responsibility_Report_TCFD_Index.pdf,,,,,,,False,no_fields_extracted
 PLTR,Palantir Technologies,sustainability_report,https://www.palantir.com/assets/xrfr7uokpv1b/H5tHWWq0298OBDCgRmKv1/b9528d25f643e8698323881c3e045b3a/2025.06.16_-_Palantir_UK_-_2025_Carbon_Reduction_Plan_Signed.pdf,,,,,,,False,no_fields_extracted
 PANW,Palo Alto Networks,cdp_pdf,https://corporate.justcapital.com/uploads/PANW/2023%20CDP%20Climate%20Disclosure-FINAL-public%20v1.0.pdf,2020.0,11073.0,13385.0,,,,old,

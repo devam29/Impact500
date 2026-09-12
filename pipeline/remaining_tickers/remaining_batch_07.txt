@@ -1,30 +1,3 @@
-ICE,Intercontinental Exchange
-IFF,International Flavors & Fragrances
-IP,International Paper
-INTU,Intuit
-ISRG,Intuitive Surgical
-IVZ,Invesco
-INVH,Invitation Homes
-IQV,IQVIA
-IRM,Iron Mountain
-JBHT,J.B. Hunt
-JBL,Jabil
-JKHY,Jack Henry & Associates
-J,Jacobs Solutions
-JNJ,Johnson & Johnson
-JCI,Johnson Controls
-JPM,JPMorgan Chase
-KVUE,Kenvue
-KDP,Keurig Dr Pepper
-KEY,KeyCorp
-KEYS,Keysight Technologies
-KMB,Kimberly-Clark
-KIM,Kimco Realty
-KMI,Kinder Morgan
-KKR,KKR & Co.
-KLAC,KLA Corporation
-KHC,Kraft Heinz
-KR,Kroger
 LHX,L3Harris
 LH,Labcorp
 LRCX,Lam Research
