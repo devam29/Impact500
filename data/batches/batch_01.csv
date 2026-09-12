@@ -1,0 +1,51 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+ABT,Abbott Laboratories,cdp_pdf,https://www.abbott.com/content/dam/corp/abbott/en-us/documents/pdfs/abbott-citizenship/2024-Abbott-CDP-Corporate-Questionnaire.pdf,501000.0,482000.0,406000.0,12/31/2018,538000.0,40109000000.0,new,
+ABBV,AbbVie,epa_ghgrp,https://www.abbvie.com/content/dam/abbvie-com2/pdfs/sustainability/2024-cdp.pdf,99777.824,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ABBVIE INC' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=cdp_pdf, report_url=https://www.abbvie.com/content/dam/abbvie-com2/pdfs/sustainability/2024-cdp.pdf, notes=download_error: 403 Client Error: Forbidden for url: https://www.abbvie.com/content/dam/corporate/abbvie-com2/pdfs/sustainability/2024-cdp.pdf"
+ACN,Accenture,cdp_pdf,https://www.accenture.com/content/dam/accenture/final/corporate/company-information/document/Accenture-CDP-2024.pdf,,,,,,,False,no_fields_extracted
+MMM,3M,epa_ghgrp,https://multimedia.3m.com/mws/media/2589589O/3m-2025-global-impact-report.pdf,,,,,,,False,"EPA GHGRP 2023 Direct Emitters, matched via parent company '3M CO' (11 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=sustainability_report, report_url=https://multimedia.3m.com/mws/media/2589589O/3m-2025-global-impact-report.pdf, notes=no_fields_extracted"
+AOS,A. O. Smith,sustainability_report,https://www.aosmith.com/on/demandware.static/-/Sites-aosmith-Library/default/dw9faf4a3d/pdf/2024-Sustainability-Report.pdf,,,,,,,False,no_fields_extracted
+ADBE,Adobe Inc.,cdp_pdf,https://www.adobe.com/content/dam/cc/en/corporate-responsibility/pdfs/CDP-2023-Climate-Change.pdf,6568.0,57168.0,22936.0,,,,old,
+AMD,Advanced Micro Devices,cdp_pdf,https://www.amd.com/content/dam/amd/en/documents/corporate/cr/amd-cdp-corporate-2024-questionnaire-2023-data.pdf,10008.0,80839.0,36597.0,12/31/2020,6412.0,,new,
+AES,AES Corporation,cdp_pdf,https://www.aes.com/sites/global/files/2025-06/aes-cdp-assessment-2024.pdf,33401594.0,472668.0,472668.0,12/31/2016,51809568.0,12668000000.0,new,
+AFL,Aflac,cdp_pdf,https://s24.q4cdn.com/367535798/files/doc_downloads/2026/03/AFLAC-Incorporated-12-08-2025-CORPORATE-04-06.pdf,2850.0,7370.0,0.0,12/31/2023,3499.0,18927000000.0,new,
+AKAM,Akamai Technologies,sustainability_report,https://www.akamai.com/site/en/documents/corporate/2025/akamai-2024-esg-impact-report.pdf,,,,,,,False,no_fields_extracted
+APD,Air Products,sustainability_report,https://www.airproducts.com/-/media/files/en/900/900-24-001-us-sustainability-report-2024.pdf,,,,,,,False,no_fields_extracted
+ABNB,Airbnb,none,,,,,,,,,no_public_report_found
+ARE,Alexandria Real Estate Equities,none,,,,,,,,,no_public_report_found
+GOOGL,Alphabet Inc. (Class A),cdp_pdf,https://kstatic.googleusercontent.com/files/c94dad6f0210733d06e8006417fa88e20ec5171772b6789ec72053b2e9d475598e2dd744a9fb04c305a7b399f1f771a27446a0581976a0fed655a928b0b775de,79400.0,9252900.0,3423400.0,12/31/2019,81900.0,307394000000.0,new,
+GOOG,Alphabet Inc. (Class C),cdp_pdf,https://kstatic.googleusercontent.com/files/c94dad6f0210733d06e8006417fa88e20ec5171772b6789ec72053b2e9d475598e2dd744a9fb04c305a7b399f1f771a27446a0581976a0fed655a928b0b775de,79400.0,9252900.0,3423400.0,12/31/2019,81900.0,307394000000.0,new,
+ALGN,Align Technology,none,,,,,,,,,no_public_report_found
+ALLE,Allegion,none,,,,,,,,,no_public_report_found
+LNT,Alliant Energy,epa_ghgrp,,23041618.196000002,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ALLIANT ENERGY CORP' (16 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+ALL,Allstate,none,,,,,,,,,no_public_report_found
+AEE,Ameren,epa_ghgrp,https://www.ameren.com/-/media/corporate-site/files/environment/esg-report-library/ameren_cdp_2024.ashx,19669522.87,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'AMEREN CORP' (11 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=cdp_pdf, report_url=https://www.ameren.com/-/media/corporate-site/files/environment/esg-report-library/ameren_cdp_2024.ashx, notes=download_error: 403 Client Error: Forbidden for url: https://www.ameren.com/-/media/corporate-site/files/environment/esg-report-library/ameren_cdp_2024.ashx"
+MO,Altria,epa_ghgrp,,66467.196,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ALTRIA GROUP INC' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+AMZN,Amazon,none,,,,,,,,,no_public_report_found
+AMCR,Amcor,none,,,,,,,,,no_public_report_found
+AEP,American Electric Power,epa_ghgrp,,50834862.764,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'AMERICAN ELECTRIC POWER CO INC' (25 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+AWK,American Water Works,cdp_pdf,https://s26.q4cdn.com/750150140/files/doc_downloads/esg_docs/2025/American-Water-2024-CDP-Response.pdf,74877.0,459896.0,0.0,,,3920000000.0,new,
+AMP,Ameriprise Financial,cdp_pdf,https://www.ameriprise.com/binaries/content/assets/ampcom/pdf/ameriprise_cdp_climate_change_2023_final.pdf,5899.0,20337.0,15627.0,12/31/2019,7687.0,,new,
+AXP,American Express,none,,,,,,,,,no_public_report_found
+AIG,American International Group,none,,,,,,,,,no_public_report_found
+AMT,American Tower,none,,,,,,,,,no_public_report_found
+AMGN,Amgen,cdp_pdf,https://www.amgen.com/responsibility/reporting-and-metrics/-/media/Themes/CorporateAffairs/amgen-com/amgen-com/downloads/responsibility/amgen-cdp-2024.pdf,160184.0,176138.0,159848.0,12/31/2019,135954.0,28200000000.0,new,
+AON,Aon plc,cdp_pdf,https://assets.aon.com/-/media/files/aon/about/impact/2024/2024-aon-cdp-questionnaire-responses-fy2023.pdf,22583.0,30714.0,24099.0,12/31/2019,14464.0,,new,
+AME,Ametek,none,,,,,,,,,no_public_report_found
+APH,Amphenol,none,,,,,,,,,no_public_report_found
+ADI,Analog Devices,epa_ghgrp,,117771.628108,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ANALOG DEVICES INC' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+AAPL,Apple Inc.,cdp_pdf,https://www.apple.com/environment/pdf/Apple_CDP-Climate-Change-Questionnaire_2024.pdf,55200.0,1206700.0,3400.0,10/25/2011,21700.0,383285000000.0,new,
+APA,APA Corporation,epa_ghgrp,,1302769.998,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'APA CORP' (13 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+APO,Apollo Global Management,none,,,,,,,,,no_public_report_found
+AMAT,Applied Materials,none,,,,,,,,,no_public_report_found
+APP,AppLovin,none,,,,,,,,,no_public_report_found
+APTV,Aptiv,cdp_pdf,https://www.aptiv.com/docs/default-source/sustainability-report/2024-aptiv-cdp-corporate-6-11-24.pdf?sfvrsn=2712b937_1,21515.0,411763.0,344970.0,12/31/2021,20388.0,20051000000.0,new,
+ADM,Archer Daniels Midland,cdp_pdf,https://www.adm.com/globalassets/sustainability/sustainability-reports/archer-daniels-midland-cdp-corporate-questionnaire-08-04-2025.pdf,12600000.0,1990000.0,2030000.0,12/31/2019,14100000.0,93935000000.0,new,
+A,Agilent Technologies,sustainability_report,https://www.agilent.com/about/esg/en/2023-agilent-esg-report.pdf,,,,,,,,download_error: 403 Client Error: Forbidden for url: https://www.agilent.com/about/esg/en/2023-agilent-esg-report.pdf
+ACGL,Arch Capital Group,none,,,,,,,,,no_public_report_found
+ANET,Arista Networks,none,,,,,,,,,no_public_report_found
+AJG,Arthur J. Gallagher & Co.,none,,,,,,,,,no_public_report_found
+AIZ,Assurant,cdp_pdf,https://azure-na-assets.contentstack.com/v3/assets/blt87461b8270f4f92b/blt0bf4e447817c7c0f/68e8032cb1e1331065ad8a53/2025-assurant-cdp-climate-change-questionnaire.pdf,1282.0,10307.0,11018.0,12/31/2021,2132.0,11877500000.0,new,
+ALB,Albemarle Corporation,epa_ghgrp,https://www.albemarle.com/sites/default/files/2024-06/Albemarle%202023%20Sustainability%20Report%20061124_0.pdf,,,,,,,False,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ALBEMARLE CORP' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=sustainability_report, report_url=https://www.albemarle.com/sites/default/files/2024-06/Albemarle%202023%20Sustainability%20Report%20061124_0.pdf, notes=no_fields_extracted"
+ARES,Ares Management,epa_ghgrp,,1817717.564,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ARES MANAGEMENT CORP' (1 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+T,AT&T,none,,,,,,,,,no_public_report_found
+ATO,Atmos Energy,epa_ghgrp,,130555.092,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'ATMOS ENERGY CORP' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"

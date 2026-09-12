@@ -1,0 +1,50 @@
+ICE,Intercontinental Exchange
+IFF,International Flavors & Fragrances
+IP,International Paper
+INTU,Intuit
+ISRG,Intuitive Surgical
+IVZ,Invesco
+INVH,Invitation Homes
+IQV,IQVIA
+IRM,Iron Mountain
+JBHT,J.B. Hunt
+JBL,Jabil
+JKHY,Jack Henry & Associates
+J,Jacobs Solutions
+JNJ,Johnson & Johnson
+JCI,Johnson Controls
+JPM,JPMorgan Chase
+KVUE,Kenvue
+KDP,Keurig Dr Pepper
+KEY,KeyCorp
+KEYS,Keysight Technologies
+KMB,Kimberly-Clark
+KIM,Kimco Realty
+KMI,Kinder Morgan
+KKR,KKR & Co.
+KLAC,KLA Corporation
+KHC,Kraft Heinz
+KR,Kroger
+LHX,L3Harris
+LH,Labcorp
+LRCX,Lam Research
+LVS,Las Vegas Sands
+LDOS,Leidos
+LEN,Lennar
+LII,Lennox International
+LLY,Lilly (Eli)
+LYV,Live Nation Entertainment
+LMT,Lockheed Martin
+L,Loews Corporation
+LOW,Lowe's
+LULU,Lululemon Athletica
+LITE,Lumentum
+LYB,LyondellBasell
+MTB,M&T Bank
+MPC,Marathon Petroleum
+MAR,Marriott International
+MRSH,Marsh McLennan
+MLM,Martin Marietta Materials
+MRVL,Marvell Technology
+MAS,Masco
+MA,Mastercard

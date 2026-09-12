@@ -1,0 +1,50 @@
+PKG,Packaging Corporation of America
+PLTR,Palantir Technologies
+PANW,Palo Alto Networks
+PSKY,Paramount Skydance Corporation
+PH,Parker Hannifin
+PAYX,Paychex
+PYPL,PayPal
+PNR,Pentair
+PEP,PepsiCo
+PFE,Pfizer
+PCG,PG&E Corporation
+PM,Philip Morris International
+PSX,Phillips 66
+PNW,Pinnacle West Capital
+PNC,PNC Financial Services
+PPG,PPG Industries
+PPL,PPL Corporation
+PFG,Principal Financial Group
+PG,Procter & Gamble
+PGR,Progressive Corporation
+PLD,Prologis
+PRU,Prudential Financial
+PEG,Public Service Enterprise Group
+PTC,PTC Inc.
+PSA,Public Storage
+PHM,PulteGroup
+PWR,Quanta Services
+QCOM,Qualcomm
+DGX,Quest Diagnostics
+Q,Qnity Electronics
+RL,Ralph Lauren Corporation
+RJF,Raymond James Financial
+RDDT,Reddit
+RTX,RTX Corporation
+O,Realty Income
+REG,Regency Centers
+REGN,Regeneron Pharmaceuticals
+RF,Regions Financial Corporation
+RSG,Republic Services
+RMD,ResMed|
+RVTY,Revvity
+HOOD,Robinhood Markets
+ROK,Rockwell Automation
+ROL,Rollins, Inc.
+ROP,Roper Technologies
+ROST,Ross Stores
+RCL,Royal Caribbean Group
+SPGI,S&P Global
+CRM,Salesforce
+SNDK,Sandisk

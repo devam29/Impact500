@@ -1,0 +1,51 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+F,Ford Motor Company,cdp_pdf,https://corporate.ford.com/content/dam/corporate/us/en-us/documents/reports/ford-cdp-climate-water-report.pdf,1419442.81,3262018.65,3110560.1,12/31/2017,1384651.26,176000000000.0,new,
+FTV,Fortive,sustainability_report,https://fortive.com/sites/default/files/2025-04/2024-Fortive-Sustainability-Report-Appendix.pdf,,,,,,,new,no_fields_extracted
+FCX,Freeport-McMoRan,cdp_pdf,https://fcx.com/sites/fcx/files/documents/sustainability/2024_cdp_response.pdf,5139523.0,2831755.0,2624651.0,12/31/2018,4964720.0,22855000000.0,new,
+FTNT,Fortinet,none,,,,,,,,,no_public_report_found
+FOXA,Fox Corporation (Class A),none,,,,,,,,,no_public_report_found
+FOX,Fox Corporation (Class B),none,,,,,,,,,no_public_report_found
+BEN,Franklin Resources,none,,,,,,,,,no_public_report_found
+GRMN,Garmin,none,,,,,,,,,no_public_report_found
+IT,Gartner,none,,,,,,,,,no_public_report_found
+GE,GE Aerospace,sustainability_report,https://www.geaerospace.com/sites/default/files/2026-sustainability-report.pdf,,,,,,,False,no_fields_extracted
+GEHC,GE HealthCare,sustainability_report,https://www.gehealthcare.com/-/jssmedia/gehc/us/files/about-us/sustainability/reports/ge-healthcare-sustainability-report-2024.pdf,,,,,,,,download_error: 502 Server Error: Bad Gateway for url: https://www.gehealthcare.com/-/jssmedia/gehc/us/files/about-us/sustainability/reports/ge-healthcare-sustainability-report-2024.pdf
+GEV,GE Vernova,sustainability_report,https://www.gevernova.com/sustainability/documents/Sustainability/GE_Vernova_Sustainability_Appendices_2023.pdf,,,,,,,False,no_fields_extracted
+GEN,Gen Digital,none,,,,,,,,,no_public_report_found
+GNRC,Generac,sustainability_report,https://www.generac.com/globalassets/footer/about/sustainability/generac_sustainability_report_2024.pdf,,,,,,,False,no_fields_extracted
+GD,General Dynamics,cdp_pdf,https://www.gd.com/-/media/gd-corporate/pdf/general-dynamics-corporation-cdp-climate-questionnaire-2024.ashx,323044.0,408322.0,390830.0,,,42272000000.0,new,
+GIS,General Mills,epa_ghgrp,,70689.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'GENERAL MILLS INC' (2 facilities). CDP PDF links both 404'd; used EPA instead of a 3rd search. Scope 1 only."
+GM,General Motors,epa_ghgrp,,572171.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'GENERAL MOTORS CO' (14 facilities). CDP PDF download timed out; used EPA instead of retrying. Scope 1 only."
+GPC,Genuine Parts Company,sustainability_report,https://filecache.investorroom.com/mr5ir_genuineparts/933/GPC_2024_Sustainability_Report.pdf,,,,,,,False,no_fields_extracted
+GILD,Gilead Sciences,sustainability_report,https://www.gilead.com/-/media/files/pdfs/sustainability/gilead-ghg-verification-opinion.pdf,,,,,,,False,no_fields_extracted
+GPN,Global Payments,cdp_pdf,https://d1io3yog0oux5.cloudfront.net/_0d854eca4ea219e95cc214cf58b4dd86/globalpayments/db/2316/21180/file/2023+CDP+Response.pdf,1159.0,50164.0,50354.0,,,,old,
+GL,Globe Life,none,,,,,,,,,no_public_report_found
+GDDY,GoDaddy,sustainability_report,https://s23.q4cdn.com/406380394/files/doc_downloads/2024/2024_GoDaddy_Sustainability_Report.pdf,,,,,,,False,no_fields_extracted
+GS,Goldman Sachs,epa_ghgrp,,52140.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'THE GOLDMAN SACHS GROUP INC' (1 facility). CDP search found no direct hit; used EPA to save budget. Scope 1 only."
+HAL,Halliburton,epa_ghgrp,,53415.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'HALLIBURTON CO' (2 facilities). CDP search inconclusive; used EPA to save budget. Scope 1 only."
+HIG,Hartford (The),cdp_pdf,https://assets.thehartford.com/image/upload/cdp_project_submission.pdf,5981.0,10884.0,116.0,,,26535000000.0,new,
+HAS,Hasbro,cdp_pdf,https://assets-us-01.kc-usercontent.com/500e0a65-283d-00ef-33b2-7f1f20488fe2/09948c70-9922-44ff-86fd-5347430a8abe/Hasbro%20CDP%202020.pdf,5963.0,6901.32,47.44,,,,old,
+HCA,HCA Healthcare,sustainability_report,https://s23.q4cdn.com/949900249/files/doc_downloads/2022/10/Annual-Sustainability-Report-Final-2021-data-accessible.pdf,,,,,,,False,no_fields_extracted
+DOC,Healthpeak Properties,cdp_pdf,https://healthpeak.com/wp-content/uploads/2025/07/2024-CDP-Climate-Change-Questionnaire-2023-Reporting-Year.pdf,52564.0,197334.0,170778.0,,,,new,
+HSIC,Henry Schein,sustainability_report,https://www.henryschein.com/us-en/images/corporate/2021ESGReportIndex.pdf,,,,,,,False,no_fields_extracted
+HSY,Hershey Company (The),sustainability_report,https://www.thehersheycompany.com/content/dam/hershey-corporate/documents/pdf/hershey-2024-consolidated-index-gri-ungprf-report.pdf,,,,,,,False,no_fields_extracted
+HPE,Hewlett Packard Enterprise,none,,,,,,,,,no_public_report_found
+HLT,Hilton Worldwide,cdp_pdf,https://travelwithpurpose.hilton.com/wp-content/uploads/sites/4/2026/05/Hilton-Worldwide-Inc.-25-11-2025-CORPORATE-15-26.pdf,442406.0,2135416.0,2061608.0,12/31/2019,476036.0,11174000000.0,new,
+HONA,Honeywell Aerospace,none,,,,,,,,,no_public_report_found
+HRL,Hormel Foods,cdp_pdf,https://www.hormelfoods.com/wp-content/uploads/2025_CDP-Corporate-Questionnaire-2025.pdf,527671.0,395278.0,27987.0,,,11920797.0,new,
+HST,Host Hotels & Resorts,sustainability_report,https://www.hosthotels.com/-/media/HostHotels/Files/DownloadLinksAssets/CR-Highlights/Host_Hotels_Resorts_Inc_2026_Corporate_Responsibility_Report.pdf,,,,,,,False,no_fields_extracted
+HWM,Howmet Aerospace,epa_ghgrp,,124138.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'HOWMET AEROSPACE INC' (3 facilities). CDP search inconclusive; used EPA to save budget. Scope 1 only."
+HPQ,HP Inc.,cdp_pdf,https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c09119803,,,,,,,,"download_error: HTTPSConnectionPool(host='h20195.www2.hp.com', port=443): Max retries exceeded with url: /v2/GetDocument.aspx?docname=c09119803 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))"
+HUBB,Hubbell Incorporated,cdp_pdf,https://hubbellcdn.com/ohwassets/Hubbell/ESG/Documents/Hubbell-2025-CDP-Climate-Change-Disclosures.pdf,38382.46,87746.25,88293.86,12/31/2022,50740.11,5628500000.0,new,
+HUM,Humana,sustainability_report,https://assets.humana.com/is/content/humana/2025_Humana_Impact_Report_Appendixpdf,41913.0,56377.0,54678.0,,,,False,
+HBAN,Huntington Bancshares,sustainability_report,http://carbonaccountingfinancials.com/files/institutions_downloads/2024HuntingtonClimateReport-121025.pdf,,,,,,,False,no_fields_extracted
+HII,Huntington Ingalls Industries,epa_ghgrp,,49707.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'HUNTINGTON INGALLS INDUSTRIES INC' (1 facility). CDP search inconclusive; used EPA. Scope 1 only."
+IBM,IBM,none,,,,,,,,,no_public_report_found
+IEX,IDEX Corporation,sustainability_report,https://www.idexcorp.com/wp-content/uploads/2024/03/IDEX-Corporation-2024-Sustainability-Disclosures-FINAL-3.21.24.pdf,,,,,,,False,no_fields_extracted
+IDXX,Idexx Laboratories,sustainability_report,https://www.idexx.com/files/idexx-corporate-responsibility-report-2023.pdf,,,,,,,False,no_fields_extracted
+ITW,Illinois Tool Works,epa_ghgrp,,35816.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'ILLINOIS TOOL WORKS INC' (1 facility). CDP search inconclusive; used EPA. Scope 1 only."
+INCY,Incyte,sustainability_report,https://cdn.incyte.com/Assets/INCY25_Global-Responsibility-Report_FINAL_ADA.pdf,,,,,,,False,no_fields_extracted
+IR,Ingersoll Rand,none,,,,,,,,,no_public_report_found
+PODD,Insulet Corporation,sustainability_report,https://www.insulet.com/sites/insulet/files/2026-05/Insulet-2025-Sustainability-Report.pdf,,,,,,,False,no_fields_extracted
+INTC,Intel,epa_ghgrp,,790768.0,,,,,,,"EPA GHGRP 2023 Direct Emitters, parent 'INTEL CORP' (4 facilities). CDP search inconclusive; used EPA. Scope 1 only."
+IBKR,Interactive Brokers,none,,,,,,,,,no_public_report_found

@@ -1,0 +1,14 @@
+# Cached/regeneratable downloads -- large, and re-fetchable from URLs
+# already in the scripts/README, so not worth versioning.
+pipeline/pdfs/
+pipeline/epa_ghgrp/*.xlsx
+pipeline/epa_ghgrp/*.xlsb
+pipeline/epa_ghgrp/summary_2023/
+pipeline/epa_ghgrp/summary_2023.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# Local session state, not portable between machines
+.claude/scheduled_tasks.lock

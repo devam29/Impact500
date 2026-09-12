@@ -1,0 +1,49 @@
+UBER,Uber
+UDR,UDR, Inc.
+ULTA,Ulta Beauty
+UNP,Union Pacific Corporation
+UAL,United Airlines Holdings
+UPS,United Parcel Service
+URI,United Rentals
+UNH,UnitedHealth Group
+UHS,Universal Health Services
+VLO,Valero Energy
+VEEV,Veeva Systems
+VTR,Ventas
+VLTO,Veralto
+VRSN,Verisign
+VRSK,Verisk Analytics
+VZ,Verizon
+VRTX,Vertex Pharmaceuticals
+VRT,Vertiv
+VTRS,Viatris
+VICI,Vici Properties
+V,Visa Inc.
+VST,Vistra Corp.
+VMRK,Vivmark Residential
+VMC,Vulcan Materials Company
+WRB,W. R. Berkley Corporation
+GWW,W. W. Grainger
+WAB,Wabtec
+WMT,Walmart
+DIS,Walt Disney Company (The)
+WBD,Warner Bros. Discovery
+WM,Waste Management
+WAT,Waters Corporation
+WEC,WEC Energy Group
+WFC,Wells Fargo
+WELL,Welltower
+WST,West Pharmaceutical Services
+WDC,Western Digital
+WY,Weyerhaeuser
+WSM,Williams-Sonoma, Inc.
+WMB,Williams Companies
+WTW,Willis Towers Watson
+WDAY,Workday, Inc.
+WYNN,Wynn Resorts
+XEL,Xcel Energy
+XYL,Xylem Inc.
+YUM,Yum! Brands
+ZBRA,Zebra Technologies
+ZBH,Zimmer Biomet
+ZTS,Zoetis

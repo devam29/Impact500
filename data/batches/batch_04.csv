@@ -1,0 +1,51 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+CI,Cigna,cdp_pdf,https://www.thecignagroup.com/static/www-thecignagroup-com/docs/cdp-report-questionnaire.pdf,16559.0,78130.0,23453.0,12/31/2019,16671.0,247121000000.0,new,
+CSCO,Cisco,cdp_pdf,https://www.cisco.com/c/dam/m/en_us/about/csr/esg-hub/_pdf/2024-Cisco-CDP-Climate-Change-Response.pdf,39514.0,567637.0,81806.0,,,,new,
+CHD,Church & Dwight,cdp_pdf,https://churchdwight.com/pdf/Sustainability/2024-Church-Dwight-CDP-Response.pdf,89596.0,64354.0,13546.0,12/31/2016,81240.0,5867900000.0,new,
+CMG,Chipotle Mexican Grill,none,,,,,,,,,no_public_report_found
+CIEN,Ciena,sustainability_report,https://www.ciena.com/__data/assets/pdf_file/0026/70973/Ciena-Sustainability-Report.pdf,,,,,,,,download_error: 403 Client Error: Forbidden for url: https://www.ciena.com/__data/assets/pdf_file/0026/70973/Ciena-Sustainability-Report.pdf
+CB,Chubb Limited,sustainability_report,https://about.chubb.com/content/dam/chubb-sites/chubb/about-chubb/citizenship/environment/pdf/chubb-2024-climate-related-financial-disclosure.pdf,,,,,,,False,no_fields_extracted
+CINF,Cincinnati Financial,sustainability_report,https://investors.cinfin.com/image/CINF+2024+Sustainability+Report+FINAL.pdf,,,,,,,False,no_fields_extracted
+C,Citigroup,sustainability_report,https://www.citigroup.com/rcs/citigpa/storage/public/2023-Citi-Climate-Report.pdf,,,,,,,False,no_fields_extracted
+CTAS,Cintas,sustainability_report,https://www.cintas.com/docs/default-source/esg/cintas_fact_sheet_2025-v2.pdf?sfvrsn=49ceb06d_1,,,,,,,False,no_fields_extracted
+CFG,Citizens Financial Group,sustainability_report,https://www.citizensbank.com/dam/aefa1c17-9029-4112-bd12-b47401546cb7/2025-sustainability-impact-report-original-file.pdf,,,,,,,False,no_fields_extracted
+CMS,CMS Energy,cdp_pdf,https://s26.q4cdn.com/888045447/files/doc_downloads/2024-CDP-Corporate-Questionnaire.pdf,14834761.0,62125.0,65076.0,12/31/2014,20132836.0,,new,
+KO,Coca-Cola Company (The),cdp_pdf,https://www.coca-colacompany.com/content/dam/company/us/en/policies/pdf/sustainability/2023-cdp-climate-change-response.pdf,533906.0,890400.0,716045.0,,,,old,
+CTSH,Cognizant,cdp_pdf,https://www.cognizant.com/en_us/about/documents/cognizant-2024-cdp-survey.pdf,15789.0,315544.0,249773.0,12/31/2019,15789.0,19353000000.0,new,
+CL,Colgate-Palmolive,cdp_pdf,https://www.colgatepalmolive.com/content/dam/cp-sites-aem/corporate/corporate/common/pdf/cdp-climate-2023.pdf,195700.0,369000.0,225400.0,,,,old,
+COHR,Coherent Corp.,cdp_pdf,https://www.coherent.com/resources/coherent/about-us/environmental/coherent-corp-cdp-climate-change-questionnaire.pdf,55254.0,304709.0,223817.0,,,,old,
+CLX,Clorox,cdp_pdf,https://cdn.metrio.net/clients/clorox/Clorox%20Company-03-10-2025-CORPORATE-12-25.pdf,69998.0,149168.0,19729.0,12/31/2020,74437.0,7164000000.0,new,
+CME,CME Group,sustainability_report,https://www.cmegroup.com/company/corporate-citizenship/files/2024-cme-group-corporate-citizenship-report.pdf,,,,,,,False,no_fields_extracted
+COIN,Coinbase,none,,,,,,,,,no_public_report_found
+CMCSA,Comcast,sustainability_report,https://cmcsa.gcs-web.com/static-files/7f30a3ff-a4e8-4ea5-8968-3470cb2466e2,,,,,,,,"download_error: HTTPSConnectionPool(host='cmcsa.gcs-web.com', port=443): Read timed out. (read timeout=30)"
+FIX,Comfort Systems USA,sustainability_report,https://comfortsystemsusa.com/wp-content/uploads/CSUSA_Sustainability_Report_2024_.pdf,,,,,,,,download_error: 403 Client Error: Forbidden for url: https://comfortsystemsusa.com/wp-content/uploads/CSUSA_Sustainability_Report_2024_.pdf
+COP,ConocoPhillips,cdp_pdf,https://static.conocophillips.com/files/resources/conocophillips-2024-cdp.pdf,16432000.0,1001000.0,,,,58574000000.0,new,
+ED,Consolidated Edison,epa_ghgrp,,2463230.61,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'CONSOLIDATED EDISON INC' (5 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=none, report_url=n/a, notes=no_public_report_found"
+STZ,Constellation Brands,none,,,,,,,,,no_public_report_found
+CEG,Constellation Energy,cdp_pdf,https://www.constellationenergy.com/content/dam/constellationenergy/pdfs/impact/ethics-and-compliance/sustainability-policies/CDP_Questionnaire_Response_Submitted_web.pdf,8237643.0,305471.0,373242.0,12/31/2020,7982743.0,23568000000.0,new,
+COO,Cooper Companies,none,,,,,,,,,no_public_report_found
+CPRT,Copart,sustainability_report,https://www.copart.com/content/copart-esg-report-2024.pdf,,,,,,,False,no_fields_extracted
+GLW,Corning Inc.,cdp_pdf,https://www.corning.com/media/worldwide/Sustainability/Files/Corning_Incorporated_2024_CDP_Response_Final.pdf,727468.17,3214098.37,3103859.15,12/31/2021,821477.38,12588000000.0,new,
+CPAY,Corpay,none,,,,,,,,,no_public_report_found
+CTVA,Corteva,cdp_pdf,https://www.corteva.com/content/dam/dpagco/corteva/global/corporate/files/sustainability/Corteva-CDP-Corporate-Questionnaire-2025.pdf,386476.7,0.0,609078.2,12/31/2020,386000.0,16900000000.0,new,
+CSGP,CoStar Group,sustainability_report,https://www.costargroup.com/sites/costargroup.com/files/docs/2024-05/CoStar%20Group-ESG-Report-2024_0.pdf,3139.0,8079.0,8103.0,,,,False,
+COST,Costco,none,,,,,,,,,no_public_report_found
+CRH,CRH plc,sustainability_report,https://www.crh.com/wp-content/uploads/2026/03/crh-2025-sustainability-performance-report_final_interactive.pdf,26897195.0,,,,,,False,
+CRWD,CrowdStrike,none,,,,,,,,,no_public_report_found
+CCI,Crown Castle,sustainability_report,https://www.crowncastle.com/sustainability/resources/2024-sustainability-report.pdf,,,,,,,False,no_fields_extracted
+CSX,CSX Corporation,sustainability_report,https://www.csx.com/share/wwwcsx15/assets/File/About_Us/Responsibility/2024-Sustainability-Data-Supplement.pdf,4259842.0,,138968.0,,,,False,
+CMI,Cummins,cdp_pdf,https://www.cummins.com/sites/default/files/2023-08/cummins-2023-cdp-climate-report.pdf,367470.0,532645.0,426216.0,,,,old,
+CVS,CVS Health,sustainability_report,https://www.cvshealth.com/content/dam/enterprise/cvs-enterprise/images/impact-2026/pdfs/2025_Impact_Report_Appendix.pdf,,,,,,,False,no_fields_extracted
+DHR,Danaher Corporation,cdp_pdf,https://www.danaher.com/sites/default/files/2026-02/danaher-corporation-2025-cdp-response.pdf,109180.0,203413.0,97036.0,12/31/2021,106834.0,23875000000.0,new,
+DRI,Darden Restaurants,sustainability_report,https://www.darden.com/sites/default/files/2023-08/Environmental%20Disclosure%20Table%20and%20Assurance%20Statement-Aug%202023.pdf,345316.0,424495.0,,,,,False,
+DDOG,Datadog,none,,,,,,,,,no_public_report_found
+DVA,DaVita,cdp_pdf,https://davita.com/wp-content/uploads/sites/2/2026/04/davita-inc-15-09-2025-corporate-questionare.pdf,65988.0,254210.0,254210.0,12/31/2018,64185.0,12815550000.0,new,
+DECK,Deckers Brands,none,,,,,,,,,no_public_report_found
+DE,Deere & Company,cdp_pdf,https://s22.q4cdn.com/253594569/files/doc_downloads/2026/04/Deere-Company-2025-CDP-Corporate-Questionnaire.pdf,353900.0,544000.0,224000.0,,,51716000.0,new,
+DELL,Dell Technologies,none,,,,,,,,,no_public_report_found
+DAL,Delta Air Lines,epa_ghgrp,https://esghub.delta.com/content/dam/esg/2025/pdf/2025-Assurance-Statement.pdf,,,,,,,False,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'DELTA AIR LINES INC' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2. Prior attempt: data_source=sustainability_report, report_url=https://esghub.delta.com/content/dam/esg/2025/pdf/2025-Assurance-Statement.pdf, notes=no_fields_extracted"
+DVN,Devon Energy,cdp_pdf,https://dvnweb-hfhahvbraba9feev.a01.azurefd.net/assets/documents/Sustainability/Environment/DVN_2024-CDP-Climate-Response.pdf,4370000.0,370000.0,,,,15258000000.0,new,
+DXCM,Dexcom,sustainability_report,https://s201.q4cdn.com/758408164/files/doc_governance/2025/Jul/31/2024_Dexcom-Environmental-Data-and-Targets-Supplemental-Report-60c537.pdf,,,,,,,False,no_fields_extracted
+FANG,Diamondback Energy,cdp_pdf,https://www.diamondbackenergy.com/static-files/eeb0aaba-c279-457a-abc5-a7419e48fdfd,,,,,,,,"download_error: HTTPSConnectionPool(host='www.diamondbackenergy.com', port=443): Read timed out. (read timeout=30)"
+DLR,Digital Realty,none,,,,,,,,,no_public_report_found
+DG,Dollar General,none,,,,,,,,,no_public_report_found

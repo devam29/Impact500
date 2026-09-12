@@ -1,0 +1,50 @@
+SBAC,SBA Communications
+SLB,Schlumberger
+STX,Seagate Technology
+SRE,Sempra
+NOW,ServiceNow
+SHW,Sherwin-Williams
+SPG,Simon Property Group
+SWKS,Skyworks Solutions
+SJM,J.M. Smucker Company (The)
+SW,Smurfit Westrock
+SNA,Snap-on
+SOLV,Solventum
+SO,Southern Company
+LUV,Southwest Airlines
+SWK,Stanley Black & Decker
+SBUX,Starbucks
+STT,State Street Corporation
+STLD,Steel Dynamics
+STE,Steris
+SYK,Stryker Corporation
+SMCI,Supermicro
+SYF,Synchrony Financial
+SNPS,Synopsys
+SYY,Sysco
+TMUS,T-Mobile US
+TROW,T. Rowe Price
+TTWO,Take-Two Interactive
+TPR,Tapestry, Inc.
+TRGP,Targa Resources
+TGT,Target Corporation
+TEL,TE Connectivity
+TDY,Teledyne Technologies
+TER,Teradyne
+TSLA,Tesla, Inc.
+TXN,Texas Instruments
+TPL,Texas Pacific Land Corporation
+TXT,Textron
+TMO,Thermo Fisher Scientific
+TJX,TJX Companies
+TKO,TKO Group Holdings
+TTD,Trade Desk (The)
+TSCO,Tractor Supply
+TT,Trane Technologies
+TDG,TransDigm Group
+TRV,Travelers Companies (The)
+TRMB,Trimble Inc.
+TFC,Truist Financial
+TYL,Tyler Technologies
+TSN,Tyson Foods
+USB,U.S. Bancorp

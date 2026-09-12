@@ -1,0 +1,50 @@
+MKC,McCormick & Company
+MCD,McDonald's
+MCK,McKesson Corporation
+MDT,Medtronic
+MRK,Merck & Co.
+META,Meta Platforms
+MET,MetLife
+MTD,Mettler Toledo
+MGM,MGM Resorts
+MCHP,Microchip Technology
+MU,Micron Technology
+MSFT,Microsoft
+MAA,Mid-America Apartment Communities
+MRNA,Moderna
+TAP,Molson Coors Beverage Company
+MDLZ,Mondelez International
+MPWR,Monolithic Power Systems
+MNST,Monster Beverage
+MCO,Moody's Corporation
+MS,Morgan Stanley
+MOS,Mosaic Company (The)
+MSI,Motorola Solutions
+MSCI,MSCI
+NDAQ,Nasdaq, Inc.
+NTAP,NetApp
+NFLX,Netflix
+NEM,Newmont
+NWSA,News Corp (Class A)
+NWS,News Corp (Class B)
+NKE,Nike, Inc.
+NI,NiSource
+NDSN,Nordson Corporation
+NSC,Norfolk Southern
+NTRS,Northern Trust
+NOC,Northrop Grumman
+NCLH,Norwegian Cruise Line Holdings
+NRG,NRG Energy
+NUE,Nucor
+NVDA,Nvidia
+NVR,NVR, Inc.
+NXPI,NXP Semiconductors
+ORLY,O'Reilly Automotive
+OXY,Occidental Petroleum
+ODFL,Old Dominion
+OMC,Omnicom Group
+ON,ON Semiconductor
+OKE,Oneok
+ORCL,Oracle Corporation
+OTIS,Otis Worldwide
+PCAR,Paccar
