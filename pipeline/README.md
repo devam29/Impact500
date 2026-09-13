@@ -232,12 +232,31 @@ sub-industries rarely clears 10 real-data peers at the narrow level).
 Deliberately broader than just `data_source=none`: a row where a real
 report was found but the parser couldn't extract a usable number
 (`notes=no_fields_extracted`) is the same practical gap, and there turn
-out to be more of those (136) than genuine `none` rows (124) — the
+out to be more of those (~129) than genuine `none` rows (124) — the
 script checks for an actual extracted number, not the `data_source`
-label, so it catches both. As of this pull: **260 of 503 companies
-(~52%) get a Tier 2 estimate**, 242 have a real number, and exactly one
+label, so it catches both. As of this pull: **253 of 503 companies
+(~50%) get a Tier 2 estimate**, 249 have a real number, and exactly one
 (Fiserv, `FISV`) has neither (a Yahoo Finance data-fetch gap for that
 specific ticker, not investigated further).
+
+**A real bug was caught and fixed while verifying this**: 7 `epa_ghgrp`
+rows (3M, Albemarle, Baxter, Biogen, BlackRock, Brown-Forman, Delta Air
+Lines) had `data_source=epa_ghgrp` and a fully-formed match note, but a
+blank `scope1_tco2e` — the real number was sitting in
+`epa_ghgrp_matches.csv` the whole time, it just never got written into
+these 7 batch-file rows during an earlier session. Re-running
+`py epa_ghgrp/patch_epa_matches.py <every batch csv>` confirmed these
+were the only 7 (it's idempotent and safe to re-run — it only ever
+touches a row with a blank `scope1_tco2e` and a real EPA match, same
+"never overwrite real data" rule as everywhere else in this pipeline).
+Backfilled all 7 with their real figures, which moved them out of the
+Tier 2 estimate pool and into the Tier 1 peer pool other companies'
+sector medians are computed from — re-run `merge_batches.py` →
+`tier2_estimation/estimate_tier2.py` → `build_combined_dataset.py` (in
+that order) after fixing anything upstream like this, since each step
+depends on the previous one's output. **Worth a periodic spot-check**:
+if a similar patch script is ever re-run by hand rather than executed,
+verify the actual value landed in the CSV, not just the notes text.
 
 Needs revenue and employee-count data for every ticker to work, which
 this pipeline didn't otherwise collect — `tier2_estimation/fetch_financials.py`

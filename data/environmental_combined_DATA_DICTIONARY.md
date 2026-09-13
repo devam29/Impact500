@@ -35,15 +35,27 @@ the actual display).
 
 ## Quick numbers (as of the 2026-09-13 collection pass)
 
-- **242 / 503 companies (~48%)** have a real, disclosed Scope 1 and/or
+- **249 / 503 companies (~50%)** have a real, disclosed Scope 1 and/or
   Scope 2 number (`is_estimated=False` with a populated `scope1_tco2e`
   and/or `scope2_*`).
-- **260 / 503 companies (~52%)** have a Tier 2 **estimate**
+- **253 / 503 companies (~50%)** have a Tier 2 **estimate**
   (`is_estimated=True`) instead — this covers both the 124 tickers with
-  `data_source=none` and a further 136 tickers where a real report was
+  `data_source=none` and a further ~129 tickers where a real report was
   found but the parser couldn't extract a usable number from it
   (`notes=no_fields_extracted` or similar) — both are the same practical
   gap from a "do we have a usable figure" standpoint.
+- **A real bug was found and fixed while verifying this data (2026-09-13,
+  second pass)**: 7 `epa_ghgrp` rows (3M, Albemarle, Baxter, Biogen,
+  BlackRock, Brown-Forman, Delta Air Lines) had `data_source=epa_ghgrp`
+  and a fully-formed match note, but a **blank `scope1_tco2e`** — the
+  real number was sitting right there in `epa_ghgrp_matches.csv` the
+  whole time, it just never got written into these 7 specific batch-file
+  rows during an earlier session. All 7 were backfilled with their real
+  EPA figures, which correctly moved them out of the Tier 2 estimate pool
+  (they're real Level data now) and added them to the Tier 1 peer pool
+  used to compute everyone else's sector-median estimates — worth
+  knowing if a number you saw earlier for one of these 7, or for a
+  Tier-2-estimated peer in the same sector, has since shifted slightly.
 - **1 / 503 companies (Fiserv, `FISV`)** has neither — a live-data-fetch
   edge case (Yahoo Finance returns no revenue/employee figures for this
   ticker under either its current or prior symbol), not investigated
