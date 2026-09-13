@@ -295,7 +295,7 @@ is prefixed `upright_` so it's never confused with this pipeline's own
 emissions data. See the data dictionary's Upright section for the full
 column reference and the unit-mismatch warning.
 
-Matched **464 / 503** tickers by exact normalized company name, same
+Matched **470 / 503** tickers by exact normalized company name, same
 conservative philosophy as SBTi/Climate TRACE matching (no fuzzy
 matching), plus:
 - A **squished-name fallback** (drops spaces/hyphens before comparing) to
@@ -312,33 +312,59 @@ matching), plus:
   missed — fixed ~9 matches at once (Home Depot, Walt Disney, Coca-Cola,
   Hershey, J.M. Smucker, Trade Desk, Mosaic, Cooper Companies, Estée
   Lauder).
+- A **multi-class alias table** (`UPRIGHT_MULTI_CLASS_ALIASES`) for 3
+  companies (Alphabet, Fox Corporation, News Corp) where Upright's single
+  flat record legitimately applies to **more than one** ticker, because
+  the tickers are just different share classes of the same operating
+  business (same balance sheet, same emissions) — e.g. Upright's single
+  "ALPHABET" record is written to both `GOOGL` and `GOOG`. This is a
+  real business-structure fact, not a guess: unlike Honeywell (split into
+  two genuinely separate companies in 2026) or Hewlett Packard (split into
+  HP Inc. and HPE in 2015), Alphabet/Fox/News Corp never split their
+  underlying operations — only their stock.
 
-The remaining 39/503 unmatched tickers are **not fixable without
-guessing** — verified individually via ticker lookup against
-`sp500_constituents.csv`:
-- Some Upright rows are companies that have since **left the current
-  S&P 500** (Upright's 505-row snapshot is slightly stale relative to the
-  live 503-constituent list): Hess (acquired by Chevron), Discover
-  Financial (acquired by Capital One), Pioneer Natural Resources
-  (acquired by ExxonMobil), Marathon Oil (acquired by ConocoPhillips —
-  **not** the same company as our constituent `Marathon Petroleum`,
-  ticker MPC, despite the similar name), Electronic Arts (taken private),
-  Walgreens Boots Alliance (taken private), American Airlines, Whirlpool,
-  BorgWarner, Illumina, Etsy, and others removed in index reconstitutions,
-  plus Paramount Global/WestRock, which now exist only as the different,
-  post-merger entities Paramount Skydance and Smurfit Westrock.
-- Some are **genuinely ambiguous** on name alone: `ALPHABET`, `HONEYWELL`,
-  `FOX`, and `NEWS` each correspond to multiple current tickers
-  (Alphabet's GOOG/GOOGL share classes, Honeywell's post-split HON/HONA,
-  Fox's FOXA/FOX and News Corp's NWSA/NWS share classes) — left unmatched
-  rather than guessed, same policy as everywhere else in this pipeline.
+The remaining 33/503 unmatched tickers are **not fixable without new
+data collection** — verified individually via ticker lookup against
+`sp500_constituents.csv`, and cross-checked a second time against
+Wikipedia's live constituent table (see
+`pipeline/upright/WIKIPEDIA_VERIFICATION.md` for the full independent
+verification, written up specifically to settle a disagreement with the
+teammate about whose company list was current):
+- Most are companies that have since **left the current S&P 500**
+  (Upright's 505-row snapshot is scoped to the S&P 500 ESG index variant,
+  which rebalances only once a year, unlike the continuously-updated base
+  index — see the Wikipedia verification doc for the mechanism): Hess
+  (acquired by Chevron), Discover Financial (acquired by Capital One),
+  Pioneer Natural Resources (acquired by ExxonMobil), Marathon Oil
+  (acquired by ConocoPhillips — **not** the same company as our
+  constituent `Marathon Petroleum`, ticker MPC, despite the similar
+  name), Electronic Arts (taken private), Walgreens Boots Alliance (taken
+  private), American Airlines, Whirlpool, BorgWarner, Illumina, Etsy, and
+  others removed in index reconstitutions, plus Paramount Global/WestRock,
+  which now exist only as the different, post-merger entities Paramount
+  Skydance and Smurfit Westrock.
+- `HONEYWELL` and `HEWLETT PACKARD` remain genuinely unmatched (unlike
+  Alphabet/Fox/News Corp above) because both really did split into
+  separate operating businesses — Honeywell into Honeywell Aerospace
+  (`HONA`) and Honeywell Technologies (`HON`) in 2026, HP into HP Inc.
+  (`HPQ`, no longer in the S&P 500) and Hewlett Packard Enterprise (`HPE`)
+  in 2015 — so a single pre-split score can't be safely assigned to
+  either half without new, entity-specific data.
 - `ORACLE CORPORATION JAPAN` is a separately-listed Japanese subsidiary,
   not the same stock as our `ORCL` constituent.
+- The post-merger successor entities (Smurfit Westrock, Paramount
+  Skydance, Vivmark Residential) and a further ~27 tickers (AXON, COIN,
+  CRWD, META, ORCL, and others) simply aren't in Upright's export at all
+  — closing this part of the gap would require a fresh pull from
+  Upright's own platform for those specific companies, not further
+  processing of the JSON export we already have.
 
-**Also found in the course of this**: `sp500_constituents.csv` has a
-literal stray `|` character in ResMed's `Security` field (`"ResMed|"`),
-worth cleaning at the source since it could silently affect any other
-name-matching script that reads that column.
+**Also found in the course of this**: `sp500_constituents.csv` had a
+literal stray `|` character in ResMed's `Security` field (`"ResMed|"`) —
+now fixed. Turned out this artifact actually originates from Wikipedia's
+own wikitext markup for that cell (confirmed by re-scraping the source
+page), not a data-entry error on our side, but it was still silently
+blocking a normal name match.
 
 ## Exact steps to resume
 

@@ -27,24 +27,32 @@ Marsh McLennan's ticker change from `MMC` to `MRSH` (effective
 2026-01-14). Our list is not just "probably current" — it is verified,
 line-for-line, against the live index as of today.
 
-## Result 2: the Upright dataset's 41 unmatched companies also fail to match Wikipedia
+## Result 2: the Upright dataset's remaining unmatched companies also fail to match Wikipedia
 
 Every one of the 505 companies in the Upright export was checked against
 Wikipedia's table directly (independent of our own matching code):
 
 | Category | Count |
 |---|---|
-| Upright company name matches a **current** Wikipedia/our-list ticker | **464** |
-| Upright company name matches **neither** Wikipedia nor our list | **41** |
+| Upright company name matches a **current** Wikipedia/our-list ticker | **470** |
+| Upright company name matches **neither** Wikipedia nor our list | **35** |
 
-That 41 is the exact same set of companies we couldn't match in our own
-pipeline. This is the key point for convincing your teammate: **it's not
-our matching logic that's excluding these companies — Wikipedia, a
-completely independent source, also has no current ticker for any of
-them.** If Upright's list were correct and current, these 41 names would
-appear somewhere in Wikipedia's live table. They don't.
+(Update after this doc was first written: Alphabet, Fox Corporation, and
+News Corp — 3 of the original 41 — were reclassified as *solvable*, not
+unmatched. They're single operating businesses with multiple stock
+classes, so Upright's one record for each was safely applied to **both**
+of their tickers, GOOGL+GOOG, FOXA+FOX, NWSA+NWS — 6 tickers gained.
+That's a real business-structure fact, not a guess, unlike Honeywell and
+Hewlett Packard below, which really did split into separate companies.)
 
-### The 41 companies, with why each one is gone from the live index
+That remaining 35 is the exact same set of companies we couldn't match in
+our own pipeline. This is the key point for convincing your teammate:
+**it's not our matching logic that's excluding these companies —
+Wikipedia, a completely independent source, also has no current ticker
+for any of them.** If Upright's list were correct and current, these 35
+names would appear somewhere in Wikipedia's live table. They don't.
+
+### The 35 companies, with why each one is gone from the live index
 
 | Upright's name | What actually happened |
 |---|---|
@@ -58,12 +66,12 @@ appear somewhere in Wikipedia's live table. They don't.
 | CONAGRA BRANDS | Removed from the S&P 500 on 2026-06-30 to make room for Honeywell Aerospace after the Honeywell split |
 | WALGREENS BOOTS ALLIANCE | Taken private (Sycamore Partners, 2025) |
 | ELECTRONIC ARTS | Taken private (2025) |
-| WESTROCK | Merged into the new entity Smurfit Westrock (ticker `SW`) |
-| PARAMOUNT / PARAMOUNT GLOBAL | Merged into the new entity Paramount Skydance (ticker `PSKY`) |
-| AVALONBAY COMMUNITIES / EQUITY RESIDENTIAL | Merged into the new entity Vivmark Residential (ticker `VMRK`, 2026-08) |
+| WESTROCK | Merged into the new entity Smurfit Westrock (ticker `SW`) — a genuinely new/current entity Upright's export doesn't cover yet |
+| PARAMOUNT / PARAMOUNT GLOBAL | Merged into the new entity Paramount Skydance (ticker `PSKY`) — same situation |
+| AVALONBAY COMMUNITIES / EQUITY RESIDENTIAL | Merged into the new entity Vivmark Residential (ticker `VMRK`, 2026-08) — same situation |
 | AMERICAN AIRLINES, BORGWARNER, CAESARS ENTERTAINMENT, CAMPBELL SOUP, ETSY, FMC, HOLOGIC, ILLUMINA, INTERPUBLIC, MATCH, METHODE ELECTRONICS, MOHAWK INDUSTRIES, ROBERT HALF, TELEFLEX, UNIVERSAL HEALTH REALTY INCOME, VF CORPORATION, WHIRLPOOL, BIO-RAD LABORATORIES, MARKETAXESS, XP INC | Removed from the S&P 500 in routine index rebalancing (still real, trading companies — just no longer S&P 500 members) |
-| ALPHABET, HONEYWELL, FOX, NEWS | Ambiguous: each now corresponds to **multiple** current tickers (Alphabet's `GOOGL`/`GOOG` share classes, Honeywell's post-split `HON`/`HONA`, Fox's `FOXA`/`FOX`, News Corp's `NWSA`/`NWS`) — Upright's flat single name can't specify which |
-| HEWLETT PACKARD | Ambiguous between `HPQ` (HP Inc.) and `HPE` (Hewlett Packard Enterprise) |
+| HONEYWELL | Genuinely split into two separate operating businesses in 2026 (Honeywell Aerospace `HONA`, Honeywell Technologies `HON`) — unlike Alphabet/Fox/News Corp above, a single pre-split score can't be applied to either half without distorting both |
+| HEWLETT PACKARD | Same situation, older: split into HP Inc. (`HPQ`, no longer in the S&P 500) and Hewlett Packard Enterprise (`HPE`) in 2015 |
 | ORACLE CORPORATION JAPAN | A separately-listed Japanese subsidiary — not the same stock as our `ORCL` constituent |
 
 ## Why this happened (root cause, not just "who's right")
@@ -88,13 +96,16 @@ one-off scraping mistake.
   500 — use this as the ground truth for "is this ticker a current
   constituent," here and in any other section of the project.
 - The Upright dataset is a real, useful, teammate-collected source **for
-  the 464 companies it does cover** — nothing wrong with using it there.
-  For the other 41, its underlying index snapshot is out of date through
-  no fault of anyone's data entry; it's just how that specific S&P
-  product is maintained.
+  the 470 companies it does cover** (464 direct/alias matches + 6 more
+  from applying Alphabet/Fox/News Corp's single record to both of their
+  share-class tickers). For the other 35, its underlying index snapshot
+  is out of date through no fault of anyone's data entry; it's just how
+  that specific S&P product is maintained.
 - No further reconciliation is possible without new data collection
   (e.g. querying Upright's platform directly for the individual
-  post-split/current entities). See `pipeline/README.md`'s Upright
+  post-split/current entities like Honeywell Aerospace, Honeywell
+  Technologies, or the merger successors Smurfit Westrock, Paramount
+  Skydance, Vivmark Residential). See `pipeline/README.md`'s Upright
   section for that option if it's worth pursuing later.
 
 Reproduce this yourself: `pipeline/upright/match_upright.py` contains

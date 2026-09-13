@@ -79,20 +79,29 @@ the actual display).
 - **223 / 503 companies (~44%)** matched to an SBTi record.
 - **67 / 503 companies (~13%)** matched to a Climate TRACE Power-sector
   asset-ownership record.
-- **464 / 503 companies (~92%)** matched to an Upright Net Impact record
-  (fourth pass, 2026-09-13). Upright's source JSON has 505 companies, not
+- **470 / 503 companies (~93%)** matched to an Upright Net Impact record
+  (fifth pass, 2026-09-13). Upright's source JSON has 505 companies, not
   503 — a handful are stale (companies since acquired, taken private, or
   removed from the index: e.g. Hess→Chevron, Discover Financial→Capital
   One, Pioneer Natural Resources→ExxonMobil, Electronic Arts taken
   private) and were correctly left unmatched rather than force-matched,
   per this project's hard scope constraint that every row must be a
-  *current* S&P 500 constituent. A few more (Alphabet, Honeywell, Fox,
-  News Corp) are genuinely ambiguous multi-class/multi-entity names in
-  Upright's data and were also left unmatched rather than guessed. See
+  *current* S&P 500 constituent — see `pipeline/upright/WIKIPEDIA_VERIFICATION.md`
+  for independent, third-party (Wikipedia) confirmation of exactly which
+  companies these are and why. See
   `pipeline/upright/match_upright.py`'s `UPRIGHT_NAME_ALIASES` table for
   the ~39 hand-verified same-company name differences that *were* safely
   resolved (e.g. Upright's "CISCO SYSTEMS" ↔ our constituent list's
-  "Cisco").
+  "Cisco"), and `UPRIGHT_MULTI_CLASS_ALIASES` for 3 more (Alphabet, Fox
+  Corporation, News Corp) that were resolved by applying one company's
+  Upright record to **both** of its share-class tickers (e.g. `GOOGL` and
+  `GOOG`) — legitimate because these are one operating business with
+  multiple stock classes, not two different companies. Honeywell and
+  Hewlett Packard Enterprise remain unmatched on purpose: unlike the
+  three above, both are genuinely **separate businesses now** (Honeywell
+  split into two independent companies in 2026; HP split into HP Inc. and
+  HPE in 2015), so a single pre-split score can't be safely applied to
+  either half.
 - **Found in the course of this matching**: `sp500_constituents.csv` has
   a literal stray `|` character in ResMed's `Security` field
   (`"ResMed|"`), which silently blocked a normal name match until it was

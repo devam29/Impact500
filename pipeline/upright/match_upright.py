@@ -104,6 +104,21 @@ UPRIGHT_NAME_ALIASES = {
                                # Works" -- same company, missing "Works".
 }
 
+# Multi-class share aliases: these are NOT ambiguous the way Honeywell
+# (post-split into two separate operating businesses) or Hewlett Packard
+# (HP Inc vs HPE, two separate companies since 2015) are. Alphabet, Fox
+# Corporation, and News Corp each have exactly one operating business and
+# one balance sheet -- the multiple tickers are just share classes with
+# different voting rights (Class A/B/C). Upright's single flat record for
+# each is legitimately the same company's data for every one of its
+# listed classes, so it's safe to apply the SAME record to all of them --
+# this is a real business-structure fact, not a guess.
+UPRIGHT_MULTI_CLASS_ALIASES = {
+    "ALPHABET": ["GOOGL", "GOOG"],
+    "FOX": ["FOXA", "FOX"],
+    "NEWS": ["NWSA", "NWS"],
+}
+
 
 def normalize(name):
     if not name:
@@ -198,19 +213,29 @@ def metric_value(metrics, metric_name, field):
 NORMALIZED_ALIASES = {normalize(k): v for k, v in UPRIGHT_NAME_ALIASES.items()}
 
 
-def resolve_ticker(name, by_name, squish_by_name):
+NORMALIZED_MULTI_CLASS_ALIASES = {
+    normalize(k): v for k, v in UPRIGHT_MULTI_CLASS_ALIASES.items()
+}
+
+
+def resolve_tickers(name, by_name, squish_by_name):
     """Try, in order: exact normalized-name match, the hand-verified
-    alias table, then a squished (space/hyphen-insensitive) exact match.
-    Returns None if nothing matches -- left out entirely, never guessed."""
+    single-ticker alias table, the multi-class alias table (returns more
+    than one ticker), then a squished (space/hyphen-insensitive) exact
+    match. Returns a list of tickers -- usually length 1, length 2 for a
+    multi-class company, empty if nothing matches (left out entirely,
+    never guessed)."""
     key = normalize(name)
     if key in by_name:
-        return by_name[key]
+        return [by_name[key]]
     if key in NORMALIZED_ALIASES:
-        return NORMALIZED_ALIASES[key]
+        return [NORMALIZED_ALIASES[key]]
+    if key in NORMALIZED_MULTI_CLASS_ALIASES:
+        return list(NORMALIZED_MULTI_CLASS_ALIASES[key])
     sk = squish(key)
     if sk in squish_by_name:
-        return squish_by_name[sk]
-    return None
+        return [squish_by_name[sk]]
+    return []
 
 
 def main():
@@ -238,36 +263,37 @@ def main():
     unmatched = []
     for row in upright_rows:
         name = row.get("company", "")
-        ticker = resolve_ticker(name, by_name, squish_by_name)
-        if not ticker:
+        tickers = resolve_tickers(name, by_name, squish_by_name)
+        if not tickers:
             unmatched.append(name)
             continue
         cat = row.get("category_totals", {})
         metrics = row.get("metrics", [])
-        matches.append({
-            "ticker": ticker,
-            "security": name,
-            "upright_company_name": name,
-            "industry": row.get("industry", ""),
-            "revenue_musd": to_number(row.get("revenue", "")),
-            "employee_count": to_number(row.get("employee_count", "")),
-            "net_impact_ratio_percent": to_number(row.get("net_impact_ratio", "")),
-            "rank_top_percent": to_number(row.get("rank_top_percent", "")),
-            "environment_cost_cents_per_dollar": to_number(cat.get("Environment", {}).get("cost", "")),
-            "environment_benefit_cents_per_dollar": to_number(cat.get("Environment", {}).get("benefit", "")),
-            "ghg_emissions_cost_cents_per_dollar": metric_value(metrics, "GHG emissions", "cost"),
-            "ghg_emissions_benefit_cents_per_dollar": metric_value(metrics, "GHG emissions", "benefit"),
-            "non_ghg_emissions_cost_cents_per_dollar": metric_value(metrics, "Non-GHG emissions", "cost"),
-            "society_cost_cents_per_dollar": to_number(cat.get("Society", {}).get("cost", "")),
-            "society_benefit_cents_per_dollar": to_number(cat.get("Society", {}).get("benefit", "")),
-            "health_cost_cents_per_dollar": to_number(cat.get("Health", {}).get("cost", "")),
-            "health_benefit_cents_per_dollar": to_number(cat.get("Health", {}).get("benefit", "")),
-            "knowledge_cost_cents_per_dollar": to_number(cat.get("Knowledge", {}).get("cost", "")),
-            "knowledge_benefit_cents_per_dollar": to_number(cat.get("Knowledge", {}).get("benefit", "")),
-            "largest_cost": row.get("largest_cost", ""),
-            "largest_benefit": row.get("largest_benefit", ""),
-            "upright_url": row.get("upright_url", ""),
-        })
+        for ticker in tickers:
+            matches.append({
+                "ticker": ticker,
+                "security": name,
+                "upright_company_name": name,
+                "industry": row.get("industry", ""),
+                "revenue_musd": to_number(row.get("revenue", "")),
+                "employee_count": to_number(row.get("employee_count", "")),
+                "net_impact_ratio_percent": to_number(row.get("net_impact_ratio", "")),
+                "rank_top_percent": to_number(row.get("rank_top_percent", "")),
+                "environment_cost_cents_per_dollar": to_number(cat.get("Environment", {}).get("cost", "")),
+                "environment_benefit_cents_per_dollar": to_number(cat.get("Environment", {}).get("benefit", "")),
+                "ghg_emissions_cost_cents_per_dollar": metric_value(metrics, "GHG emissions", "cost"),
+                "ghg_emissions_benefit_cents_per_dollar": metric_value(metrics, "GHG emissions", "benefit"),
+                "non_ghg_emissions_cost_cents_per_dollar": metric_value(metrics, "Non-GHG emissions", "cost"),
+                "society_cost_cents_per_dollar": to_number(cat.get("Society", {}).get("cost", "")),
+                "society_benefit_cents_per_dollar": to_number(cat.get("Society", {}).get("benefit", "")),
+                "health_cost_cents_per_dollar": to_number(cat.get("Health", {}).get("cost", "")),
+                "health_benefit_cents_per_dollar": to_number(cat.get("Health", {}).get("benefit", "")),
+                "knowledge_cost_cents_per_dollar": to_number(cat.get("Knowledge", {}).get("cost", "")),
+                "knowledge_benefit_cents_per_dollar": to_number(cat.get("Knowledge", {}).get("benefit", "")),
+                "largest_cost": row.get("largest_cost", ""),
+                "largest_benefit": row.get("largest_benefit", ""),
+                "upright_url": row.get("upright_url", ""),
+            })
 
     with open(OUT_PATH, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
