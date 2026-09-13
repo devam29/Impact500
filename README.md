@@ -122,5 +122,8 @@ py pipeline/build_website_json.py
   built. The rejected sources themselves are kept in
   [`research/rejected_sources/`](research/rejected_sources/) for anyone
   who wants to check that reasoning against the actual data.
+- [`docs/BONUS_QUESTION.md`](docs/BONUS_QUESTION.md) — the challenge's
+  bonus question ("the world commits to net-zero tomorrow, allocate a
+  $1B fund") answered using this project's own scores, not just theory.
 - [`pipeline/README.md`](pipeline/README.md) — the technical reference
   for every pipeline stage.
