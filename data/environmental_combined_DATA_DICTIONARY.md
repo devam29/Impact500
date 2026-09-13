@@ -35,13 +35,15 @@ the actual display).
 
 ## Quick numbers (as of the 2026-09-13 collection pass)
 
+- **All 503 / 503 companies now have a CO2 figure — full coverage.**
+  249 real disclosed + 254 Tier 2 estimated = 503, 0 blank.
 - **249 / 503 companies (~50%)** have a real, disclosed Scope 1 and/or
   Scope 2 number (`is_estimated=False` with a populated `scope1_tco2e`
   and/or `scope2_*`).
-- **253 / 503 companies (~50%)** have a Tier 2 **estimate**
-  (`is_estimated=True`) instead — this covers both the 124 tickers with
-  `data_source=none` and a further ~129 tickers where a real report was
-  found but the parser couldn't extract a usable number from it
+- **254 / 503 companies (~50%)** have a Tier 2 **estimate**
+  (`is_estimated=True`) instead — this covers both the tickers with
+  `data_source=none` and tickers where a real report was found but the
+  parser couldn't extract a usable number from it
   (`notes=no_fields_extracted` or similar) — both are the same practical
   gap from a "do we have a usable figure" standpoint.
 - **A real bug was found and fixed while verifying this data (2026-09-13,
@@ -56,10 +58,15 @@ the actual display).
   used to compute everyone else's sector-median estimates — worth
   knowing if a number you saw earlier for one of these 7, or for a
   Tier-2-estimated peer in the same sector, has since shifted slightly.
-- **1 / 503 companies (Fiserv, `FISV`)** has neither — a live-data-fetch
-  edge case (Yahoo Finance returns no revenue/employee figures for this
-  ticker under either its current or prior symbol), not investigated
-  further given it's a single company.
+- **The last gap (Fiserv, `FISV`) was closed in a third pass (2026-09-13)**:
+  Yahoo's `.info` endpoint returns null revenue/employees for this ticker
+  (likely fallout from Fiserv's 2023 `FISV`→`FI` ticker change), which
+  had left it with neither a real number nor an estimate. Its most recent
+  annual revenue ($21.193B) was pulled instead from
+  `yf.Ticker('FISV').income_stmt` (a real, non-fabricated Yahoo Finance
+  figure, just from a different endpoint) and manually added to
+  `financials_cache.csv`, which let `estimate_tier2.py` produce a normal
+  revenue-based Tier 2 estimate for it like any other company.
 - **223 / 503 companies (~44%)** matched to an SBTi record.
 - **67 / 503 companies (~13%)** matched to a Climate TRACE Power-sector
   asset-ownership record.

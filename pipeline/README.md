@@ -234,10 +234,10 @@ report was found but the parser couldn't extract a usable number
 (`notes=no_fields_extracted`) is the same practical gap, and there turn
 out to be more of those (~129) than genuine `none` rows (124) — the
 script checks for an actual extracted number, not the `data_source`
-label, so it catches both. As of this pull: **253 of 503 companies
-(~50%) get a Tier 2 estimate**, 249 have a real number, and exactly one
-(Fiserv, `FISV`) has neither (a Yahoo Finance data-fetch gap for that
-specific ticker, not investigated further).
+label, so it catches both. As of this pull: **254 of 503 companies
+(~50%) get a Tier 2 estimate**, 249 have a real number — **all 503 of 503
+S&P 500 companies now have a CO2 figure, real or estimated, no blanks
+left.**
 
 **A real bug was caught and fixed while verifying this**: 7 `epa_ghgrp`
 rows (3M, Albemarle, Baxter, Biogen, BlackRock, Brown-Forman, Delta Air
@@ -257,6 +257,17 @@ that order) after fixing anything upstream like this, since each step
 depends on the previous one's output. **Worth a periodic spot-check**:
 if a similar patch script is ever re-run by hand rather than executed,
 verify the actual value landed in the CSV, not just the notes text.
+
+**The last gap (Fiserv, `FISV`) was closed in a follow-up pass**: Yahoo's
+`.info` endpoint returns null revenue/employees for this ticker (likely
+fallout from Fiserv's 2023 `FISV`→`FI` ticker change), leaving it with
+neither a real number nor a Tier 2 estimate. Its most recent annual
+revenue ($21.193B) was pulled instead from
+`yf.Ticker('FISV').income_stmt` — a real Yahoo Finance figure from a
+different endpoint, not fabricated — and added to
+`tier2_estimation/financials_cache.csv` by hand, which let
+`estimate_tier2.py` produce a normal revenue-based estimate for it on the
+next run, same as any other company.
 
 Needs revenue and employee-count data for every ticker to work, which
 this pipeline didn't otherwise collect — `tier2_estimation/fetch_financials.py`
@@ -410,22 +421,21 @@ property if you extend it.
 
 Even with perfect search and a perfect parser, some real fraction of the
 S&P 500 simply doesn't publish CDP or sustainability-report emissions
-data publicly. The current plan (confirmed with the user) for the final
-deliverable, once collection is as complete as it's going to get:
+data publicly. This is resolved — see
+`tier2_estimation/estimate_tier2.py` below and
+`data/environmental_combined_DATA_DICTIONARY.md` for the final numbers:
 
-- **Tier 1 — verified**: `data_source` = `cdp_pdf` or
-  `sustainability_report`, real extracted figures.
-- **Tier 2 — estimated, clearly flagged**: for tickers with
-  `data_source=none`, impute a Level-score input from sector-median
-  emissions intensity (tCO2e / $ revenue, computed from Tier 1 companies
-  in the same GICS sector) × that company's own revenue. Tag these rows
-  `data_source=sector_median_estimate` so they are never presented as
-  equivalent to real disclosure.
+- **Tier 1 — verified**: `data_source` = `cdp_pdf`, `sustainability_report`,
+  or `epa_ghgrp`, real extracted figures. 249 / 503 companies.
+- **Tier 2 — estimated, clearly flagged**: for every other ticker, a
+  Level input imputed via LSEG's published median-model methodology
+  (peer-group median tCO2e/revenue and tCO2e/employee, scaled by the
+  target's own size) — see the section below for full detail. Tagged
+  `is_estimated=True` in `environmental_combined.csv` so it is never
+  presented as equivalent to real disclosure. 254 / 503 companies.
 
-This estimation step hasn't been built yet — it's future work for once
-real-data collection has run its course, not something to do instead of
-searching. Keep searching for real data first; only fall back to Tier 2
-for whatever's left after all 11 batches are genuinely attempted.
+**All 503 / 503 S&P 500 companies now have a CO2 figure — full
+coverage, real or estimated, no blanks.**
 
 ## Current status (as of 2026-09-13, this update) — COLLECTION COMPLETE
 

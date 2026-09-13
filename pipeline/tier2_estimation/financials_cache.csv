@@ -197,7 +197,7 @@ FIS,12199999488,44000,Technology,Information Technology Services,19669022720,
 FITB,10094999552,25197,Financial Services,Banks - Regional,49625161728,
 FSLR,5378071040,7900,Technology,Solar,22464409600,
 FE,15635999744,11186,Utilities,Utilities - Regulated Electric,26692661248,
-FISV,,,,,27428528128,
+FISV,21193000000,,,,27428528128,manually backfilled from yf.Ticker('FISV').income_stmt Total Revenue (FY2025) -- .info returns null revenue/employees for this ticker likely due to the 2023 FISV->FI rename; sector/industry left blank since estimate_tier2.py uses GICS from sp500_constituents.csv instead
 FLEX,29266999296,149686,Technology,Electronic Components,42769477632,
 F,187972993024,169000,Consumer Cyclical,Auto Manufacturers,55706714112,
 FTNT,7527399936,15472,Technology,Software - Infrastructure,114510700544,
