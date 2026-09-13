@@ -1,11 +1,19 @@
-"""Merge seed + all available batch CSVs into one master dataset.
-Skips duplicate tickers (keeps first occurrence). Prints a summary."""
+"""Combine every collected batch into one master emissions dataset.
+
+Companies were searched in batches of ~50 (data/batches/batch_NN.csv,
+plus a small hand-verified seed file). This script reads all of them,
+keeps the first row seen for any ticker that appears more than once, and
+writes the result to data/environmental_emissions_master.csv -- the
+single file every later pipeline stage builds on. Prints per-file row
+counts and a breakdown by data_source (cdp_pdf / sustainability_report /
+epa_ghgrp / none) so a re-run's output is easy to sanity-check."""
 import csv
 import glob
 import os
 import sys
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+REPO_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(REPO_DIR, "data")
 OUT_PATH = os.path.join(DATA_DIR, "environmental_emissions_master.csv")
 
 FIELDNAMES = ["ticker", "security", "data_source", "report_url",

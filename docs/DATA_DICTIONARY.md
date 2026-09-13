@@ -1,11 +1,26 @@
-# `environmental_combined.csv` — column reference
+# Data dictionary — every output file, column by column
+
+This project produces three files a consumer might actually use. This
+doc covers all three:
+
+1. [`environmental_combined.csv`](#environmental_combinedcsv--column-reference) — every raw collected/estimated input, one row per ticker. The file to use if you want the underlying numbers.
+2. [`environmental_scores.csv`](#environmental_scorescsv--column-reference) — the final computed Level/Velocity/Integrity/Composite score per ticker. The file to use if you just want the score.
+3. [`sp500_metrics.json`](#sp500_metricsjson--structure-reference) — everything above, reshaped as nested JSON for a website to consume directly.
+
+For the exact formulas behind `environmental_scores.csv`, see
+`docs/SCORE_METHODOLOGY.md` — this doc tells you what each column means,
+that one tells you how it was computed and why.
+
+---
+
+## `environmental_combined.csv` — column reference
 
 One row per S&P 500 ticker (503 rows total, including a few dual-class
 listings like GOOG/GOOGL). Built by `pipeline/build_combined_dataset.py`
 from six sources joined on `ticker`:
 
 - **Level input, real** (`environmental_emissions_master.csv`, built by
-  `pipeline/merge_batches.py`) — real disclosed Scope 1/2 tonnage,
+  `pipeline/pdf_extraction/merge_batches.py`) — real disclosed Scope 1/2 tonnage,
   collected from CDP PDFs, sustainability reports, and EPA GHGRP.
 - **Level input, estimated** (`pipeline/tier2_estimation/tier2_estimates.csv`,
   built by `pipeline/tier2_estimation/estimate_tier2.py`) — for tickers
@@ -54,17 +69,27 @@ the actual display).
 
 ## Quick numbers (as of the 2026-09-13 collection pass)
 
-- **All 503 / 503 companies now have a CO2 figure — full coverage.**
-  249 real disclosed + 254 Tier 2 estimated = 503, 0 blank.
-- **249 / 503 companies (~50%)** have a real, disclosed Scope 1 and/or
-  Scope 2 number (`is_estimated=False` with a populated `scope1_tco2e`
-  and/or `scope2_*`).
-- **254 / 503 companies (~50%)** have a Tier 2 **estimate**
-  (`is_estimated=True`) instead — this covers both the tickers with
-  `data_source=none` and tickers where a real report was found but the
-  parser couldn't extract a usable number from it
-  (`notes=no_fields_extracted` or similar) — both are the same practical
-  gap from a "do we have a usable figure" standpoint.
+- **All 503 / 503 companies now have BOTH a Scope 1 and a Scope 2 figure
+  — full coverage on each scope independently** (sixth pass, 2026-09-13).
+  Scope 1 and Scope 2 are estimated **independently** of each other, not
+  as a combined total split by share like earlier passes of this
+  pipeline: a company can have a real Scope 1 and an estimated Scope 2
+  side by side (or vice versa), each with its own `scope1_is_estimated`/
+  `scope2_is_estimated` flag.
+  - **Scope 1**: 247 real + 256 Tier 2 estimated = 503, 0 blank.
+  - **Scope 2**: 164 real (market-based preferred, else location-based)
+    + 339 Tier 2 estimated = 503, 0 blank.
+  - This replaced an earlier, cruder version of this model that only
+    ever estimated when a ticker had **neither** scope disclosed at all
+    (254 companies) — which silently left **87 companies** with a real
+    number for one scope and a totally blank other scope (85 with real
+    Scope 1/no Scope 2, 2 with real Scope 2/no Scope 1) uncovered. Those
+    87 are now correctly filled from a scope-specific peer pool (peers
+    with a *real* value for that specific scope, not the other one).
+  - The old combined `is_estimated` column is kept for backward
+    compatibility (`True` if either scope is estimated) — but
+    `scope1_is_estimated`/`scope2_is_estimated` are the columns to
+    actually use now for per-scope color-coding.
 - **A real bug was found and fixed while verifying this data (2026-09-13,
   second pass)**: 7 `epa_ghgrp` rows (3M, Albemarle, Baxter, Biogen,
   BlackRock, Brown-Forman, Delta Air Lines) had `data_source=epa_ghgrp`
@@ -96,7 +121,7 @@ the actual display).
   One, Pioneer Natural Resources→ExxonMobil, Electronic Arts taken
   private) and were correctly left unmatched rather than force-matched,
   per this project's hard scope constraint that every row must be a
-  *current* S&P 500 constituent — see `pipeline/upright/WIKIPEDIA_VERIFICATION.md`
+  *current* S&P 500 constituent — see `docs/UPRIGHT_DATA_VERIFICATION.md`
   for independent, third-party (Wikipedia) confirmation of exactly which
   companies these are and why. See
   `pipeline/upright/match_upright.py`'s `UPRIGHT_NAME_ALIASES` table for
@@ -169,24 +194,30 @@ genuine extraction attempt was made — it does **not** guarantee
 actually yielded a number. `data_source=epa_ghgrp` rows always have a
 number (that's the point of the match) but only for `scope1_tco2e`.
 
-### Level — ESTIMATED emissions (Tier 2, only for `data_source=none`)
+### Level — ESTIMATED emissions (Tier 2, per-scope independent)
 
-For the ~124 companies with no real report found at all, this pipeline
-can optionally fill in an **estimate** — never a substitute for real
-data, and never applied on top of a real number. Modeled on LSEG's
-published carbon-estimate "median model": take the median emissions
-intensity (tCO2e per $ revenue, and separately per employee) among real
-S&P 500 peers in the same GICS sector/sub-industry, then scale it by the
-target company's own revenue/employee count.
+For any ticker missing a real value for a **specific scope**, this
+pipeline fills in an **estimate for that scope only** — never a
+substitute for real data, and never applied on top of a real number.
+Modeled on LSEG's published carbon-estimate "median model": take the
+median emissions intensity (tCO2e per $ revenue, and separately per
+employee) among real S&P 500 peers **that have a real value for that
+same scope**, in the same GICS sector/sub-industry, then scale it by the
+target company's own revenue/employee count. Scope 1 and Scope 2 each
+get their own independent peer pool, median, and estimate — a row can
+have a real Scope 1 and an estimated Scope 2 side by side.
 
 | Column | Meaning |
 |---|---|
-| `is_estimated` | **`True`/`False` — the column to key any color-coding off of.** `True` means every emissions figure on this row is a Tier 2 estimate, not a disclosure. |
-| `tier2_scope1_tco2e` / `tier2_scope2_tco2e` | The estimated split, in tCO2e. The scope1/scope2 split itself is a secondary approximation (using the peer group's median scope1-share) layered on top of a single combined-total estimate — see `tier2_notes` for the arithmetic. |
-| `tier2_method` | Which inputs were available: `median_model_revenue`, `median_model_employees`, or `median_model_revenue+employees` (averaged, matching LSEG's approach of averaging both methods when both are available). |
-| `tier2_sector_used` | Which peer group actually supplied the median, e.g. `sub_industry:Semiconductors` or `sector:Information Technology` — the model widens from sub-industry to sector (and finally to the whole S&P 500) if the narrower group doesn't have enough real-data peers (`tier2_peer_count`). |
-| `tier2_peer_count` | How many real-data (Tier 1) companies were in that peer group. |
-| `tier2_notes` | The full arithmetic: which ratios were used, what they were multiplied by, and the resulting estimate. Read this before citing a specific estimated number anywhere. |
+| `scope1_is_estimated` / `scope2_is_estimated` | **`True`/`False` per scope — the columns to key color-coding off of.** `True` means that specific scope's figure (read `tier2_scope{1,2}_tco2e`, not `scope{1,2}_*_tco2e`, when `True`) is a Tier 2 estimate, not a disclosure. Independent of each other. |
+| `is_estimated` | Backward-compatible summary flag: `True` if *either* scope is estimated. Kept for anything still keying off the old single flag — prefer the per-scope columns above for anything new. |
+| `tier2_scope1_tco2e` | Estimated Scope 1, in tCO2e. Only meaningful when `scope1_is_estimated=True`; blank otherwise (the real value is in `scope1_tco2e` instead). |
+| `tier2_scope1_method` / `tier2_scope1_sector_used` / `tier2_scope1_peer_count` / `tier2_scope1_notes` | Same meaning as the Scope 2 equivalents below, for the Scope 1 estimate. |
+| `tier2_scope2_tco2e` | Estimated Scope 2, in tCO2e (approximates whichever of market-/location-based the peer group predominantly reported — see notes). Only meaningful when `scope2_is_estimated=True`. |
+| `tier2_scope2_method` | Which inputs were available: `median_model_revenue`, `median_model_employees`, or `median_model_revenue+employees` (averaged, matching LSEG's approach of averaging both methods when both are available). |
+| `tier2_scope2_sector_used` | Which peer group actually supplied the median, e.g. `sub_industry:Semiconductors` or `sector:Information Technology` — the model widens from sub-industry to sector (and finally to the whole S&P 500) if the narrower group doesn't have enough real-data peers for that scope (`tier2_scope2_peer_count`). |
+| `tier2_scope2_peer_count` | How many real-data (Tier 1) companies with a real Scope 2 value were in that peer group. |
+| `tier2_scope2_notes` | The full arithmetic: which ratios were used, what they were multiplied by, and the resulting estimate. Read this before citing a specific estimated number anywhere. |
 
 **This is genuinely an estimate, not a disclosure** — two S&P 500
 companies in the same GICS sub-industry can have very different actual
@@ -280,6 +311,97 @@ about before citing them:
   total) before being entered — see each row's `notes` for the exact
   verification performed.
 
-See `pipeline/README.md` for the full collection methodology, the
-project's "never fabricate a number" rule, and what's planned next
-(Tier 2 sector-median estimation for the 124 `none` companies).
+See `pipeline/README.md` for the full collection methodology and the
+project's "never fabricate a number" rule.
+
+---
+
+## `environmental_scores.csv` — column reference
+
+One row per S&P 500 ticker (503 rows), sorted best-to-worst by
+`environmental_composite_score`. Built by
+`pipeline/scoring/compute_environmental_scores.py` from
+`environmental_combined.csv` above. **This file has no raw tCO2e
+numbers of its own** — `level_intensity_tco2e_per_usd` is the one
+exception, everything else here is a 0–100 score or a label explaining
+how that score was reached. Full formulas: `docs/SCORE_METHODOLOGY.md`.
+
+| Column | Meaning |
+|---|---|
+| `ticker` / `security` / `gics_sector` | Identity, same as `environmental_combined.csv`. |
+| `level_score` | 0–100, current emissions intensity vs. sector peers. 100 = cleanest in sector, 0 = dirtiest. |
+| `level_intensity_tco2e_per_usd` | The raw intensity value (`(scope1+scope2)/revenue`) `level_score` was computed from — the one non-score number in this file, useful for recomputing or sanity-checking the score. |
+| `scope1_is_estimated` / `scope2_is_estimated` | Carried over from `environmental_combined.csv` — whether the intensity feeding `level_score` used a real or Tier 2 estimated figure for each scope. |
+| `velocity_score` | 0–100, is the company decarbonizing fast enough. |
+| `velocity_basis` | Which tier produced the score: `measured_trend` (a real multi-year Scope 1 comparison vs. SBTi's required pace), `target_ambition` (no real trend, scored from SBTi target status/classification instead), or `no_commitment` (no SBTi match at all, fixed low score). **Read this before comparing two velocity_score values** — a 50 from `measured_trend` and a 50 from `target_ambition` are not the same kind of evidence. |
+| `velocity_details` | The actual arithmetic or points breakdown behind the score on this row — e.g. the observed vs. required annual reduction rate, or the SBTi points earned per criterion. |
+| `integrity_score` | 0–100, can this company's number be trusted. |
+| `integrity_disclosure_quality` | The sub-score from source tier (CDP > sustainability report > EPA > estimated) and completeness (both scopes real, base year stated, dual Scope 2 reporting). |
+| `integrity_cross_source_agreement` | The sub-score from comparing this company's percentile rank in our own emissions-intensity data against its percentile rank in Upright's independently-modeled GHG-cost data — blank if no real Upright record exists for this ticker (falls back to disclosure quality alone). |
+| `integrity_basis` | `with_cross_validation` (both sub-scores blended) or `disclosure_quality_only` (no real Upright data to cross-check against). |
+| `environmental_composite_score` | The final score: `(level_score + velocity_score + integrity_score) / 3`. This is the number to use for an overall ranking. |
+
+---
+
+## `sp500_metrics.json` — structure reference
+
+One JSON object per current S&P 500 ticker (503 records), the shape a
+website would actually consume. Built by `pipeline/build_website_json.py`.
+Every record has this shape:
+
+```
+{
+  "ticker": "AAPL",
+  "security": "Apple Inc.",
+  "gics_sector": "...", "gics_sub_industry": "...", "headquarters_location": "...",
+
+  "co2": {
+    "data_source": "...", "report_url": "...", "notes": "...",
+    "is_estimated": false,   // true if EITHER scope below is estimated (summary flag)
+    "scope1": { "tco2e": 55200.0, "is_estimated": false, "estimate": null },
+    "scope2": {
+      "location_tco2e": 1206700.0, "market_tco2e": 3400.0,
+      "tco2e": 3400.0,             // market preferred over location when both real; the value actually used for scoring
+      "is_estimated": false, "estimate": null
+    }
+    // when is_estimated is true for a scope, "estimate" holds
+    // {method, sector_used, peer_count, notes} instead of null
+  },
+
+  "sbti": { "matched": true, "near_term_status": "...", "near_term_target_classification": "...", ... },
+  "climate_trace": { "matched": false },
+
+  "upright": {
+    // when real (upright.is_estimated == false): the teammate's ORIGINAL
+    // Upright record verbatim -- company, industry, revenue_musd,
+    // employee_count, net_impact_ratio, rank_top_percent, category_totals
+    // (Environment/Health/Knowledge/Society cost+benefit), metrics (18
+    // granular sub-metrics), largest_cost, largest_benefit, upright_url.
+    // NOT tCO2e -- cents per dollar of revenue, a different unit entirely.
+
+    // when estimated (upright.is_estimated == true): our own peer-median
+    // proxy in the same shape, but only 2 of the 18 metrics are populated
+    // (GHG emissions, Non-GHG emissions -- the only ones we estimate),
+    // largest_cost/largest_benefit/upright_url are null, and
+    // estimate_method/estimate_peer_group/estimate_peer_count/estimate_notes
+    // are added.
+    "is_estimated": false
+  },
+
+  "scores": {
+    "level_score": 100.0, "level_intensity_tco2e_per_usd": 1.26e-07,
+    "velocity_score": 0.0, "velocity_basis": "measured_trend", "velocity_details": "...",
+    "integrity_score": 86.9, "integrity_disclosure_quality": 100.0,
+    "integrity_cross_source_agreement": 67.4, "integrity_basis": "with_cross_validation",
+    "environmental_composite_score": 62.3
+  }
+}
+```
+
+Every field's meaning matches its equivalent flat-CSV column above
+(`co2.scope1.tco2e` ≈ `environmental_combined.csv`'s `scope1_tco2e`,
+`scores.level_score` ≈ `environmental_scores.csv`'s `level_score`, etc.)
+— this doc's CSV column tables above are the reference for what each
+value actually means; this section is just the JSON shape they're
+nested into. `data/upright_final_esg.json` (the teammate's raw source)
+is a separate file, never modified by this pipeline.

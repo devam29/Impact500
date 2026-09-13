@@ -1,17 +1,17 @@
 """
 Download one company's emissions report PDF, extract Scope 1/2 fields via
-extract_emissions.py, and append one row to the shared CSV. Designed to be
-called once per company from a batch-processing fork -- no dependency on
-Claude reading the PDF itself, so cost is a handful of tokens (this
-script's stdout) rather than the whole document.
+extract_emissions.py, and append one row to the shared CSV. Designed to
+be called once per company after a web search has already located the
+PDF URL -- the search step and this extraction step are kept separate on
+purpose, so locating a document never requires reading the whole thing.
 
 Usage:
     py process_company.py <ticker> <security_name> <pdf_url> <source_type> <csv_path>
 
-source_type: "cdp_pdf" or "sustainability_report" -- caller (the research
-agent) decides this based on what kind of document it found; it is
-recorded in the output row so low-confidence (sustainability_report) rows
-can be told apart from high-confidence (cdp_pdf) ones later.
+source_type: "cdp_pdf" or "sustainability_report" -- decided by whoever
+found the document, based on what kind of report it is; recorded in the
+output row so low-confidence (sustainability_report) rows can be told
+apart from high-confidence (cdp_pdf) ones later.
 
 Never fabricates data: on any failure (download, parse, no fields found)
 the row is still written with whatever was found (possibly nothing) plus
