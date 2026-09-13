@@ -13,9 +13,11 @@ assigned batch(es) below** — working someone else's batch wastes WebSearch
 budget re-researching companies they're already covering, and risks both
 of you writing to the same batch CSV at once.
 
-- **devam29 (repo owner): batch_07, batch_08 — both fully attempted as of
-  2026-09-13, nothing left to pick up here.**
-- **Teammate: batch_09 (in progress), batch_10, batch_11**
+- **devam29 (repo owner): batch_07, batch_08, and (picked up ahead of
+  teammate) batch_11 — all fully attempted as of 2026-09-13, nothing left
+  to pick up here.**
+- **Teammate: batch_09 (in progress), batch_10 — batch_11 was taken over
+  by devam29 since it was still untouched; don't duplicate it.**
 
 When done, commit your updated `data/batches/batch_NN.csv` and
 `pipeline/remaining_tickers/remaining_batch_NN.txt`, push, and let the other
@@ -280,18 +282,69 @@ for whatever's left after all 11 batches are genuinely attempted.
 
 ## Current status (as of 2026-09-13, this update)
 
-- **batch_07 and batch_08 are now both fully attempted (100 companies)** —
-  devam29's full assignment is done. batch_07's remaining 23 (LHX through
-  MA) were finished this session; batch_08 (50 companies, MKC through
-  PCAR) was completed from scratch. Batches 04, 05, and 06 remain fully
-  attempted from before. **batch_09 is partially attempted (30 companies);
-  resume where teammate left off.** Batches 10 and 11 remain untouched.
+- **batch_07, batch_08, and batch_11 are now fully attempted (149
+  companies)** — devam29 also picked up batch_11 (49 companies, UBER
+  through ZTS) since it was still untouched and teammate hadn't started
+  it; see "Who's working on which batch" above. Batches 04, 05, and 06
+  remain fully attempted from before. **batch_09 is partially attempted
+  (30 companies); resume where teammate left off.** Batch 10 remains
+  untouched.
 - Master file: `data/environmental_emissions_master.csv` — run
   `py merge_batches.py` after pulling to get the current combined count;
   don't trust a number written here, it goes stale the moment either of
-  you pushes a new batch. As of this merge (384 companies total):
-  cdp_pdf 125, sustainability_report 102, epa_ghgrp 66 (some overlap —
-  epa_ghgrp only fills gaps the other two didn't already cover), none 91.
+  you pushes a new batch. As of this merge (433 companies total):
+  cdp_pdf 140, sustainability_report 115, epa_ghgrp 73 (some overlap —
+  epa_ghgrp only fills gaps the other two didn't already cover), none 105.
+- **EPA GHGRP saved 23 more searches in batch_11**: VLO, VTRS, VST, WM,
+  WEC, WY, XEL. Combined with batch_07/08's 16 from earlier this session,
+  EPA GHGRP has now backfilled 39 tickers total for devam29's batches at
+  zero search cost.
+- **Vivmark Residential (VMRK) needs a flag for whoever works with this
+  data next**: AvalonBay Communities (AVB) and Equity Residential (EQR)
+  merged into VMRK in August 2026, and no combined-entity CDP or
+  sustainability filing exists yet under the new ticker. The row entered
+  for VMRK is AvalonBay's own 2024 CDP response only — roughly half the
+  combined company's real footprint, not the full VMRK figure. Flagged
+  clearly in that row's `notes` column; don't treat it as final without
+  either adding EQR's own historical numbers or waiting for VMRK's first
+  post-merger disclosure.
+- **A second manual (non-generalizable) entry this session**: Warner Bros.
+  Discovery (WBD) — its GHG data supplement uses bare "Scope 1" / "Scope 2
+  (Location-Based)" / "Scope 2 (Market-Based)" row labels with footnote
+  digits glued directly onto the label (e.g. "Scope 11" = "Scope 1" +
+  footnote 1), unit stated once in a column header rather than per-row. A
+  generic pattern for this was tried and **reverted** after it matched
+  dozens of unrelated "100"-type figures (percentage/target-completion
+  rows) across other cached CDP PDFs — see the inline comment in
+  `extract_generic_fields`, don't re-attempt without reading it first.
+  Entered manually instead, verified against the document's own combined
+  totals: Scope 1 (80,650) + Scope 2 location (112,921) = 193,571 matches
+  the stated "Total Scope 1 + 2 (Location-Based)" exactly, and 80,650 +
+  Scope 2 market (116,285) = 196,935 matches the stated market-based total
+  exactly.
+- **Research leads surfaced by the user, checked and mostly ruled out**:
+  (1) Harvard Law Forum "Corporate Climate Disclosures" article — narrative
+  only, cites aggregate stats from The Conference Board's paid ESGAUGE
+  platform, no per-company data. (2) S&P Global Marketplace's Trucost
+  Environmental dataset — real company-level Scope 1/2/3 data exists but
+  it's a paid/licensed institutional product, not accessible without a
+  subscription. (3) `filofossati/NetZeroEmissionCommitment` GitHub repo —
+  a research/ML project (net-zero-commitment prediction), not a raw
+  dataset; underlying emissions data (from paid provider Entelligent) not
+  included, companies anonymized in the public repo. (4) HuggingFace
+  `danielrosehill/GHG-Emissions-Data` — explicitly LLM-derived and
+  **not human-verified** (`human_verified: 0`), only 78 companies; skip it,
+  using unverified LLM-generated numbers as ground truth would undercut
+  the whole Integrity pillar. **(5) Worth a real look next**: Lynn
+  LoPucki's Stakeholder Takeover Project
+  (stakeholdertakeover.org/rankings/2020, and a 2021 version) ranks ALL
+  S&P 500 companies by Scope 1+2 emissions ÷ revenue, sourced from
+  voluntary GHG reports plus mandatory EPA data — real academic project,
+  full S&P 500 coverage, exactly the kind of source this pipeline wants.
+  The site is a JS-rendered SPA, so WebFetch only sees an empty shell —
+  needs an actual browser (or view-source / network-tab inspection) to
+  get at the underlying table data. Not yet integrated; flagging for
+  whoever picks this up next.
 - **EPA GHGRP saved 16 searches this session**: batch_07 had matches for
   LMT, L, MPC, MLM; batch_08 had matches for MRK, MGM, MCHP, MU, TAP, NEM,
   NI, NOC, NRG, NUE, OXY, OKE. All entered directly with real Scope 1

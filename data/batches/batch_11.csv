@@ -1,0 +1,50 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+VLO,Valero Energy,epa_ghgrp,,23535216.552000005,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'VALERO ENERGY CORP' (27 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+VTRS,Viatris,epa_ghgrp,,26031.806,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'VIATRIS INC' (1 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+VST,Vistra Corp.,epa_ghgrp,,86320993.13799997,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'Vistra Corp' (40 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+WM,Waste Management,epa_ghgrp,,11650459.606000002,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'WASTE MANAGEMENT INC' (225 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+WEC,WEC Energy Group,epa_ghgrp,,19291885.63,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'WEC Energy Group Inc' (17 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+WY,Weyerhaeuser,epa_ghgrp,,41144.524,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'WEYERHAEUSER CO' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+XEL,Xcel Energy,epa_ghgrp,,44184964.932,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'XCEL ENERGY INC' (31 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+UBER,Uber,none,,,,,,,,,no_public_report_found
+UDR,"UDR, Inc.",none,,,,,,,,,no_public_report_found
+ULTA,Ulta Beauty,sustainability_report,https://d1io3yog0oux5.cloudfront.net/_2a8629e3f704636d5d799dc4f8e7fd6d/ulta/db/1975/18000/description/ULTA-008_2025_CRR_Report_PDF_6_ADA_04.22.26.pdf,,,,,,,new,no_fields_extracted
+UNP,Union Pacific Corporation,cdp_pdf,https://www.up.com/content/dam/upcom/strategy-sustainability/documents/cdp-submission.pdf,10083282.0,261372.0,314075.0,12/31/2018,11313933.0,24250000000.0,new,
+UAL,United Airlines Holdings,none,,,,,,,,,no_public_report_found
+UPS,United Parcel Service,none,,,,,,,,,no_public_report_found
+URI,United Rentals,sustainability_report,https://www.unitedrentals.com/sites/default/files/press-releases/Corporate-Responsibility-Report-2024.pdf,,,,,,,False,no_fields_extracted
+UNH,UnitedHealth Group,cdp_pdf,https://www.unitedhealthgroup.com/content/dam/UHG/PDF/2024/sustainability/UHG-2024-CDP-Corporate-Questionnaire.pdf,24487.0,156751.0,148741.0,12/31/2021,131593.0,371622000000.0,new,
+UHS,Universal Health Services,none,,,,,,,,,no_public_report_found
+VEEV,Veeva Systems,none,,,,,,,,,no_public_report_found
+VTR,Ventas,cdp_pdf,https://ventasreit.com/sites/default/files/pdf/CDP_2023_Report.pdf,121591.0,288579.0,255446.0,,,,old,
+VLTO,Veralto,sustainability_report,https://filecache.investorroom.com/mr5ir_veralto/253/Veralto_2025_Sustainability_Report.pdf,,,,,,,False,no_fields_extracted
+VRSN,Verisign,none,,,,,,,,,no_public_report_found
+VRSK,Verisk Analytics,sustainability_report,https://www.verisk.com/490b52/siteassets/media/corporate-social-responsibility/verisk-climate-disclosure-report-2022.pdf,,,,,,,False,no_fields_extracted
+VZ,Verizon,sustainability_report,https://www.verizon.com/about/sites/default/files/Verizon-2025-TCFD-Report.pdf,,,,,,,False,no_fields_extracted
+VRTX,Vertex Pharmaceuticals,sustainability_report,https://www.vrtx.com/sites/default/files/2025-Environmental-Assurance.pdf,,,,,,,False,no_fields_extracted
+VRT,Vertiv,sustainability_report,https://www.vertiv.com/48ec63/globalassets/documents/reports/one-vertiv-one-world_2023-responsible-business-report.pdf,,,,,,,False,no_fields_extracted
+VICI,Vici Properties,sustainability_report,https://viciproperties.com/wp-content/uploads/2024/09/VICI-Properties-2023-2024-ESG-Report.pdf,,,,,,,False,no_fields_extracted
+V,Visa Inc.,cdp_pdf,https://corporate.visa.com/content/dam/VCOM/regional/na/us/about-visa/documents/visa-cdp-response.pdf,5102.0,66462.0,8821.0,,,,old,
+VMRK,Vivmark Residential,cdp_pdf,https://ims.avalonbay.com/AVB/esg/2024CDPResponse.pdf,15389.0,49068.0,23316.0,,,2767909000.0,new,"CAUTION: this is AvalonBay Communities (AVB) pre-merger data only, from their 2024 CDP response -- Vivmark Residential (VMRK) is the Aug 2026 merger of AvalonBay and Equity Residential (EQR), and no combined-entity CDP/sustainability filing exists yet under the new ticker. This figure covers roughly half the combined company's portfolio, not the full VMRK footprint -- do not treat as a complete Scope 1/2 figure without adding EQR's own historical data or waiting for VMRK's first combined disclosure."
+VMC,Vulcan Materials Company,none,,,,,,,,,no_public_report_found
+WRB,W. R. Berkley Corporation,none,,,,,,,,,no_public_report_found
+GWW,W. W. Grainger,cdp_pdf,https://s1.q4cdn.com/422144722/files/doc_downloads/ESG/2026/Grainger_CDP-Response_2025.pdf,28000.0,62000.0,56000.0,12/31/2018,37000.0,17200000000.0,new,
+WAB,Wabtec,sustainability_report,https://illuminem.b-cdn.net/datahub/Sustainability_Reports/707_Wabtec.pdf,,,,,,,False,no_fields_extracted
+WMT,Walmart,sustainability_report,https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/FY2025-Walmart-ESG-Report.pdf,,,,,,,False,no_fields_extracted
+DIS,Walt Disney Company (The),cdp_pdf,https://impact.disney.com/app/uploads/2025/05/CDP-Survey-Response-2024.pdf,993347.0,782066.0,727414.0,09/29/2019,909382.0,88898000000.0,new,
+WBD,Warner Bros. Discovery,sustainability_report,https://static-wbd-cdn.wbd.com/s3_assets/docs/2026-04/wbd_2025_impact_disclosures_greenhouse_gas_emissions_data_and_methodology.pdf,80650,112921,116285,,,,False,"Manually entered (not parser-automated): the report's Scope 1/2 table uses bare ""Scope 1"" / ""Scope 2 (Location-Based)"" / ""Scope 2 (Market-Based)"" row labels with footnote reference digits glued directly onto the label text (e.g. ""Scope 11"" for ""Scope 1"" + footnote 1), unit stated once in a column header rather than per-row -- tried a generic pattern for this and reverted it after it produced false matches on unrelated percentage figures in other cached PDFs (see extract_generic_fields comment). Read directly from the FY2025 table in ""Greenhouse Gas Emissions Data and Methodology 2025"": Scope 1 = 80,650; Scope 2 location-based = 112,921; Scope 2 market-based = 116,285 (all MT CO2e). Cross-checked against the document's own combined-total rows: 80,650 + 112,921 = 193,571 matches the stated ""Total Scope 1 + 2 (Location-Based)"" exactly, and 80,650 + 116,285 = 196,935 matches the stated ""Total Scope 1 + 2 (Market-Based)"" exactly."
+WAT,Waters Corporation,cdp_pdf,https://s205.q4cdn.com/962852172/files/doc_downloads/2026/04/Waters-Corporation-CDP-Corporate-Questionnaire-2025.pdf,14759.0,19564.0,7326.0,12/31/2024,14759.0,2958000000.0,new,
+WFC,Wells Fargo,sustainability_report,https://www.wellsfargo.com/assets/pdf/about/corporate-responsibility/operational-sustainability-data.pdf,,,,,,,False,no_fields_extracted
+WELL,Welltower,cdp_pdf,https://welltower.com/wp-content/uploads/2025/02/Welltower_2023_CDP_Response.pdf,180316.0,442834.0,426603.0,,,,old,
+WST,West Pharmaceutical Services,none,,,,,,,,,no_public_report_found
+WDC,Western Digital,cdp_pdf,https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/collateral/company/western-digital-climate-change-water-cdp-questionnaire-2025.pdf,144034.0,863293.0,521366.0,06/30/2020,44643.4,13003000000.0,new,
+WSM,"Williams-Sonoma, Inc.",none,,,,,,,,,no_public_report_found
+WMB,Williams Companies,cdp_pdf,https://www.williams.com/wp-content/uploads/sites/8/2021/07/2023-CDP-Climate-Change-Questionnaire_The-Williams-Companies-Inc.pdf,11742300.0,1777329.71,,,,,old,
+WTW,Willis Towers Watson,none,,,,,,,,,no_public_report_found
+WDAY,"Workday, Inc.",none,,,,,,,,,no_public_report_found
+WYNN,Wynn Resorts,none,,,,,,,,,no_public_report_found
+XYL,Xylem Inc.,cdp_pdf,https://www.xylem.com/siteassets/sustainability/2024/xylem_2023-cdp-climate-change-disclosure.pdf,41826.0,43268.0,10132.0,,,,old,
+YUM,Yum! Brands,cdp_pdf,"https://www.yum.com/wps/wcm/connect/yumbrands/fee6a0ff-e16e-4fdc-88f3-b7792a564521/Yum!+Brands,+Inc+-+CDP+Climate+-2023.pdf?MOD=AJPERES&CVID=oCityWk",35429.62,100477.74,37856.11,,,,old,
+ZBRA,Zebra Technologies,cdp_pdf,https://www.zebra.com/content/dam/zebra_dam/en/policies/environment/zebra-cdp-submittal-policy-environment-2024-en-us.pdf,3548.37,20626.6,13488.91,12/31/2020,2100.0,4981000000.0,new,
+ZBH,Zimmer Biomet,sustainability_report,https://investor.zimmerbiomet.com/~/media/Files/Z/ZimmerBiomet-IR/documents/sustainability-reports/2023-sustainability-report.pdf,,,,,,,False,no_fields_extracted
+ZTS,Zoetis,cdp_pdf,https://www.zoetis.com/our-company/corporate-sustainability/downloads/zoetis-inc-2024-cdp-corporate-questionnaire.pdf,111637.0,121167.0,177750.0,12/31/2021,101498.0,8544000000.0,new,

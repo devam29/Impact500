@@ -346,6 +346,21 @@ def extract_generic_fields(text):
             if v is not None:
                 out[key] = v
 
+    # NOTE: a "bare Scope 1 / Scope 2 (Location-Based/Market-Based)" label
+    # pattern (no unit text nearby, value on the next line) was tried here
+    # to catch Warner Bros. Discovery's 2025 GHG Emissions Data supplement
+    # ("Scope 11 \n80,650", footnote digit glued to the label) and
+    # reverted: tested against every cached PDF and it matched dozens of
+    # unrelated "100" (or other small) figures in CDP PDFs' progress/
+    # target-completion tables (e.g. "Scope 1 \n100%" reduction-target
+    # rows), which extract_cdp_fields's success normally masks (generic
+    # fallback only runs when the CDP path found nothing) but which would
+    # silently corrupt results the day a CDP PDF's high-confidence path
+    # partially fails. Not safe as a general-purpose pattern without much
+    # tighter context-anchoring than "label, optional digits, newline,
+    # number" allows. WBD's own figure was instead entered manually after
+    # reading it directly from the document -- see merge notes.
+
     # Some "Key data and frameworks" / performance-summary tables abbreviate
     # the unit to "(MTCO2e)" right in the row label instead of spelling out
     # "metric tons CO2e" -- confirmed real case: Lam Research's 2024 Impact
