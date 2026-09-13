@@ -2,7 +2,7 @@
 
 One row per S&P 500 ticker (503 rows total, including a few dual-class
 listings like GOOG/GOOGL). Built by `pipeline/build_combined_dataset.py`
-from five sources joined on `ticker`:
+from six sources joined on `ticker`:
 
 - **Level input, real** (`environmental_emissions_master.csv`, built by
   `pipeline/merge_batches.py`) — real disclosed Scope 1/2 tonnage,
@@ -29,6 +29,16 @@ from five sources joined on `ticker`:
   comparable to or a substitute for the Level columns. Merged in purely
   because it's the teammate's data and the two need to live in one file;
   every column is prefixed `upright_` for that reason.
+- **Upright input, PROXY ESTIMATED** (`pipeline/upright/upright_estimates.csv`,
+  built by `pipeline/upright/estimate_upright_gaps.py`) — for the ~33
+  tickers Upright's export has no real record for at all, a peer-median
+  proxy: the median of each cents-per-dollar-of-revenue metric among real
+  Upright-covered peers in the same GICS sector/sub-industry. **This is
+  OUR OWN modeled proxy, not Upright's actual methodology or output** —
+  Upright computes company-specific activity-based scores, this is a much
+  cruder industry-average stand-in. Tagged `upright_is_estimated=True`;
+  never overwrites a real Upright match; never present this as if Upright
+  itself produced it.
 
 This file holds **raw collected inputs, not computed scores** — it is not
 `level_score`, `velocity_score`, or `integrity_score`. Turning these
@@ -97,11 +107,22 @@ the actual display).
   Upright record to **both** of its share-class tickers (e.g. `GOOGL` and
   `GOOG`) — legitimate because these are one operating business with
   multiple stock classes, not two different companies. Honeywell and
-  Hewlett Packard Enterprise remain unmatched on purpose: unlike the
-  three above, both are genuinely **separate businesses now** (Honeywell
-  split into two independent companies in 2026; HP split into HP Inc. and
-  HPE in 2015), so a single pre-split score can't be safely applied to
-  either half.
+  Hewlett Packard Enterprise remain unmatched **by a real Upright
+  record** on purpose: unlike the three above, both are genuinely
+  **separate businesses now** (Honeywell split into two independent
+  companies in 2026; HP split into HP Inc. and HPE in 2015), so a single
+  pre-split score can't be safely applied to either half.
+- **All 33 remaining tickers (503 − 470) are now covered by a PROXY
+  ESTIMATE instead** (`pipeline/upright/upright_estimates.csv`, built by
+  `pipeline/upright/estimate_upright_gaps.py`) — **full 503/503 coverage
+  on the Upright dimension, matching the CO2 side.** This is a
+  peer-median stand-in (same GICS sector/sub-industry cascade as the
+  Tier 2 CO2 model), **not Upright's real methodology or output** —
+  tagged `upright_is_estimated=True` specifically so it's never
+  presented as if Upright itself produced it. `upright_revenue_musd` /
+  `upright_employee_count` on these rows are each company's own real
+  `yfinance` data (not estimated) — only the cents-per-dollar-of-revenue
+  metrics are peer-median proxies.
 - **Found in the course of this matching**: `sp500_constituents.csv` has
   a literal stray `|` character in ResMed's `Security` field
   (`"ResMed|"`), which silently blocked a normal name match until it was
@@ -233,7 +254,11 @@ divided by, or plotted on the same axis as `scope1_tco2e` or
 | `upright_health_cost_cents_per_dollar` / `_benefit_...` | Health-category total (e.g. product health impacts). |
 | `upright_knowledge_cost_cents_per_dollar` / `_benefit_...` | Knowledge-category total (R&D, education contributions). |
 | `upright_largest_cost` / `upright_largest_benefit` | Free text naming the company's single largest negative/positive impact driver and a rough physical-unit figure when Upright provides one (e.g. `"GHG emissions 110M tons of GHG emissions"` for Walmart) — **only present when that specific category happens to be the company's single largest**, so this text field cannot be read as "GHG tonnage for every company" (only ~152 of 505 Upright rows happen to have GHG as their top driver). |
-| `upright_url` | Link to the company's full profile on Upright's platform, for anything not captured in these summary columns. |
+| `upright_url` | Link to the company's full profile on Upright's platform, for anything not captured in these summary columns. Blank on a PROXY-ESTIMATED row (no such page exists for our own estimate). |
+| `upright_is_estimated` | **`True`/`False` — the second color-coding flag in this file.** `True` means every `upright_*` cents-per-dollar figure on this row is OUR OWN peer-median proxy (see below), not real Upright output. Independent of the main `is_estimated` column (that one is about tCO2e, this one is about Upright's metrics) — a single row can be `True`/`True`, `True`/`False`, `False`/`True`, or `False`/`False`. |
+| `upright_peer_group_used` | Which peer group supplied the median on an estimated row, e.g. `sector:Communication Services` — same sub_industry→sector→global cascade as the Tier 2 CO2 model. Blank on a real-match row. |
+| `upright_peer_count` | How many real Upright-covered peers were in that group. Blank on a real-match row. |
+| `upright_estimate_notes` | Explains the estimate is a crude industry-average proxy, not Upright's real company-specific modeling, and that `upright_revenue_musd`/`upright_employee_count` on that row are the company's own real financials, not estimated. Blank on a real-match row. |
 
 ## Known data-quality flags worth reading before using a specific row
 

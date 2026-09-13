@@ -323,13 +323,29 @@ matching), plus:
   HP Inc. and HPE in 2015), Alphabet/Fox/News Corp never split their
   underlying operations — only their stock.
 
-The remaining 33/503 unmatched tickers are **not fixable without new
-data collection** — verified individually via ticker lookup against
-`sp500_constituents.csv`, and cross-checked a second time against
-Wikipedia's live constituent table (see
-`pipeline/upright/WIKIPEDIA_VERIFICATION.md` for the full independent
-verification, written up specifically to settle a disagreement with the
-teammate about whose company list was current):
+The remaining 33/503 tickers have no REAL Upright record and are **not
+fixable without new data collection from Upright's own platform** —
+verified individually via ticker lookup against `sp500_constituents.csv`,
+and cross-checked a second time against Wikipedia's live constituent
+table (see `pipeline/upright/WIKIPEDIA_VERIFICATION.md` for the full
+independent verification, written up specifically to settle a
+disagreement with the teammate about whose company list was current).
+Instead of a live scrape, `pipeline/upright/estimate_upright_gaps.py`
+fills these 33 with a **peer-median PROXY estimate** — same
+sub_industry→sector→global cascade as the Tier 2 CO2 model, taking the
+median of each real peer's cents-per-dollar-of-revenue figure (no
+scaling needed, since Upright's metrics are already per-revenue-dollar).
+Tagged `upright_is_estimated=True`, distinct from the main
+`is_estimated` CO2 flag. **This is our own modeled stand-in, not
+Upright's real methodology or output** — Upright does detailed
+company-specific activity modeling; this is a much cruder industry
+average. `upright_revenue_musd`/`upright_employee_count` on these rows
+are each company's own real `yfinance` figures, not estimated — only the
+cents-per-dollar metrics are proxied. Net effect: **503/503 full
+coverage on the Upright dimension**, matching the CO2 side.
+
+For context, here's why those 33 tickers have no real Upright record in
+the first place:
 - Most are companies that have since **left the current S&P 500**
   (Upright's 505-row snapshot is scoped to the S&P 500 ESG index variant,
   which rebalances only once a year, unlike the continuously-updated base

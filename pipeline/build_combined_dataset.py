@@ -22,6 +22,12 @@ Combine everything this pipeline has collected so far into one CSV:
   NOT folded into or compared against the Level/Velocity/Integrity
   emissions columns above, and every column is prefixed `upright_` so
   that's never ambiguous. Per upright/match_upright.py.)
+- upright/upright_estimates.csv, if it exists (for tickers with no real
+  Upright record at all -- a peer-median PROXY of what an Upright-style
+  score might look like, per upright/estimate_upright_gaps.py. Tagged
+  `upright_is_estimated=True`; never overwrites a real Upright match.
+  This is OUR OWN modeled proxy, not Upright's actual methodology or
+  output -- never present it as if Upright itself produced it.)
 
 This does NOT compute level_score/velocity_score/integrity_score -- it
 only merges the raw inputs collected so far into one row-per-ticker file,
@@ -48,6 +54,7 @@ SBTI_PATH = os.path.join(HERE, "sbti", "sbti_matches.csv")
 CLIMATE_TRACE_PATH = os.path.join(HERE, "climate_trace", "climate_trace_matches.csv")
 TIER2_PATH = os.path.join(HERE, "tier2_estimation", "tier2_estimates.csv")
 UPRIGHT_PATH = os.path.join(HERE, "upright", "upright_matches.csv")
+UPRIGHT_ESTIMATES_PATH = os.path.join(HERE, "upright", "upright_estimates.csv")
 OUT_PATH = os.path.join(REPO_DIR, "data", "environmental_combined.csv")
 
 SBTI_FIELDS = [
@@ -82,6 +89,23 @@ UPRIGHT_SOURCE_FIELDS = [
 # this pipeline's own tCO2e emissions columns -- see the module docstring.
 UPRIGHT_FIELDS = [f"upright_{f}" if not f.startswith("upright_") else f
                    for f in UPRIGHT_SOURCE_FIELDS]
+
+# The subset of UPRIGHT_FIELDS a peer-median proxy estimate can actually
+# fill (the cents-per-dollar-of-revenue metrics) -- excludes company_name/
+# industry/largest_cost/largest_benefit/upright_url (nothing sensible to
+# estimate) and revenue_musd/employee_count (filled from the company's
+# own REAL financials_cache.csv data instead, handled separately below).
+UPRIGHT_ESTIMATABLE_FIELDS = [
+    f for f in UPRIGHT_FIELDS
+    if f not in ("upright_company_name", "upright_industry", "upright_revenue_musd",
+                 "upright_employee_count", "upright_largest_cost",
+                 "upright_largest_benefit", "upright_url")
+]
+
+UPRIGHT_ESTIMATE_META_FIELDS = [
+    "upright_is_estimated", "upright_peer_group_used", "upright_peer_count",
+    "upright_estimate_notes",
+]
 
 
 def load_sbti_by_ticker():
@@ -125,6 +149,25 @@ def load_tier2_by_ticker():
     return by_ticker
 
 
+def load_upright_estimates_by_ticker():
+    if not os.path.isfile(UPRIGHT_ESTIMATES_PATH):
+        return {}
+    by_ticker = {}
+    with open(UPRIGHT_ESTIMATES_PATH, encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            out = {}
+            for f_est in UPRIGHT_ESTIMATABLE_FIELDS:
+                src_field = f_est[len("upright_"):]  # estimate file uses unprefixed names
+                out[f_est] = row.get(src_field, "")
+            out["upright_peer_group_used"] = row.get("upright_peer_group_used", "")
+            out["upright_peer_count"] = row.get("upright_peer_count", "")
+            out["upright_estimate_notes"] = row.get("upright_estimate_notes", "")
+            out["upright_revenue_musd"] = row.get("upright_revenue_musd", "")
+            out["upright_employee_count"] = row.get("upright_employee_count", "")
+            by_ticker[row["ticker"]] = out
+    return by_ticker
+
+
 def load_upright_by_ticker():
     if not os.path.isfile(UPRIGHT_PATH):
         return {}
@@ -147,6 +190,8 @@ def main():
     print(f"Tier 2 estimates available: {len(tier2_by_ticker)}")
     upright_by_ticker = load_upright_by_ticker()
     print(f"Upright Net Impact matches available: {len(upright_by_ticker)}")
+    upright_estimates_by_ticker = load_upright_estimates_by_ticker()
+    print(f"Upright Net Impact PROXY estimates available: {len(upright_estimates_by_ticker)}")
 
     with open(MASTER_PATH, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
@@ -157,11 +202,12 @@ def main():
     out_fields = (master_fields + ["sbti_matched"] + SBTI_FIELDS
                   + ["climatetrace_power_matched"] + CLIMATE_TRACE_FIELDS
                   + ["is_estimated"] + TIER2_FIELDS
-                  + ["upright_matched"] + UPRIGHT_FIELDS)
+                  + ["upright_matched"] + UPRIGHT_FIELDS + UPRIGHT_ESTIMATE_META_FIELDS)
     sbti_matched_count = 0
     ct_matched_count = 0
     tier2_used_count = 0
     upright_matched_count = 0
+    upright_estimated_count = 0
     with open(OUT_PATH, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=out_fields)
         w.writeheader()
@@ -207,17 +253,34 @@ def main():
                 upright_matched_count += 1
                 out["upright_matched"] = "True"
                 out.update(upright)
+                out["upright_is_estimated"] = "False"
+                for field in UPRIGHT_ESTIMATE_META_FIELDS:
+                    if field != "upright_is_estimated":
+                        out[field] = ""
             else:
                 out["upright_matched"] = "False"
                 for field in UPRIGHT_FIELDS:
                     out[field] = ""
+                # No real match -- fall back to a peer-median PROXY
+                # estimate if one exists (never the other way around).
+                estimate = upright_estimates_by_ticker.get(row["ticker"])
+                if estimate:
+                    upright_estimated_count += 1
+                    out["upright_is_estimated"] = "True"
+                    out.update(estimate)
+                else:
+                    out["upright_is_estimated"] = "False"
+                    for field in UPRIGHT_ESTIMATE_META_FIELDS:
+                        if field != "upright_is_estimated":
+                            out[field] = ""
 
             w.writerow(out)
 
     print(f"Rows with an SBTi match: {sbti_matched_count} / {len(rows)}")
     print(f"Rows with a Climate TRACE Power-ownership match: {ct_matched_count} / {len(rows)}")
     print(f"Rows using a Tier 2 estimate: {tier2_used_count} / {len(rows)}")
-    print(f"Rows with an Upright Net Impact match: {upright_matched_count} / {len(rows)}")
+    print(f"Rows with a real Upright Net Impact match: {upright_matched_count} / {len(rows)}")
+    print(f"Rows using an Upright PROXY estimate: {upright_estimated_count} / {len(rows)}")
     print(f"Wrote {OUT_PATH}")
 
 
