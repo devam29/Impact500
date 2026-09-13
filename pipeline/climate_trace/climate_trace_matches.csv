@@ -1,0 +1,68 @@
+ticker,security,asset_count,sectors,subsectors,countries,min_share_percent,max_share_percent,avg_share_percent,sample_source_names
+AAPL,Apple Inc.,1,power,electricity-generation,USA,,,,Apple Data Center - Fuel Cell 1&2
+AEE,Ameren,17,power,electricity-generation,USA,100.0,100.0,100.0,Audrain Generating Station;Fairgrounds;Goose Creek Energy Center
+AEP,American Electric Power,30,power,electricity-generation,USA,50.0,100.0,94.7,Arsenal Hill - J Lamar Stall plant complex;Big Sandy;Ceredo Generating Station
+AES,AES Corporation,30,power,electricity-generation,ARG;BGR;CHL;DOM;JOR;MEX;PAN;PRI;QAT;USA,6.0,100.0,69.7,Guillermo Brown power station;Manuel Belgrano I power station;San Nicolás power station
+APA,APA Corporation,3,power,electricity-generation,AUS,100.0,100.0,100.0,Diamantina power station;Leichhardt power station;Newman (AU) power station
+APO,Apollo Global Management,3,power,electricity-generation,DEU;IND;USA,5.7,5.7,5.7,Huckingen power station;Ballarpur Bilt Power power station;Kaukauna Paper Mill
+ARES,Ares Management,6,power,electricity-generation,IND;JPN;USA,,,,Raipur Neco power station;Shin Nakasode power station;Birdsboro Power
+BAC,Bank of America,11,power,electricity-generation,GBR;USA,0.1,5.9,5.2,Drax power station;East Hampton;E F Barrett
+BEN,Franklin Resources,33,power,electricity-generation,AUS;HND;TWN;USA,0.0,5.6,4.3,Diamantina power station;Gladstone power station;Leichhardt power station
+BLK,BlackRock,1862,power,electricity-generation,ARE;ARG;ARM;AUS;AUT;BEL;BGD;BGR;BHR;BHS;BRA;BRB;CAN;CHL;CHN;COL;CZE;DEU;DOM;ESP;EST;FIN;FRA;GBR;GHA;GLP;HND;HUN;IDN;IND;IRL;ITA;JAM;JOR;JPN;KAZ;KEN;KOR;LKA;LTU;LVA;MAR;MDG;MEX;MLI;MMR;MRT;MTQ;MUS;MYS;NCL;NGA;NLD;NZL;OMN;PAK;PAN;PER;PHL;POL;PRI;PRT;QAT;REU;RUS;SAU;SEN;SGP;SLV;SRB;SVK;SWE;TGO;THA;TTO;TUR;TWN;URY;USA;VNM;ZAF,0.0,100.0,5.2,Fujairah F2 Integrated Water and power plant;Hamriyah power station;Mirfa Independent Water and Power Project
+BRK.B,Berkshire Hathaway,77,power,electricity-generation,AUS;GBR;KAZ;USA,0.0,100.0,53.3,Barrow Island LNG power station;Drax power station;Tengizchevroil 3 power station
+BX,Blackstone Inc.,15,power,electricity-generation,CAN;IND;ITA;MEX;SLV;USA,32.6,100.0,77.5,St. Clair Energy Centre;Anuppur Thermal Power Project;Fiumicio Airport power station
+C,Citigroup,62,power,electricity-generation,AUS;CHL;CZE;DEU;FIN;GBR;GHA;IDN;MEX;MLI;MYS;SAU;TUR;URY;USA,1.7,10.1,7.9,Barker Inlet power station;Bayswater power station;Darling Downs power station
+CAT,Caterpillar Inc.,2,power,electricity-generation,DOM;USA,100.0,100.0,100.0,Siba power station;Caterpillar
+CEG,Constellation Energy,79,power,electricity-generation,CAN;USA,100.0,100.0,100.0,Greenfield Energy Centre;Whitby cogeneration station;Baytown Energy Center
+CMS,CMS Energy,16,power,electricity-generation,USA,50.0,100.0,89.6,B C Cobb;Craven County Wood Energy LP;Dan E Karn
+COP,ConocoPhillips,1,power,electricity-generation,USA,,,,Ingleside Cogeneration
+CVX,Chevron Corporation,11,power,electricity-generation,AUS;KAZ;USA,25.5,100.0,79.3,Barrow Island LNG power station;Tengizchevroil 3 power station;Tengizchevroil Future Growth Project power station
+D,Dominion Energy,38,power,electricity-generation,USA,50.0,100.0,97.7,Altavista Power Station;Bear Garden;Bellmeade Power Station
+DD,DuPont,2,power,electricity-generation,NLD;USA,0.0,19.9,9.9,Dordrecht Dupont power station;Spruance Operating Services LLC
+DOW,Dow Inc.,5,power,electricity-generation,NLD;USA,100.0,100.0,100.0,Elsta power station;Dow St Charles Operations;LaO Energy Systems
+DTE,DTE Energy,25,power,electricity-generation,USA,,,,Belle River;Blue Water Energy Center;Colfax
+DUK,Duke Energy,51,power,electricity-generation,USA,12.1,100.0,92.5,Anclote;Asheville;Avon Park
+ED,Consolidated Edison,4,power,electricity-generation,USA,100.0,100.0,100.0,59th Street;74th Street;East River
+EIX,Edison International,6,power,electricity-generation,USA,100.0,100.0,100.0,Barre Peaker;Center Hybrid;Grapeland Hybrid
+ES,Eversource Energy,1,power,electricity-generation,USA,2.4,2.4,2.4,William F Wyman Hybrid
+ETR,Entergy,26,power,electricity-generation,USA,8.3,100.0,81.1,Acadia Energy Center;Big Cajun 2;Buras
+EVRG,Evergy,23,power,electricity-generation,USA,32.9,100.0,89.8,Emporia Energy Center;Gordon Evans Energy Center;Greenwood (MO)
+EXC,Exelon,2,power,electricity-generation,CAN;USA,100.0,100.0,100.0,Grande Prairie generating station;Hyperion Treatment Plant CHP Plant
+FCX,Freeport-McMoRan,4,power,electricity-generation,IDN;PER;USA,48.8,48.8,48.8,Amamapare Port power station;Grasberg Mine power station;Recka power station
+FE,FirstEnergy,5,power,electricity-generation,USA,,,,Buchanan Generation LLC;FirstEnergy Eastlake;FirstEnergy Fort Martin Power Station
+GEV,GE Vernova,1,power,electricity-generation,USA,,,,Parlin Power Plant
+GS,Goldman Sachs,16,power,electricity-generation,BGR;CAN;CHN;DEU;ESP;FRA;ITA;USA,1.5,13.7,6.9,Deven power station;Bear Creek cogeneration power station;Bécancour cogeneration plant
+IP,International Paper,28,power,electricity-generation,ESP;GBR;ITA;PRT;USA,0.0,100.0,84.3,Duenas Mill power station;Fuenlabrada Mill power station;Peninsular de Cogeneracion Mill power station
+IVZ,Invesco,1,power,electricity-generation,GBR,0.1,0.1,0.1,Drax power station
+KKR,KKR & Co.,34,power,electricity-generation,BGR;BRA;CAN;COL;ESP;GBR;GLP;IND;MEX;MTQ;MUS;REU;SEN;SRB;TGO;TTO;USA,27.5,42.6,33.2,Maritsa Iztok-3 power station;Codora power station;Esplanada power station
+KMB,Kimberly-Clark,3,power,electricity-generation,USA,100.0,100.0,100.0,"Chester Operations;Kimberly Clark Mobile - CHP Plant;Kimberly Clark-Unit 1,2,3"
+LIN,Linde,1,power,electricity-generation,MEX,100.0,100.0,100.0,Compañía de Nitrógeno de Cantarell power station
+LNT,Alliant Energy,29,power,electricity-generation,USA,4.0,100.0,75.8,Alliant Energy Neenah;Burlington Generating Station;Burlington (IA)
+MPC,Marathon Petroleum,4,power,electricity-generation,USA,50.0,100.0,87.5,Green Power 2;Power Station 4;Tesoro SLC Cogeneration Plant
+MRK,Merck & Co.,2,power,electricity-generation,USA,100.0,100.0,100.0,Merck Rahway Power Plant;West Point (PA)
+MS,Morgan Stanley,1,power,electricity-generation,USA,100.0,100.0,100.0,Red Oak Power LLC
+MSFT,Microsoft,1,power,electricity-generation,IRL,,,,Microsoft Dublin Data Center power station
+NEE,NextEra Energy,24,power,electricity-generation,USA,8.3,100.0,88.6,Bayswater Peaking Facility LLC;Bellingham Cogeneration Facility;Cape Canaveral
+NEM,Newmont,3,power,electricity-generation,DOM;USA,38.5,40.0,39.0,Quisqueya 1 power station;TS Power Plant;Western 102 Power Plant
+NI,NiSource,4,power,electricity-generation,USA,100.0,100.0,100.0,Bailly;Michigan City;R M Schahfer
+NRG,NRG Energy,30,power,electricity-generation,AUS;HND;TWN;USA,0.0,100.0,72.7,Gladstone power station;ELCOSA power station;Hsin Yu cogeneration power station
+OKE,Oneok,1,power,electricity-generation,USA,100.0,100.0,100.0,Bridgeport Gas Processing Plant
+OXY,Occidental Petroleum,6,power,electricity-generation,USA,45.2,100.0,85.8,Houston Chemical Complex Battleground;Ingleside Cogeneration;NET Power La Porte power station
+PCG,PG&E Corporation,3,power,electricity-generation,USA,100.0,100.0,100.0,Colusa Generating Station;Gateway Generating Station;Humboldt Bay
+PEG,Public Service Enterprise Group,2,power,electricity-generation,USA,71.7,100.0,85.9,Bridgeport Station;New Haven Steam
+PFE,Pfizer,1,power,electricity-generation,USA,100.0,100.0,100.0,Pfizer Groton Plant
+PG,Procter & Gamble,3,power,electricity-generation,USA,100.0,100.0,100.0,Oxnard;Procter & Gamble Cincinnati Plant;Procter & Gamble Mehoopany Mill
+PKG,Packaging Corporation of America,6,power,electricity-generation,USA,100.0,100.0,100.0,Boise Cascade International Falls;DeRidder Mill;Packaging Corp of America
+PNW,Pinnacle West Capital,10,power,electricity-generation,USA,3.5,100.0,86.3,Cholla;Douglas;Four Corners
+PPL,PPL Corporation,13,power,electricity-generation,USA,7.1,100.0,64.5,Cane Run;Colstrip;E W Brown
+PSX,Phillips 66,6,power,electricity-generation,USA,0.0,100.0,75.0,Bayway Refinery;Enterprise Products Operating;Los Angeles Refinery Wilmington
+SO,Southern Company,38,power,electricity-generation,USA,0.0,100.0,89.1,Barry;Boulevard;Bowen
+SRE,Sempra,5,power,electricity-generation,MEX;USA,70.0,100.0,92.5,Termoelectrica de Mexicali power station;Cuyamaca Peak Energy Plant;Desert Star Energy Center
+STT,State Street Corporation,1066,power,electricity-generation,ARE;AUS;BGR;BHR;BRA;CAN;CHL;CHN;DEU;DOM;ESP;EST;FIN;FRA;GBR;GHA;HND;IDN;IND;ITA;JAM;JOR;JPN;KAZ;KEN;KOR;LKA;MAR;MDG;MEX;MLI;MMR;MYS;NCL;NLD;NZL;OMN;PHL;PRI;PRT;QAT;RUS;SAU;SGP;SRB;SVK;THA;TTO;TWN;USA;VNM;ZAF,0.0,9.7,3.1,Fujairah F2 Integrated Water and power plant;Hamriyah power station;Mirfa Independent Water and Power Project
+SW,Smurfit Westrock,21,power,electricity-generation,AUT;BRA;COL;ESP;FRA;GBR;ITA;USA,100.0,100.0,100.0,Nettingsdorf Paper Mill power station;Rigesa power station;Smurfit power station
+TROW,T. Rowe Price,67,power,electricity-generation,ESP;GBR;ITA;PRT;USA,0.0,12.6,10.6,Duenas Mill power station;Fuenlabrada Mill power station;Peninsular de Cogeneracion Mill power station
+VLO,Valero Energy,5,power,electricity-generation,GBR;USA,100.0,100.0,100.0,Valero Pembroke power station;Air Products Port Arthur;Valero Refinery Cogeneration Unit 1
+VST,Vistra Corp.,60,power,electricity-generation,HND;USA,0.0,100.0,92.1,ELCOSA power station;ANP Blackstone Energy Project;Baldwin Energy Complex
+WEC,WEC Energy Group,22,power,electricity-generation,USA,0.0,100.0,74.7,A.J. Mihm Generating Station;Columbia (WI);Concord
+WM,Waste Management,8,power,electricity-generation,USA,,,,CSL Gas Recovery;DFW Gas Recovery;Metro Methane Recovery Facility
+XEL,Xcel Energy,39,power,electricity-generation,USA,6.1,100.0,94.4,Alamosa;Allen S King;Angus Anson

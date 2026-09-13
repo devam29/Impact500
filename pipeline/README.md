@@ -10,6 +10,13 @@ step-by-step resume instructions are kept in this file for reference (in
 case a constituent list change or a data refresh ever reopens a gap), not
 because there's current work waiting.
 
+**`data/environmental_combined.csv` is the one file to hand someone who
+just wants to use this data** — Level (real + Tier 2 estimated),
+Velocity (SBTi), and Integrity (Climate TRACE) all joined by ticker. See
+`data/environmental_combined_DATA_DICTIONARY.md` for the full column
+reference, and the SBTi / Climate TRACE / Tier 2 sections further down
+this file for how each piece was built.
+
 ## Who worked on which batch (historical, for reference)
 
 Two people ran sessions on this repo in parallel while collection was in
@@ -100,8 +107,12 @@ not reinvented, by every new session.
   exact duplicate of batch 01's company list, so batch 01 already covers
   it; batches 03-11 correctly cover the true remainder with no gaps.
 - `build_combined_dataset.py` — joins the master emissions file with
-  `sbti/sbti_matches.csv` by ticker into one file,
-  `data/environmental_combined.csv`. See the SBTi section below.
+  `sbti/sbti_matches.csv`, `climate_trace/climate_trace_matches.csv`, and
+  `tier2_estimation/tier2_estimates.csv` (if present) by ticker into one
+  file, `data/environmental_combined.csv`. See the SBTi, Climate TRACE,
+  and Tier 2 sections below, and
+  `data/environmental_combined_DATA_DICTIONARY.md` for the full column
+  reference.
 
 ## EPA GHGRP supplemental source (Scope 1 only, zero search cost)
 
@@ -166,7 +177,80 @@ and `sbti/match_sbti.py`) joins `environmental_emissions_master.csv` with
 computed score, same spirit as the master file itself. A ticker with no
 SBTi match gets `sbti_matched=False` and blank `sbti_*` fields, same
 leave-it-visible convention as `data_source=none` elsewhere in this
-pipeline.
+pipeline. See `data/environmental_combined_DATA_DICTIONARY.md` for a
+full column-by-column reference to this file — that's the doc to hand
+someone who wants to actually use the combined CSV without re-deriving
+this README's context first.
+
+## Climate TRACE supplemental source (Integrity input, satellite-based)
+
+`climate_trace/climate_trace_matches.csv` — built by
+`climate_trace/match_climate_trace.py` from a real Climate TRACE
+"Ownership" data package download (Power sector, worldwide, inventory
+v5.10.0, free at https://climatetrace.org/data, no login required),
+matched to our tickers the same exact-normalized-name way as EPA GHGRP
+and SBTi. This is the only source in this pipeline that isn't
+self-reported at all — Climate TRACE estimates emissions from
+satellite/sensor observation of physical infrastructure, independent of
+anything a company files or discloses, which is exactly what the
+Integrity sub-score is designed to cross-check against.
+
+**What this actually gives us**: confirmation that a company owns
+specific Power-sector physical assets (plants) an independent tracker
+also observes — not a re-measurement of the company's total emissions.
+Getting an actual independent tCO2e figure would mean joining this
+Ownership package against Climate TRACE's separate Emissions package (by
+`source_id`) — technically straightforward in principle, but the
+site's guided download wizard proved unreliable to drive a second time
+via browser automation (a heavy live map on the page repeatedly froze
+the renderer mid-flow), so this session stopped at the ownership-only
+signal rather than burn more time on browser flakiness for a
+nice-to-have. Revisiting this with either a steadier browser session or
+Climate TRACE's public BigQuery access (`trace-data-383422.climate_trace`,
+mentioned on their site, needs a Google Cloud account) is a clean next
+step if the full cross-check becomes worth the effort.
+
+**Read `avg_share_percent` before treating a match as meaningful**: 67
+tickers matched. Utilities (Duke Energy ~92% avg share, Southern Company
+~89%, NextEra ~89%) are real operational owners. Asset managers
+(BlackRock: 1,862 assets at ~5.2% avg share; State Street: 1,066 assets
+at ~3.1%) show up because of small index-fund equity stakes across
+thousands of holdings, not operational control — a completely different
+signal. Don't conflate the two when this gets used downstream.
+
+## Tier 2 sector-median estimation (Level input, ESTIMATED not disclosed)
+
+For any ticker with **no real Scope 1/2 number at all**,
+`tier2_estimation/estimate_tier2.py` can fill in an **estimate** —
+modeled on LSEG's published carbon-estimate methodology (their "median
+model": peer-group median emissions intensity per revenue and per
+employee, scaled by the target company's own size), adapted to this
+project's smaller universe (GICS sector/sub-industry from
+`sp500_constituents.csv` standing in for LSEG's TRBC codes, and a 5-peer
+floor instead of LSEG's 10, since 503 companies split across ~130 GICS
+sub-industries rarely clears 10 real-data peers at the narrow level).
+Deliberately broader than just `data_source=none`: a row where a real
+report was found but the parser couldn't extract a usable number
+(`notes=no_fields_extracted`) is the same practical gap, and there turn
+out to be more of those (136) than genuine `none` rows (124) — the
+script checks for an actual extracted number, not the `data_source`
+label, so it catches both. As of this pull: **260 of 503 companies
+(~52%) get a Tier 2 estimate**, 242 have a real number, and exactly one
+(Fiserv, `FISV`) has neither (a Yahoo Finance data-fetch gap for that
+specific ticker, not investigated further).
+
+Needs revenue and employee-count data for every ticker to work, which
+this pipeline didn't otherwise collect — `tier2_estimation/fetch_financials.py`
+pulls that live from Yahoo Finance (`yfinance`) for all 503 tickers, cached
+to `financials_cache.csv` (re-run is safe, already-fetched tickers are
+skipped unless `--refresh` is passed).
+
+**This produces an estimate, never a substitute for real data, and never
+overwrites one.** `build_combined_dataset.py` only ever applies a Tier 2
+number to a ticker with zero real Scope 1/2 value, and always sets
+`is_estimated=True` on that row — **this is the column to key any
+color-coding or visual distinction off of** wherever this data gets
+displayed. Never present an estimated and a real number the same way.
 
 ## Exact steps to resume
 
