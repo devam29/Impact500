@@ -1,0 +1,51 @@
+ticker,security,data_source,report_url,scope1_tco2e,scope2_location_tco2e,scope2_market_tco2e,scope1_base_year_end,scope1_base_year_tco2e,revenue_usd,is_cdp_format,notes
+SWKS,Skyworks Solutions,epa_ghgrp,,24116.71997,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'SKYWORKS SOLUTIONS INC' (1 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+SO,Southern Company,epa_ghgrp,,83794610.56400003,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'THE SOUTHERN CO' (48 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+STLD,Steel Dynamics,epa_ghgrp,,2569896.58,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'STEEL DYNAMICS INC' (11 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TRGP,Targa Resources,epa_ghgrp,,4304820.654815542,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'TARGA RESOURCES CORP' (37 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TSLA,"Tesla, Inc.",epa_ghgrp,,80515.196,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'TESLA INC' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TXN,Texas Instruments,epa_ghgrp,,1057774.335383,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'TEXAS INSTRUMENTS INC' (5 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TXT,Textron,epa_ghgrp,,55579.572,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'TEXTRON INC' (2 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TMO,Thermo Fisher Scientific,epa_ghgrp,,28392.342,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'THERMO FISHER SCIENTIFIC INC' (1 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+TSN,Tyson Foods,epa_ghgrp,,1874907.4860000003,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'TYSON FOODS INC' (34 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+SBAC,SBA Communications,none,,,,,,,,,no_public_report_found
+SLB,Schlumberger,cdp_pdf,https://www.slb.com/-/media/files/sustainability/2024/cdp-climate-change-2024.ashx,1368937.0,0.0,375019.0,12/31/2019,1667956.0,33140000000.0,new,
+STX,Seagate Technology,cdp_pdf,https://www.seagate.com/content/dam/seagate/assets/global-citizenship/environmental/files/seagate-cdp-climatec-2023.pdf,326718.0,721566.0,288613.0,,,,old,
+SRE,Sempra,sustainability_report,https://www.sempra.com/sites/default/files/2023-05/Sempra-Sustainability-Report-Full-2021.pdf,,,,,,,,download_error: 403 Client Error: Forbidden for url: https://www.sempra.com/sites/default/files/2023-05/Sempra-Sustainability-Report-Full-2021.pdf
+NOW,ServiceNow,cdp_pdf,https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/other-document/servicenow-cdp-climate-change-questionnaire-2023-submission.pdf,2270.0,41979.0,635.0,,,,old,
+SHW,Sherwin-Williams,cdp_pdf,https://corporate.sherwin-williams.com/content/dam/sherwin/corp/corp-aem-sherwin/sustainability/sustainability-reports/2022/cover-pages-tables-icons/CDP%20Climate%202023.pdf.coredownload.pdf,394124.0,280152.0,,,,,old,
+SPG,Simon Property Group,sustainability_report,https://www.responsibilityreports.com/HostedData/ResponsibilityReportArchive/s/NYSE_SPG_2022.pdf,,,,,,,False,no_fields_extracted
+SJM,J.M. Smucker Company (The),sustainability_report,https://www.jmsmucker.com/assets/jmsmucker/news-stories/corporate-publications/2025-corporate-impact-report.pdf,165414,176567,629,12/31/2019,171356,,False,"Manually entered (not parser-automated): figures are in an assurance-letter ""Exhibit A"" schedule (page 19) with bare ""Scope 1 Emissions""/""Scope 2 Location Based Method""/""Scope 2 Market Based Method"" row labels, no unit suffix on the label itself (unit stated once in the table header, ""Amounts in Metric Tonnes CO2e""), current-year-first (2024 then 2019). Cross-verified via the document's own internal consistency: 165,414 + 176,567 = 341,981, matching the stated ""Total Scope 1 and Scope 2 LBM GHG Emissions"" row exactly; 165,414 + 629 = 166,043, matching the stated ""Total Scope 1 and Scope 2 MBM GHG Emissions"" row exactly. Base year (2019, as amended): Scope 1 = 171,356."
+SW,Smurfit Westrock,sustainability_report,https://www.smurfitwestrock.com/-/m/files/publications---global/sr-2025-downloads/smurfit_westrock_sustainability_report_2025.pdf?rev=6007465af80e4591b94f6df090645845,,,,,,,False,no_fields_extracted
+SNA,Snap-on,sustainability_report,https://www.snapon.com/Snap-on-Files/Investors/SASB-Index/SASB-Standards-Index_2025_Final.pdf,,,,,,,False,no_fields_extracted
+SOLV,Solventum,none,,,,,,,,,no_public_report_found
+LUV,Southwest Airlines,sustainability_report,https://www.southwest.com/swa-resources/pdfs/communications/one-reports/240507-2023-One-Report-Planet-Snapshot.pdf,,,,,,,False,no_fields_extracted
+SWK,Stanley Black & Decker,sustainability_report,https://www.stanleyblackanddecker.com/sites/default/files/2026-07/2025_sbd_impact_report_0.pdf,,,,,,,False,no_fields_extracted
+SBUX,Starbucks,none,,,,,,,,,no_public_report_found
+STT,State Street Corporation,sustainability_report,https://www.statestreet.com/web/about/sustainability/documents/statestreet-esg-report-2022.pdf,,,,,,,False,no_fields_extracted
+STE,Steris,sustainability_report,https://www.steris.com/-/media/documents/pdfs/sustainability/corporate-responsibility-fact-sheet-2025.pdf,,,,,,,False,no_fields_extracted
+SYK,Stryker Corporation,none,,,,,,,,,no_public_report_found
+SMCI,Supermicro,sustainability_report,https://s204.q4cdn.com/707617056/files/doc_downloads/2025/Supermicro-ESG-Report-2025.pdf,,,,,,,False,no_fields_extracted
+SYF,Synchrony Financial,sustainability_report,https://www.synchrony.com/esgreport2023.pdf,,,,,,,False,no_fields_extracted
+SNPS,Synopsys,cdp_pdf,https://www.synopsys.com/content/dam/synopsys/company/corporate-social-responsibility/synopsys-cdp-climate-change-2021.pdf,2749.22,29865.34,22244.15,,,,old,
+SYY,Sysco,cdp_pdf,https://mediacdn.sysco.com/images/rendition?id=00c2988bf30c0a2c952595e9c10fdc4b9a42060d,1064620.0,253056.0,227420.0,,,,old,
+TMUS,T-Mobile US,cdp_pdf,https://www.t-mobile.com/content/dam/digx/tmobile/us/en/non-dynamic-media/pdf/annual-report/T-Mobile-2023-CDP-Climate-Change-Response.pdf,97080.0,2971861.0,0.0,,,,old,
+TROW,T. Rowe Price,none,,,,,,,,,no_public_report_found
+TTWO,Take-Two Interactive,sustainability_report,https://ir.take2games.com/static-files/99702a7e-3d22-4da2-b7c8-54eb33f82533,,,,,,,False,no_fields_extracted
+TPR,"Tapestry, Inc.",cdp_pdf,https://assets.tapestry.com/tapestrycorp/assets/docs/2024/CDP-Climate-Change-2023.pdf,10941.0,41674.0,16396.0,,,,old,
+TGT,Target Corporation,cdp_pdf,https://corporate.target.com/getmedia/c70c48ab-0e10-4576-9e92-789e30665964/2023-CDP-Climate-Response.pdf,779858.0,1505539.0,891321.0,,,,old,
+TEL,TE Connectivity,cdp_pdf,https://www.te.com/content/dam/te-com/documents/about-te/corporate-responsibility/global/2023_CDP_Climate_Questionnaire_Final.pdf,71479.0,466063.0,179879.0,,,,old,
+TDY,Teledyne Technologies,sustainability_report,https://www.teledyne.com/en-us/About-Us/Documents/Teledyne%20Corporate%20Social%20Responsibility%20Report%202024%20Supplement.pdf,58970,51971,,,,,False,"Manually entered (not parser-automated): SASB-style table has ""Gross Global Scope 1 Total Emissions"" as a label immediately followed by an identically-worded decoy row (""Gross Global Scope 1 Total Emissions from Perfluorinated Compounds (PFCs)"") -- a naive substring match risks grabbing the PFC subset value (37,424) instead of the real total (58,970); took the FIRST occurrence specifically. Cross-verified via the document's own internal consistency: 58,970 + 51,971 = 110,941, matching the stated ""Gross Global Scope 1 and 2 Total Emissions"" row exactly. CAUTION: the report labels the Scope 2 figure only as ""Scope 2 MT CO2e"" with no location-based/ market-based distinction stated anywhere in the document -- entered under scope2_location_tco2e as the more common default when unspecified, but this is an assumption, not a confirmed method."
+TER,Teradyne,none,,,,,,,,,no_public_report_found
+TPL,Texas Pacific Land Corporation,none,,,,,,,,,no_public_report_found
+TJX,TJX Companies,cdp_pdf,https://www.tjx.com/docs/default-source/corporate-responsibility/the-tjx-companies-inc-cdp-climate-change-report-2025.pdf?sfvrsn=490764e0_1,143258.0,559158.0,363202.0,01/31/2010,69695.0,56360000000.0,new,
+TKO,TKO Group Holdings,none,,,,,,,,,no_public_report_found
+TTD,Trade Desk (The),none,,,,,,,,,no_public_report_found
+TSCO,Tractor Supply,cdp_pdf,https://s23.q4cdn.com/539497486/files/doc_financials/2023/sr/CDP-Climate-Change-Questionnaire-2023.pdf,68000.0,185000.0,149000.0,,,,old,
+TT,Trane Technologies,cdp_pdf,https://www.tranetechnologies.com/content/dam/cs-corporate/pdf/sustainability/annual/2023-CDP-Climate-Change.pdf,237639.0,124057.0,55708.0,,,,old,
+TDG,TransDigm Group,none,,,,,,,,,no_public_report_found
+TRV,Travelers Companies (The),none,,,,,,,,,no_public_report_found
+TRMB,Trimble Inc.,none,,,,,,,,,no_public_report_found
+TFC,Truist Financial,cdp_pdf,https://filecache.investorroom.com/mr5ir_truist/644/Truist%202022%20CDP%20Disclosure.pdf,29725.0,223542.0,223522.0,,,,old,
+TYL,Tyler Technologies,sustainability_report,https://www.tylertech.com/Portals/0/Corporate-Responsibility/Tyler-2024-CRR-Report.pdf,,,,,,,False,no_fields_extracted
+USB,U.S. Bancorp,cdp_pdf,https://www.usbank.com/dam/documents/pdf/about-us-bank/community/sustainability/2022%20CDP_Public_Web.pdf,41335.3,191918.7,97537.8,,,,old,

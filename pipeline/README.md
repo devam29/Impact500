@@ -1,23 +1,25 @@
 # Emissions data collection pipeline — briefing for a new session
 
-If you are a fresh Claude Code session picking this up: read this whole file
-before doing anything. It exists because the WebSearch budget is capped
-*per session* (see "Why sessions keep restarting" below), so this project
-gets worked on across many short-lived sessions, and each one needs the
-same context the last one had.
+**Collection is DONE as of 2026-09-13.** All batches (01, 03-11 — 02 never
+existed, see below) are fully attempted: 503 unique tickers in
+`data/environmental_emissions_master.csv` (the full S&P 500 plus a couple
+of dual-class listings like GOOG/GOOGL). If you're picking this up next,
+there is no more searching to do on the Level input — see "What's next"
+near the bottom instead of resuming the search workflow below. The
+step-by-step resume instructions are kept in this file for reference (in
+case a constituent list change or a data refresh ever reopens a gap), not
+because there's current work waiting.
 
-## Who's working on which batch right now (avoid duplicate work)
+## Who worked on which batch (historical, for reference)
 
-Two people are running sessions on this repo in parallel. **Stick to your
-assigned batch(es) below** — working someone else's batch wastes WebSearch
-budget re-researching companies they're already covering, and risks both
-of you writing to the same batch CSV at once.
+Two people ran sessions on this repo in parallel while collection was in
+progress.
 
-- **devam29 (repo owner): batch_07, batch_08, and (picked up ahead of
-  teammate) batch_11 — all fully attempted as of 2026-09-13, nothing left
-  to pick up here.**
-- **Teammate: batch_09 (in progress), batch_10 — batch_11 was taken over
-  by devam29 since it was still untouched; don't duplicate it.**
+- **devam29 (repo owner): batch_07, batch_08, batch_09, batch_10, batch_11**
+  — batch_09/10/11 were originally the teammate's, picked up by devam29
+  once they were sitting untouched/incomplete.
+- **Teammate: batch_01, batch_03, batch_04, batch_05, batch_06** — done
+  earlier, before this parallel-work arrangement started.
 
 When done, commit your updated `data/batches/batch_NN.csv` and
 `pipeline/remaining_tickers/remaining_batch_NN.txt`, push, and let the other
@@ -322,21 +324,24 @@ real-data collection has run its course, not something to do instead of
 searching. Keep searching for real data first; only fall back to Tier 2
 for whatever's left after all 11 batches are genuinely attempted.
 
-## Current status (as of 2026-09-13, this update)
+## Current status (as of 2026-09-13, this update) — COLLECTION COMPLETE
 
-- **batch_07, batch_08, and batch_11 are now fully attempted (149
-  companies)** — devam29 also picked up batch_11 (49 companies, UBER
-  through ZTS) since it was still untouched and teammate hadn't started
-  it; see "Who's working on which batch" above. Batches 04, 05, and 06
-  remain fully attempted from before. **batch_09 is partially attempted
-  (30 companies); resume where teammate left off.** Batch 10 remains
-  untouched.
-- Master file: `data/environmental_emissions_master.csv` — run
-  `py merge_batches.py` after pulling to get the current combined count;
-  don't trust a number written here, it goes stale the moment either of
-  you pushes a new batch. As of this merge (433 companies total):
-  cdp_pdf 140, sustainability_report 115, epa_ghgrp 73 (some overlap —
-  epa_ghgrp only fills gaps the other two didn't already cover), none 105.
+- **Every batch is now fully attempted: batch_07, batch_08, batch_09,
+  batch_10, and batch_11 all finished this session** (batch_09's last 18
+  companies and all of batch_10 and batch_11 picked up from the teammate
+  once they were sitting untouched/incomplete — see "Who worked on which
+  batch" above). Combined with the already-complete batches 01, 03-06,
+  **the master file now has all 503 S&P 500 tickers (incl. dual-class
+  listings) with a genuine search attempt each** — there is nothing left
+  to resume in the search workflow below.
+- Master file: `data/environmental_emissions_master.csv` (run
+  `py merge_batches.py` after any future pull to regenerate it). Final
+  counts (503 companies total): cdp_pdf 157, sustainability_report 138,
+  epa_ghgrp 84 (some overlap — epa_ghgrp only fills gaps the other two
+  didn't already cover), none 124 (~25% of the S&P 500 simply doesn't
+  publish an extractable Scope 1/2 figure — see "The bigger open
+  question" above; Tier 2 sector-median estimation is the documented next
+  step for these).
 - **EPA GHGRP saved 23 more searches in batch_11**: VLO, VTRS, VST, WM,
   WEC, WY, XEL. Combined with batch_07/08's 16 from earlier this session,
   EPA GHGRP has now backfilled 39 tickers total for devam29's batches at
@@ -475,3 +480,42 @@ for whatever's left after all 11 batches are genuinely attempted.
   EPA's "Exxon Mobil"); worth a manual glance at near-misses for large
   companies specifically, not worth automating further given the false-
   positive risk.
+- **batch_09/10/11 completion pass, same session**: EPA GHGRP backfilled
+  7 more tickers in batch_09/10 combined (RTX, RSG, SWKS, SO, STLD, TRGP,
+  TSLA, TXN, TXT, TMO, TSN — some already counted above). Two more manual,
+  cross-verified entries for one-off table layouts: Salesforce (CRM) —
+  figures stated in thousands with the column header trailing the data in
+  extraction order, verified via 6+293+1,155=1,454 (thousand tCO2e)
+  matching the document's own "Total absolute emissions" row exactly —
+  and J.M. Smucker (SJM) — an assurance-letter "Exhibit A" schedule,
+  verified via 165,414+176,567=341,981 and 165,414+629=166,043 both
+  matching the document's own stated LBM/MBM totals exactly. Teledyne
+  (TDY) also entered manually after a label collision risk (a decoy
+  "...Total Emissions from Perfluorinated Compounds (PFCs)" row shares
+  the same label prefix as the real Scope 1 total) — took the first
+  occurrence, verified via 58,970+51,971=110,941 matching the stated
+  Scope 1+2 total exactly.
+
+## What's next (once real-data collection is genuinely finished)
+
+This file's original purpose — coordinating fresh sessions through an
+in-progress WebSearch-limited collection effort — is done; every S&P 500
+ticker has a real attempt behind it. Picking this up again means one of:
+
+1. **Tier 2 sector-median estimation** for the ~124 `none` tickers, per
+   "The bigger open question" section above — the confirmed next step,
+   not yet built.
+2. **Folding in the leads noted in this file but not yet integrated**:
+   the `cdp_global500_2013.csv` / `cdp_industry_emission_ranking.csv`
+   historical data (see the note above), and Lynn LoPucki's Stakeholder
+   Takeover Project (full S&P 500 Scope 1+2/revenue rankings — real,
+   free, but needs an actual browser session to extract since it's a
+   JS-rendered SPA that WebFetch can't read).
+3. **Using `data/environmental_combined.csv`** (Level + SBTi Velocity
+   input already joined — see the SBTi section above) as the actual input
+   to build `level_score`/`velocity_score`/`integrity_score`, which is a
+   separate piece of work this pipeline was never scoped to do (see "What
+   this is actually for" near the top).
+4. **A periodic re-check**, if the constituent list or a company's
+   disclosure status changes materially before the deliverable is due —
+   this file's exact-match, no-fabrication conventions still apply.

@@ -29,3 +29,23 @@ PWR,Quanta Services,sustainability_report,https://investors.quantaservices.com/_
 QCOM,Qualcomm,epa_ghgrp,,48566.816,,,,,,,EPA GHGRP Scope 1-only direct/on-site emissions; Scope 2 not covered
 DGX,Quest Diagnostics,cdp_pdf,https://www.questdiagnostics.com/content/dam/corporate/documents/Quest_Diagnostics_Incorporated_-_CDP_Climate_Change_Questionnaire_2023.pdf,288624.0,104080.0,94474.0,,,,old,
 Q,Qnity Electronics,none,,,,,,,,,no_public_report_found
+RTX,RTX Corporation,epa_ghgrp,,154646.258,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'RTX CORP' (3 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+RSG,Republic Services,epa_ghgrp,,10721712.294000002,,,,,,,"EPA GHGRP 2023 Direct Emitters, matched via parent company 'REPUBLIC SERVICES INC' (177 facilities). Scope 1 (direct/on-site) only -- GHGRP does not cover Scope 2."
+RL,Ralph Lauren Corporation,cdp_pdf,https://corporate.ralphlauren.com/on/demandware.static/-/Sites-RalphLauren_Corporate-Library/default/dw024e8938/documents/2023_reports_and_policies/CDP-ClimateChange2023.pdf,16248.0,60808.0,62381.0,,,,old,
+RJF,Raymond James Financial,sustainability_report,https://www.responsibilityreports.com/HostedData/ResponsibilityReportArchive/r/NYSE_RJF_2022.pdf,,,,,,,False,no_fields_extracted
+RDDT,Reddit,none,,,,,,,,,no_public_report_found
+O,Realty Income,sustainability_report,https://www.realtyincome.com/sites/realty-income/files/realty-income/sustainability/sustainability-report/realty-income-corporation-2023-sustainability-report.pdf,,,,,,,False,no_fields_extracted
+REG,Regency Centers,sustainability_report,https://stregcorpweb.blob.core.windows.net/sitefinityfiles/docs/default-source/corporate-responsibility/regency-centers-2023-corporate-responsibility-report.pdf,,,,,,,False,no_fields_extracted
+REGN,Regeneron Pharmaceuticals,cdp_pdf,https://www.regeneron.com/downloads/2025-cdp-climate-change-water-security.pdf,80250.631,56937.424,40391.544,,,14202000000.0,new,
+RF,Regions Financial Corporation,none,,,,,,,,,no_public_report_found
+RMD,ResMed,sustainability_report,https://document.resmed.com/documents/global/ResMed_Sustainability_report.pdf,,,,,,,False,no_fields_extracted
+RVTY,Revvity,sustainability_report,https://resources.revvity.com/pdfs/2024-impact-report.pdf,,,,,,,False,no_fields_extracted
+HOOD,Robinhood Markets,sustainability_report,https://esg.robinhood.com/static-files/af585da2-bc3b-4b0b-879e-2420b77f61c0,,,,,,,,"download_error: HTTPSConnectionPool(host='esg.robinhood.com', port=443): Read timed out. (read timeout=30)"
+ROK,Rockwell Automation,none,,,,,,,,,no_public_report_found
+ROL,"Rollins, Inc.",sustainability_report,https://d1io3yog0oux5.cloudfront.net/_edc1cdab95ef3efeadac34f126875d40/rollins/db/856/7655/pdf/Rollins+(1).pdf,,,,,,,False,no_fields_extracted
+ROP,Roper Technologies,none,,,,,,,,,no_public_report_found
+ROST,Ross Stores,none,,,,,,,,,no_public_report_found
+RCL,Royal Caribbean Group,none,,,,,,,,,no_public_report_found
+SPGI,S&P Global,sustainability_report,https://www.spglobal.com/content/dam/spglobal/corporate/en/documents/organization/who-we-are/sp-global-impact-report-2024.pdf,,,,,,,False,no_fields_extracted
+CRM,Salesforce,sustainability_report,https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/white-papers/fy25-schedules-of-environmental-and-employee-metrics.pdf,6000,293000,78000,,,,False,"Manually entered (not parser-automated): report uses a multi-row table with the column header (""Fiscal year ended January 31, Target / 2025 / 2024 / 2019 (Base Year)"") rendered AFTER the data rows in PDF text-extraction order, and each metric row only has 3 values (2025, 2024, 2019 Base Year -- no Target column value), all in THOUSANDS of metric tons CO2e. Cross-verified via the document's own internal consistency: FY2025 Scope 1 (6) + Scope 2 location-based/LBM (293) + Scope 3 LBM (1,155) = 1,454 thousand tCO2e, matching the document's own stated ""Total absolute emissions"" row for FY2025 (1,454) exactly. Scope 2 market-based/MBM figure (78) cross-checked against a second, independent table in the same document (""Scope 1 & 2 MBM reduction by fiscal 2031"") which repeats the identical Scope 1 value (6) alongside Scope 2 MBM = 78, both matching externally-reported FY2025 figures. All values converted from thousands to raw tCO2e (x1000)."
+SNDK,Sandisk,none,,,,,,,,,no_public_report_found
