@@ -4,130 +4,78 @@
 > possible. You manage a $1 billion investment fund. How do you allocate
 > your portfolio under this new scenario, and why?
 
-## The key framing decision
+## The answer
 
-This isn't a gradual multi-decade rebalancing problem. Most real
-institutional net-zero frameworks (e.g. the IIGCC's Net Zero Investment
-Framework) are built around 10-year engagement horizons, on the
-assumption that the transition happens slowly enough for portfolios to
-adjust alongside it. **"Tomorrow the world commits" is a shock
-scenario** — closer to how markets reprice around a surprise policy
-announcement than a gradual trend. That changes the strategy: the goal
-isn't to slowly tilt toward companies you expect to improve over a
-decade, it's to already be positioned for a repricing that happens fast,
-and to get ahead of the companies most exposed to it.
+Treat it as a **shock**, not a trend — markets would reprice fast, so
+the fund should already be positioned, not gradually adjusting over
+years. Three moves, using this project's own Level/Velocity/Integrity
+scores as the actual signal:
 
-## Why the risk is large and asymmetric
+1. **Stay diversified, but tilt security selection within every sector**
+   toward companies with a better `level_score` — never abandon a
+   sector entirely.
+2. **Overweight verified Transition Leaders** — companies with a *real,
+   measured* emissions decline at the required pace, not just a pledge.
+3. **Cut exposure to (but don't fully exit) companies that walked back
+   a climate commitment** — the worst credibility signal in a
+   sudden-mandate world.
 
-- The IEA estimates private oil & gas companies are valued at roughly
-  **$6 trillion** under current policy settings — but that value is
-  **~25% lower** if every existing national climate pledge is actually
-  met, and **~60% lower** on a pathway consistent with 1.5°C.
-- Research from Exeter and Lancaster universities (2024) found that a
-  complete halt to fossil fuel investment in 2020 would have put **$117
-  trillion** of global capital at risk of stranding — delaying that halt
-  to 2030 raises it to **$557 trillion** (about 37% of all global
-  capital today). The longer fossil investment continues before a
-  net-zero shock, the larger the eventual repricing — which is exactly
-  this scenario's premise: the delay just ended, all at once.
+## Why a within-sector tilt, not sector exclusion
 
-This is asymmetric: on the upside, a well-positioned company doesn't
-suddenly become dramatically more valuable overnight; on the downside, a
-poorly-positioned one can lose a large fraction of its value very
-quickly. That argues for a risk-management-first allocation, not a
-pure return-chasing one.
+![Portfolio emissions intensity: S&P 500 baseline vs. our tilted allocation](assets/bonus_intensity_reduction.png)
 
-## The allocation: tilt the core, overweight verified leaders, underweight credibility risk
+Reweighting companies *within* each GICS sector by their `level_score`
+(overweight the cleaner half, underweight the dirtier half, sector
+totals unchanged) cuts the portfolio's revenue-weighted emissions
+intensity by **52.6%** relative to the plain S&P 500 — using real data
+already in `data/environmental_scores.csv` for all 502 scoreable
+companies. That clears the EU's actual regulatory bar for a
+**Paris-Aligned Benchmark** fund (≥50% lower carbon intensity than the
+parent index), without dropping a single sector to zero.
 
-Real institutional practice (IIGCC's NZIF explicitly favors engagement
-and tilting over blanket divestment, since exclusion loses information
-and concentrates risk elsewhere) shaped the structure. The actual
-tilting signal is our own Level/Velocity/Integrity data from this
-project, not a generic ESG label.
+That last point matters more than it sounds: a peer-reviewed NBER study
+(Kahn, Matsusaka & Shu, 2024) found that **divestment is
+counterproductive** — shares sold by green investors just move to
+less-green owners with less incentive to push for change, and emissions
+at divested companies didn't fall (in some specifications, they rose).
+Engagement by remaining shareholders, not exit, is what's empirically
+associated with lower emissions. That's why the design here is
+"underweight and hold" rather than "exclude."
 
-### 1. Core holdings (~85%) — cap-weighted, tilted by sector environmental score
+## The two overlays
 
-Every company's `environmental_composite_score` (from
-`data/environmental_scores.csv`) is averaged by GICS sector and compared
-to the sector's current S&P 500 market-cap weight. Sectors scoring above
-the cap-weighted mean get tilted up; sectors scoring below get tilted
-down — moderately (a 1.5× sensitivity factor), not to zero, since Energy
-and Utilities are already a small share of the index and some
-individual companies within a "dirty" sector are real transition
-leaders (see below) that a blanket sector cut would wrongly punish.
+- **Transition Leaders overweight**: 15 companies with `velocity_basis
+  = measured_trend` and a velocity score ≥80 — a real multi-year
+  emissions decline at or near the pace SBTi's methodology requires, not
+  a promise. Includes `SLB` (Schlumberger, Energy sector) — proof the
+  signal is per-company, not a sector stereotype.
+- **Credibility-risk cut**: 37 companies whose SBTi-validated target was
+  later withdrawn (`sbti_near_term_status = Commitment removed`),
+  including Tesla, Amazon, and Meta. Reduced weight, held with active
+  engagement rather than excluded, consistent with the divestment
+  finding above.
 
-![Sector allocation: current vs. environmental-tilted](assets/bonus_sector_tilt.png)
+## Why the risk is asymmetric enough to justify moving before the fact
 
-| Sector | Current weight | Tilted weight | Dollar shift (of $1B) |
-|---|---|---|---|
-| Information Technology (score 65.0) | 34.7% | 37.7% | **+$30M** |
-| Communication Services (score 52.0) | 15.6% | 13.9% | **−$17M** |
-| Financials (56.6) | 11.9% | 11.4% | −$5M |
-| Consumer Discretionary (58.3) | 9.0% | 8.9% | −$1M |
-| Health Care (55.5) | 8.3% | 7.8% | −$5M |
-| Industrials (61.5) | 7.5% | 7.8% | +$3M |
-| Consumer Staples (61.7) | 4.7% | 4.9% | +$2M |
-| Energy (53.2) | 3.2% | 2.9% | −$3M |
-| Utilities (51.2) | 1.8% | 1.6% | −$2M |
-| Real Estate (56.7) | 1.7% | 1.6% | −$1M |
-| Materials (56.5) | 1.6% | 1.5% | −$1M |
+- IEA: oil & gas companies valued at ~$6T today under current policy
+  are worth **~60% less** on a pathway consistent with 1.5°C.
+- Exeter/Lancaster (2024): up to **$557 trillion** in global capital at
+  risk if fossil investment continues to 2030 before net-zero action
+  starts.
 
-### 2. Transition Leaders overweight sleeve (~10%, ~$100M)
+Downside for laggards is far larger than upside for leaders — this is
+risk management first, alpha-seeking second.
 
-Overweight companies our pipeline verifies are *actually* cutting
-emissions at the required pace, not just pledging to. From
-`environmental_scores.csv`, 15 companies have `velocity_basis =
-measured_trend` (a real multi-year emissions comparison, not a target
-promise) **and** a velocity score ≥80 (at or near SBTi's required
-reduction pace):
+## Limitation, stated plainly
 
-**UNH, LHX, AFL, AIZ, HUBB, AMP, CDNS, GWW, SLB, INTU, MNST, JCI, AES,
-DD, GLW**
-
-Note `SLB` (Schlumberger, oilfield services) is on this list —
-deliberate proof that the tilt is evidence-based per company, not a
-sector stereotype. A real Energy-sector company can still be a genuine
-transition leader.
-
-### 3. Credibility-risk underweight (~5%, trimmed from wherever these names already sit)
-
-The sharpest signal for a shock scenario is a company that **set a
-validated science-based target and then withdrew it**
-(`sbti_near_term_status = Commitment removed`). 37 companies carry this
-flag in our data, including several mega-caps: **Tesla, Amazon, Meta,
-Johnson & Johnson, Walmart**, among others. In a sudden universal
-net-zero mandate, these are exactly the companies most exposed to
-regulatory scrutiny, activist pressure, and capital flight — they've
-already demonstrated they can walk back a public climate commitment,
-which is a materially worse signal in a shock scenario than never having
-made one at all. Underweight these regardless of sector or size.
-
-## Why using our own data matters here
-
-Every number above traces back to a `*_is_estimated` / `*_basis` flag in
-this project's own pipeline. A real fund would size positions by
-confidence, not just score: a company scoring well because of
-`measured_trend` Velocity (real, multi-year data) deserves more
-conviction than one scoring the same from `target_ambition` (a promise,
-not a measurement). The same real-vs-estimated discipline this entire
-project is built on — see `docs/SCORE_METHODOLOGY.md` — applies directly
-to how confidently you'd actually size each position, not just how you
-rank companies.
-
-## Honest limitations
-
-- This tilt is built from **backward-looking** Level/Integrity data and
-  **forward-looking but unverified** Velocity/target data for over half
-  the index. A genuinely fast policy shock could reprice companies whose
-  transition plans aren't real faster than this kind of data can catch.
-- Concentrating further into Information Technology (already 34.7% of
-  the index, now higher under this tilt) is a real single-sector
-  concentration risk independent of climate considerations, and worth
-  capping in practice even though the environmental case supports the
-  tilt.
+The tilt leans on `level_score`, which is real for only about half the
+S&P 500 (`scope1_is_estimated` / `scope2_is_estimated` = `False`) — the
+rest rests on peer-based estimates. A real fund would size conviction by
+that flag, not just the score itself.
 
 ## Sources
 
 - [IEA — The Oil and Gas Industry in Net Zero Transitions](https://www.iea.org/reports/the-oil-and-gas-industry-in-net-zero-transitions/executive-summary)
-- [Stranded fossil fuel assets: up to $557 trillion at risk by 2030](https://www.asiafinancial.com/continued-fossil-fuel-investments-put-557-trillion-at-risk)
-- [IIGCC Net Zero Investment Framework](https://www.iigcc.org/net-zero-investment-framework)
+- [Stranded fossil fuel assets: up to $557T at risk by 2030](https://www.asiafinancial.com/continued-fossil-fuel-investments-put-557-trillion-at-risk)
+- [MSCI / EU Paris-Aligned Benchmark methodology (≥50% carbon intensity cut, 7%/yr self-decarbonization)](https://www.msci.com/documents/10199/6cd92a40-92c0-f12b-c416-f45bf2b7032e)
+- [Kahn, Matsusaka & Shu (NBER, 2024) — Divestment and Engagement: The Effect of Green Investors on Corporate Carbon Emissions](https://www.nber.org/papers/w31791)
