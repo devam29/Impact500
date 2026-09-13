@@ -13,6 +13,15 @@ Combine everything this pipeline has collected so far into one CSV:
   ESTIMATED not disclosed -- sector-median emissions intensity scaled by
   the company's own revenue/employees, for tickers with no real report.
   Per tier2_estimation/estimate_tier2.py.)
+- upright/upright_matches.csv, if it exists (a completely separate
+  teammate dataset -- Upright Project's Net Impact Model. NOT a Scope 1/2
+  tCO2e figure: it's a modeled, monetized cost/benefit score in "cents
+  per dollar of revenue" across four categories (Environment, Health,
+  Knowledge, Society). Included here purely because the teammate's job
+  is now to merge their data with this one into a single file -- it is
+  NOT folded into or compared against the Level/Velocity/Integrity
+  emissions columns above, and every column is prefixed `upright_` so
+  that's never ambiguous. Per upright/match_upright.py.)
 
 This does NOT compute level_score/velocity_score/integrity_score -- it
 only merges the raw inputs collected so far into one row-per-ticker file,
@@ -24,7 +33,8 @@ with a guess.
 Usage: py build_combined_dataset.py
 Reads:  ../data/environmental_emissions_master.csv, sbti/sbti_matches.csv,
         climate_trace/climate_trace_matches.csv,
-        tier2_estimation/tier2_estimates.csv (optional)
+        tier2_estimation/tier2_estimates.csv (optional),
+        upright/upright_matches.csv (optional)
 Writes: ../data/environmental_combined.csv
 """
 import csv
@@ -37,6 +47,7 @@ MASTER_PATH = os.path.join(REPO_DIR, "data", "environmental_emissions_master.csv
 SBTI_PATH = os.path.join(HERE, "sbti", "sbti_matches.csv")
 CLIMATE_TRACE_PATH = os.path.join(HERE, "climate_trace", "climate_trace_matches.csv")
 TIER2_PATH = os.path.join(HERE, "tier2_estimation", "tier2_estimates.csv")
+UPRIGHT_PATH = os.path.join(HERE, "upright", "upright_matches.csv")
 OUT_PATH = os.path.join(REPO_DIR, "data", "environmental_combined.csv")
 
 SBTI_FIELDS = [
@@ -55,6 +66,22 @@ TIER2_FIELDS = [
     "tier2_scope1_tco2e", "tier2_scope2_tco2e", "tier2_method",
     "tier2_sector_used", "tier2_peer_count", "tier2_notes",
 ]
+
+UPRIGHT_SOURCE_FIELDS = [
+    "upright_company_name", "industry", "revenue_musd", "employee_count",
+    "net_impact_ratio_percent", "rank_top_percent",
+    "environment_cost_cents_per_dollar", "environment_benefit_cents_per_dollar",
+    "ghg_emissions_cost_cents_per_dollar", "ghg_emissions_benefit_cents_per_dollar",
+    "non_ghg_emissions_cost_cents_per_dollar",
+    "society_cost_cents_per_dollar", "society_benefit_cents_per_dollar",
+    "health_cost_cents_per_dollar", "health_benefit_cents_per_dollar",
+    "knowledge_cost_cents_per_dollar", "knowledge_benefit_cents_per_dollar",
+    "largest_cost", "largest_benefit", "upright_url",
+]
+# Prefixed with upright_ in the output so these are never confused with
+# this pipeline's own tCO2e emissions columns -- see the module docstring.
+UPRIGHT_FIELDS = [f"upright_{f}" if not f.startswith("upright_") else f
+                   for f in UPRIGHT_SOURCE_FIELDS]
 
 
 def load_sbti_by_ticker():
@@ -98,6 +125,19 @@ def load_tier2_by_ticker():
     return by_ticker
 
 
+def load_upright_by_ticker():
+    if not os.path.isfile(UPRIGHT_PATH):
+        return {}
+    by_ticker = {}
+    with open(UPRIGHT_PATH, encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            by_ticker[row["ticker"]] = {
+                out_field: row.get(src_field, "")
+                for src_field, out_field in zip(UPRIGHT_SOURCE_FIELDS, UPRIGHT_FIELDS)
+            }
+    return by_ticker
+
+
 def main():
     sbti_by_ticker = load_sbti_by_ticker()
     print(f"SBTi matches available: {len(sbti_by_ticker)}")
@@ -105,6 +145,8 @@ def main():
     print(f"Climate TRACE Power-ownership matches available: {len(ct_by_ticker)}")
     tier2_by_ticker = load_tier2_by_ticker()
     print(f"Tier 2 estimates available: {len(tier2_by_ticker)}")
+    upright_by_ticker = load_upright_by_ticker()
+    print(f"Upright Net Impact matches available: {len(upright_by_ticker)}")
 
     with open(MASTER_PATH, encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
@@ -114,10 +156,12 @@ def main():
 
     out_fields = (master_fields + ["sbti_matched"] + SBTI_FIELDS
                   + ["climatetrace_power_matched"] + CLIMATE_TRACE_FIELDS
-                  + ["is_estimated"] + TIER2_FIELDS)
+                  + ["is_estimated"] + TIER2_FIELDS
+                  + ["upright_matched"] + UPRIGHT_FIELDS)
     sbti_matched_count = 0
     ct_matched_count = 0
     tier2_used_count = 0
+    upright_matched_count = 0
     with open(OUT_PATH, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=out_fields)
         w.writeheader()
@@ -158,11 +202,22 @@ def main():
                 for field in TIER2_FIELDS:
                     out[field] = ""
 
+            upright = upright_by_ticker.get(row["ticker"])
+            if upright:
+                upright_matched_count += 1
+                out["upright_matched"] = "True"
+                out.update(upright)
+            else:
+                out["upright_matched"] = "False"
+                for field in UPRIGHT_FIELDS:
+                    out[field] = ""
+
             w.writerow(out)
 
     print(f"Rows with an SBTi match: {sbti_matched_count} / {len(rows)}")
     print(f"Rows with a Climate TRACE Power-ownership match: {ct_matched_count} / {len(rows)}")
     print(f"Rows using a Tier 2 estimate: {tier2_used_count} / {len(rows)}")
+    print(f"Rows with an Upright Net Impact match: {upright_matched_count} / {len(rows)}")
     print(f"Wrote {OUT_PATH}")
 
 

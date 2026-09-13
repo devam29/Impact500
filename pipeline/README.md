@@ -282,6 +282,64 @@ number to a ticker with zero real Scope 1/2 value, and always sets
 color-coding or visual distinction off of** wherever this data gets
 displayed. Never present an estimated and a real number the same way.
 
+## Upright Net Impact merge (a teammate's dataset, not an emissions source)
+
+`upright/match_upright.py` matches a teammate's Upright Project export
+(`data/upright_final_esg.json`, 505 companies) to our ticker roster and
+joins it into `environmental_combined.csv` as `upright_*` columns.
+**This is not a Scope 1/2 tCO2e source** — Upright measures modeled,
+monetized cost/benefit in cents per dollar of revenue across Environment,
+Health, Knowledge, and Society categories. It's merged into the same file
+purely because the two datasets need to live in one place; every column
+is prefixed `upright_` so it's never confused with this pipeline's own
+emissions data. See the data dictionary's Upright section for the full
+column reference and the unit-mismatch warning.
+
+Matched **464 / 503** tickers by exact normalized company name, same
+conservative philosophy as SBTi/Climate TRACE matching (no fuzzy
+matching), plus:
+- A **squished-name fallback** (drops spaces/hyphens before comparing) to
+  catch spelling variants like `ExxonMobil` vs `EXXON MOBIL` — still an
+  exact match on a deterministic transform, not fuzzy.
+- A **hand-verified alias table** (`UPRIGHT_NAME_ALIASES` in the script)
+  of ~39 confirmed same-company name pairs where Upright uses an informal
+  short name and our constituent list uses the formal one (e.g. Upright's
+  `CISCO SYSTEMS` ↔ constituent `Cisco`, both `CSCO`). Each entry was
+  checked individually against the live constituent list before being
+  added — this is a fixed, auditable list, not a matching heuristic.
+- A **normalize() fix** for a trailing `(The)` in a constituent's name
+  (e.g. `"Home Depot (The)"`) that the original leading-`THE`-only strip
+  missed — fixed ~9 matches at once (Home Depot, Walt Disney, Coca-Cola,
+  Hershey, J.M. Smucker, Trade Desk, Mosaic, Cooper Companies, Estée
+  Lauder).
+
+The remaining 39/503 unmatched tickers are **not fixable without
+guessing** — verified individually via ticker lookup against
+`sp500_constituents.csv`:
+- Some Upright rows are companies that have since **left the current
+  S&P 500** (Upright's 505-row snapshot is slightly stale relative to the
+  live 503-constituent list): Hess (acquired by Chevron), Discover
+  Financial (acquired by Capital One), Pioneer Natural Resources
+  (acquired by ExxonMobil), Marathon Oil (acquired by ConocoPhillips —
+  **not** the same company as our constituent `Marathon Petroleum`,
+  ticker MPC, despite the similar name), Electronic Arts (taken private),
+  Walgreens Boots Alliance (taken private), American Airlines, Whirlpool,
+  BorgWarner, Illumina, Etsy, and others removed in index reconstitutions,
+  plus Paramount Global/WestRock, which now exist only as the different,
+  post-merger entities Paramount Skydance and Smurfit Westrock.
+- Some are **genuinely ambiguous** on name alone: `ALPHABET`, `HONEYWELL`,
+  `FOX`, and `NEWS` each correspond to multiple current tickers
+  (Alphabet's GOOG/GOOGL share classes, Honeywell's post-split HON/HONA,
+  Fox's FOXA/FOX and News Corp's NWSA/NWS share classes) — left unmatched
+  rather than guessed, same policy as everywhere else in this pipeline.
+- `ORACLE CORPORATION JAPAN` is a separately-listed Japanese subsidiary,
+  not the same stock as our `ORCL` constituent.
+
+**Also found in the course of this**: `sp500_constituents.csv` has a
+literal stray `|` character in ResMed's `Security` field (`"ResMed|"`),
+worth cleaning at the source since it could silently affect any other
+name-matching script that reads that column.
+
 ## Exact steps to resume
 
 Requires `py -m pip install pymupdf requests` once per machine (already

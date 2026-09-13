@@ -2,7 +2,7 @@
 
 One row per S&P 500 ticker (503 rows total, including a few dual-class
 listings like GOOG/GOOGL). Built by `pipeline/build_combined_dataset.py`
-from four sources joined on `ticker`:
+from five sources joined on `ticker`:
 
 - **Level input, real** (`environmental_emissions_master.csv`, built by
   `pipeline/merge_batches.py`) — real disclosed Scope 1/2 tonnage,
@@ -20,6 +20,15 @@ from four sources joined on `ticker`:
   built by `pipeline/climate_trace/match_climate_trace.py`) — independent,
   satellite/sensor-based confirmation (not self-reported) that a company
   owns Power-sector physical assets Climate TRACE also tracks.
+- **Upright input, a separate teammate dataset** (`pipeline/upright/upright_matches.csv`,
+  built by `pipeline/upright/match_upright.py` from `data/upright_final_esg.json`)
+  — the Upright Project's "Net Impact Model": a modeled, **monetized**
+  cost/benefit score in cents per dollar of revenue, across Environment,
+  Health, Knowledge, and Society categories. **This is a fundamentally
+  different unit than everything else in this file** — not tCO2e, not
+  comparable to or a substitute for the Level columns. Merged in purely
+  because it's the teammate's data and the two need to live in one file;
+  every column is prefixed `upright_` for that reason.
 
 This file holds **raw collected inputs, not computed scores** — it is not
 `level_score`, `velocity_score`, or `integrity_score`. Turning these
@@ -70,6 +79,26 @@ the actual display).
 - **223 / 503 companies (~44%)** matched to an SBTi record.
 - **67 / 503 companies (~13%)** matched to a Climate TRACE Power-sector
   asset-ownership record.
+- **464 / 503 companies (~92%)** matched to an Upright Net Impact record
+  (fourth pass, 2026-09-13). Upright's source JSON has 505 companies, not
+  503 — a handful are stale (companies since acquired, taken private, or
+  removed from the index: e.g. Hess→Chevron, Discover Financial→Capital
+  One, Pioneer Natural Resources→ExxonMobil, Electronic Arts taken
+  private) and were correctly left unmatched rather than force-matched,
+  per this project's hard scope constraint that every row must be a
+  *current* S&P 500 constituent. A few more (Alphabet, Honeywell, Fox,
+  News Corp) are genuinely ambiguous multi-class/multi-entity names in
+  Upright's data and were also left unmatched rather than guessed. See
+  `pipeline/upright/match_upright.py`'s `UPRIGHT_NAME_ALIASES` table for
+  the ~39 hand-verified same-company name differences that *were* safely
+  resolved (e.g. Upright's "CISCO SYSTEMS" ↔ our constituent list's
+  "Cisco").
+- **Found in the course of this matching**: `sp500_constituents.csv` has
+  a literal stray `|` character in ResMed's `Security` field
+  (`"ResMed|"`), which silently blocked a normal name match until it was
+  special-cased. Worth cleaning up at the source — every other script
+  that reads that column (SBTi, Climate TRACE matching) may be similarly
+  affected for this one ticker.
 
 ## Columns
 
@@ -168,6 +197,34 @@ wasn't completed this session — see `pipeline/README.md`).
 | `climatetrace_power_subsectors` | Which Power subsectors these assets fall into (e.g. `electricity-generation`), semicolon-separated. |
 | `climatetrace_power_countries` | ISO3 country codes of the assets' locations, semicolon-separated. |
 | `climatetrace_power_avg_share_percent` | The company's average ownership share across its matched assets, 0-100. **Read this before treating a match as meaningful**: utilities like Duke Energy (`DUK`) average ~92% (real operational ownership), while asset managers like BlackRock (`BLK`, 1,862 assets, ~5.2% avg share) and State Street (`STT`, 1,066 assets, ~3.1% avg share) show up because of small index-fund equity stakes, not operational control — a completely different signal that a naive "asset count" alone would conflate. |
+
+### Upright — a separate teammate dataset (monetized impact, NOT tCO2e)
+
+**Read this before using any `upright_*` column.** Upright's Net Impact
+Model measures modeled, monetized externalities in **cents per dollar of
+revenue** — e.g. `-15.2` means "this company's environmental impact costs
+society an estimated 15.2 cents for every dollar of revenue it earns."
+That is not a physical emissions quantity and cannot be added to,
+divided by, or plotted on the same axis as `scope1_tco2e` or
+`tier2_scope1_tco2e` anywhere in this file.
+
+| Column | Meaning |
+|---|---|
+| `upright_matched` | `True`/`False` — whether this ticker matched an Upright record by exact (or hand-verified-alias) company name. |
+| `upright_company_name` | The company name as it appears in Upright's own export (often an informal short name, e.g. `WALMART`). |
+| `upright_industry` | Upright's own industry label for the company (their own classification, not GICS). |
+| `upright_revenue_musd` | Revenue in millions of USD, as used by Upright's own model (their own data source, not `yfinance` — may differ slightly from `revenue_usd` or Tier 2's financials). |
+| `upright_employee_count` | Employee count per Upright. |
+| `upright_net_impact_ratio_percent` | `(positive impact − negative impact) / positive impact`, as a percentage, across *all four* categories combined — Upright's single top-line "is this company net-positive or net-negative for the world" number. |
+| `upright_rank_top_percent` | The company's percentile rank (Upright's own methodology) — check `upright_url` for the precise definition before citing this number, it wasn't independently re-derived here. |
+| `upright_environment_cost_cents_per_dollar` / `upright_environment_benefit_cents_per_dollar` | Total Environment-category cost/benefit (cents per dollar of revenue) — the broadest environmental figure Upright publishes, covering GHG emissions, non-GHG emissions, resource use, biodiversity, and waste combined. |
+| `upright_ghg_emissions_cost_cents_per_dollar` / `upright_ghg_emissions_benefit_cents_per_dollar` | The GHG-emissions-specific slice of the Environment category. Still cents/$ revenue, **not tCO2e** — this is the column most likely to be confused with this file's real emissions data, so don't be. |
+| `upright_non_ghg_emissions_cost_cents_per_dollar` | Non-GHG environmental cost (e.g. other pollution), same unit. |
+| `upright_society_cost_cents_per_dollar` / `_benefit_...` | Society-category total (jobs, taxes, equality & human rights, etc.) — likely more relevant to a teammate's Economic Resilience or Transition Readiness pillar than to this Environmental section. |
+| `upright_health_cost_cents_per_dollar` / `_benefit_...` | Health-category total (e.g. product health impacts). |
+| `upright_knowledge_cost_cents_per_dollar` / `_benefit_...` | Knowledge-category total (R&D, education contributions). |
+| `upright_largest_cost` / `upright_largest_benefit` | Free text naming the company's single largest negative/positive impact driver and a rough physical-unit figure when Upright provides one (e.g. `"GHG emissions 110M tons of GHG emissions"` for Walmart) — **only present when that specific category happens to be the company's single largest**, so this text field cannot be read as "GHG tonnage for every company" (only ~152 of 505 Upright rows happen to have GHG as their top driver). |
+| `upright_url` | Link to the company's full profile on Upright's platform, for anything not captured in these summary columns. |
 
 ## Known data-quality flags worth reading before using a specific row
 
