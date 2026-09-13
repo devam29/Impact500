@@ -97,6 +97,9 @@ not reinvented, by every new session.
   recreated** — an earlier off-by-one in batch generation made it an
   exact duplicate of batch 01's company list, so batch 01 already covers
   it; batches 03-11 correctly cover the true remainder with no gaps.
+- `build_combined_dataset.py` — joins the master emissions file with
+  `sbti/sbti_matches.csv` by ticker into one file,
+  `data/environmental_combined.csv`. See the SBTi section below.
 
 ## EPA GHGRP supplemental source (Scope 1 only, zero search cost)
 
@@ -123,6 +126,45 @@ Matching is deliberately conservative (exact normalized name only, no
 fuzzy matching) to avoid a false-positive company match — a ticker not
 in the file was checked and genuinely doesn't have an exact match, not
 skipped.
+
+## SBTi supplemental source (Velocity input, zero search cost)
+
+`sbti/sbti_matches.csv` is a lookup table built from the Science Based
+Targets initiative's official by-company target dashboard export
+(`sbti/sbti_companies.xlsx`, ~15,600 companies globally, free download at
+https://files.sciencebasedtargets.org/production/files/companies-excel.xlsx,
+updated weekly) matched to our tickers by exact normalized company name —
+same conservative, no-fuzzy-matching philosophy as the EPA GHGRP match
+above, for the same reason (avoid a false-positive company match).
+Re-run `py sbti/match_sbti.py` any time the roster changes or the source
+file is refreshed.
+
+This is a **different sub-score's input than everything else in this
+pipeline**: it doesn't give a Scope 1/2 tonnage (that's the Level input,
+collected everywhere else in this file) — it gives near-term/long-term/
+net-zero target status, target years, and the target's own free-text
+description (which usually states the exact % reduction and base year),
+which is exactly the "real science-based pathway" benchmark the Velocity
+sub-score is designed to compare a company's actual trajectory against.
+Useful even for a ticker with no Level data at all — 33 of our currently
+`data_source=none` companies (as of the 2026-09-13 SBTi pull) turned out
+to have a real, matchable SBTi record.
+
+Also genuinely useful for **Integrity**, not just Velocity: `Commitment
+removed` is a real status SBTi tracks (a company set a target, then let it
+lapse or withdrew it) — 21 of our 222 matches carry this status as of this
+pull, Tesla among them. A company that abandoned a science-based target
+is arguably a worse signal than one that never set one, and this dataset
+is the only source in this pipeline that can currently surface that.
+
+`build_combined_dataset.py` (in `pipeline/`, run after `merge_batches.py`
+and `sbti/match_sbti.py`) joins `environmental_emissions_master.csv` with
+`sbti/sbti_matches.csv` by ticker into one file,
+`data/environmental_combined.csv` — still raw collected inputs, not a
+computed score, same spirit as the master file itself. A ticker with no
+SBTi match gets `sbti_matched=False` and blank `sbti_*` fields, same
+leave-it-visible convention as `data_source=none` elsewhere in this
+pipeline.
 
 ## Exact steps to resume
 
