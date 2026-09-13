@@ -1,7 +1,7 @@
 """
 Peer-median PROXY estimate of Upright-style Net Impact metrics for the
 ~33 current S&P 500 tickers Upright's export has no real record for (see
-match_upright.py and WIKIPEDIA_VERIFICATION.md for why those 33 aren't
+match_upright.py and docs/UPRIGHT_DATA_VERIFICATION.md for why those 33 aren't
 covered -- mostly companies added to the S&P 500 since Upright's "S&P 500
 ESG" snapshot was last refreshed, plus a few genuinely-split businesses
 like Honeywell that can't reuse a pre-split score).

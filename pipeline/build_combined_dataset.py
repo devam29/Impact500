@@ -11,8 +11,11 @@ Combine everything this pipeline has collected so far into one CSV:
   climate_trace/match_climate_trace.py)
 - tier2_estimation/tier2_estimates.csv, if it exists (Level input,
   ESTIMATED not disclosed -- sector-median emissions intensity scaled by
-  the company's own revenue/employees, for tickers with no real report.
-  Per tier2_estimation/estimate_tier2.py.)
+  the company's own revenue/employees. Scope 1 and Scope 2 are estimated
+  INDEPENDENTLY: a ticker with a real Scope 1 but no real Scope 2 gets
+  only a Scope 2 estimate, and vice versa -- tagged separately via
+  `scope1_is_estimated`/`scope2_is_estimated`. Per
+  tier2_estimation/estimate_tier2.py.)
 - upright/upright_matches.csv, if it exists (a completely separate
   teammate dataset -- Upright Project's Net Impact Model. NOT a Scope 1/2
   tCO2e figure: it's a modeled, monetized cost/benefit score in "cents
@@ -69,10 +72,15 @@ CLIMATE_TRACE_FIELDS = [
     "climatetrace_power_countries", "climatetrace_power_avg_share_percent",
 ]
 
-TIER2_FIELDS = [
-    "tier2_scope1_tco2e", "tier2_scope2_tco2e", "tier2_method",
-    "tier2_sector_used", "tier2_peer_count", "tier2_notes",
+TIER2_SCOPE1_FIELDS = [
+    "tier2_scope1_tco2e", "tier2_scope1_method", "tier2_scope1_sector_used",
+    "tier2_scope1_peer_count", "tier2_scope1_notes",
 ]
+TIER2_SCOPE2_FIELDS = [
+    "tier2_scope2_tco2e", "tier2_scope2_method", "tier2_scope2_sector_used",
+    "tier2_scope2_peer_count", "tier2_scope2_notes",
+]
+TIER2_FIELDS = TIER2_SCOPE1_FIELDS + TIER2_SCOPE2_FIELDS
 
 UPRIGHT_SOURCE_FIELDS = [
     "upright_company_name", "industry", "revenue_musd", "employee_count",
@@ -201,11 +209,12 @@ def main():
 
     out_fields = (master_fields + ["sbti_matched"] + SBTI_FIELDS
                   + ["climatetrace_power_matched"] + CLIMATE_TRACE_FIELDS
-                  + ["is_estimated"] + TIER2_FIELDS
+                  + ["is_estimated", "scope1_is_estimated", "scope2_is_estimated"] + TIER2_FIELDS
                   + ["upright_matched"] + UPRIGHT_FIELDS + UPRIGHT_ESTIMATE_META_FIELDS)
     sbti_matched_count = 0
     ct_matched_count = 0
-    tier2_used_count = 0
+    scope1_estimated_count = 0
+    scope2_estimated_count = 0
     upright_matched_count = 0
     upright_estimated_count = 0
     with open(OUT_PATH, "w", newline="", encoding="utf-8") as f:
@@ -234,19 +243,40 @@ def main():
                 for field in CLIMATE_TRACE_FIELDS:
                     out[field] = ""
 
-            # Tier 2 only ever fills in for a ticker with no real Level
-            # number -- never overrides real disclosed data.
-            has_real_scope = bool(row.get("scope1_tco2e") or row.get("scope2_location_tco2e")
-                                   or row.get("scope2_market_tco2e"))
-            tier2 = tier2_by_ticker.get(row["ticker"])
-            if tier2 and not has_real_scope:
-                tier2_used_count += 1
-                out["is_estimated"] = "True"
-                out.update(tier2)
+            # Scope 1 and Scope 2 are estimated INDEPENDENTLY -- a row can
+            # have a real Scope 1 and an estimated Scope 2 side by side
+            # (or vice versa). Tier 2 only ever fills the specific scope
+            # that has no real value; it never overrides a real number.
+            has_real_scope1 = bool(row.get("scope1_tco2e"))
+            has_real_scope2 = bool(row.get("scope2_location_tco2e") or row.get("scope2_market_tco2e"))
+            tier2 = tier2_by_ticker.get(row["ticker"], {})
+
+            if not has_real_scope1 and tier2.get("tier2_scope1_tco2e"):
+                scope1_estimated_count += 1
+                out["scope1_is_estimated"] = "True"
+                for field in TIER2_SCOPE1_FIELDS:
+                    out[field] = tier2.get(field, "")
             else:
-                out["is_estimated"] = "False"
-                for field in TIER2_FIELDS:
+                out["scope1_is_estimated"] = "False"
+                for field in TIER2_SCOPE1_FIELDS:
                     out[field] = ""
+
+            if not has_real_scope2 and tier2.get("tier2_scope2_tco2e"):
+                scope2_estimated_count += 1
+                out["scope2_is_estimated"] = "True"
+                for field in TIER2_SCOPE2_FIELDS:
+                    out[field] = tier2.get(field, "")
+            else:
+                out["scope2_is_estimated"] = "False"
+                for field in TIER2_SCOPE2_FIELDS:
+                    out[field] = ""
+
+            # Backward-compatible summary flag: "some estimated figure
+            # appears on this row" -- kept for anything still keying off
+            # the single old is_estimated column, but scope1_is_estimated/
+            # scope2_is_estimated are the columns to actually use now.
+            out["is_estimated"] = "True" if (out["scope1_is_estimated"] == "True"
+                                              or out["scope2_is_estimated"] == "True") else "False"
 
             upright = upright_by_ticker.get(row["ticker"])
             if upright:
@@ -278,7 +308,8 @@ def main():
 
     print(f"Rows with an SBTi match: {sbti_matched_count} / {len(rows)}")
     print(f"Rows with a Climate TRACE Power-ownership match: {ct_matched_count} / {len(rows)}")
-    print(f"Rows using a Tier 2 estimate: {tier2_used_count} / {len(rows)}")
+    print(f"Rows with a Scope 1 Tier 2 estimate: {scope1_estimated_count} / {len(rows)}")
+    print(f"Rows with a Scope 2 Tier 2 estimate: {scope2_estimated_count} / {len(rows)}")
     print(f"Rows with a real Upright Net Impact match: {upright_matched_count} / {len(rows)}")
     print(f"Rows using an Upright PROXY estimate: {upright_estimated_count} / {len(rows)}")
     print(f"Wrote {OUT_PATH}")
