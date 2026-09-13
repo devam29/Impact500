@@ -88,10 +88,6 @@ UPRIGHT_NAME_ALIASES = {
     "L3HARRIS TECHNOLOGIES": "LHX",
     "GLOBE LIFE AND ACCIDENT INSURANCE": "GL",
     "CARRIER": "CARR",
-    "RESMED": "RMD",  # sp500_constituents.csv has a stray "|" in this
-                       # row's Security field ("ResMed|") that silently
-                       # blocks a normal name match -- worth fixing at
-                       # the source too, flagged separately.
     "BROWN-FORMAN": "BF.B",  # constituent's Security field uses an
                               # en-dash ("Brown–Forman"), not a
                               # hyphen, which normalize() doesn't strip.
