@@ -1,3 +1,30 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# --- Environmental pillar (pipeline/) ---
+
 # Cached/regeneratable downloads -- large, and re-fetchable from URLs
 # already in the scripts/README, so not worth versioning.
 pipeline/pdf_extraction/pdfs/
@@ -17,3 +44,10 @@ pipeline/scoring/scores_for_chart.json
 # Local assistant working files -- not part of the project, kept locally only.
 CLAUDE.md
 .claude/
+
+# Local LaTeX report draft -- not part of the pushed project, kept on this machine only.
+report_latex/
+
+# One-off downloaded ZIP snapshot of the submission repo, already merged into
+# this tree above -- kept on disk for reference only, never pushed.
+hackathon-application-main/

@@ -1,0 +1,231 @@
+company,row_type,category,metric,cost,benefit,unit,model_release,upright_url
+KELLANOVA,category_total,Society,Society,-0.3,+5.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,category_total,Knowledge,Knowledge,-1.5,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,category_total,Health,Health,-10.3,+9.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,category_total,Environment,Environment,-16.9,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Society,Taxes,,+3.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Society,Jobs,,+2.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Society,Societal infrastructure,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Society,Equality & human rights,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Society,Societal stability,-0.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Knowledge,Scarce human capital,-1.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Health,Physical diseases,-10.0,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Health,Mental diseases,-0.2,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Health,Nutrition,,+6.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Health,Relationships,,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Health,Meaning & joy,-0.1,+2.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Environment,GHG emissions,-4.3,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Environment,Non-GHG emissions,-2.6,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Environment,Scarce natural resources,-1.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Environment,Biodiversity,-5.9,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+KELLANOVA,submetric,Environment,Waste,-3.0,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/c09b77af-7cbc-44a6-b8bc-b606ef32743c/Kellanova/
+NORFOLK SOUTHERN RAILWAY,category_total,Society,Society,-1.3,+20.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,category_total,Knowledge,Knowledge,-2.9,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,category_total,Health,Health,-3.3,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,category_total,Environment,Environment,-27.4,+5.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Society,Taxes,,+5.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Society,Jobs,,+3.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Society,Societal infrastructure,,+10.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Society,Equality & human rights,-0.4,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Society,Societal stability,-0.9,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Knowledge,Scarce human capital,-2.9,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Knowledge,Creating knowledge,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Health,Physical diseases,-2.7,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Health,Mental diseases,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Health,Nutrition,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Health,Relationships,-0.2,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Health,Meaning & joy,-0.3,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Environment,GHG emissions,-14.3,+4.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Environment,Non-GHG emissions,-5.6,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Environment,Scarce natural resources,-1.0,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Environment,Biodiversity,-4.8,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+NORFOLK SOUTHERN RAILWAY,submetric,Environment,Waste,-1.8,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/64a4b7d8-0b79-4382-92bb-397f6182e72e/Norfolk%20Southern%20Railway/
+DAVITA,category_total,Society,Society,-1.3,+15.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,category_total,Knowledge,Knowledge,-4.1,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,category_total,Health,Health,-3.2,+23.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,category_total,Environment,Environment,-4.3,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Society,Taxes,,+7.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Society,Jobs,,+7.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Society,Societal infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Society,Equality & human rights,-1.3,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Society,Societal stability,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Knowledge,Scarce human capital,-4.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Knowledge,Creating knowledge,,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Health,Physical diseases,-2.6,+22.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Health,Mental diseases,-0.3,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Health,Nutrition,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Health,Relationships,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Health,Meaning & joy,-0.4,+0.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Environment,GHG emissions,-1.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Environment,Non-GHG emissions,-0.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Environment,Scarce natural resources,-0.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Environment,Biodiversity,-0.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+DAVITA,submetric,Environment,Waste,-1.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cf0f701b-f0f9-4440-bd4d-7cb111cb18a4/DaVita/
+HORMEL FOODS,category_total,Society,Society,-0.4,+7.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,category_total,Knowledge,Knowledge,-1.4,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,category_total,Health,Health,-8.2,+13.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,category_total,Environment,Environment,-18.8,+0.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Society,Taxes,,+3.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Society,Jobs,,+3.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Society,Societal infrastructure,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Society,Equality & human rights,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Society,Societal stability,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Knowledge,Scarce human capital,-1.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Knowledge,Distributing knowledge,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Health,Physical diseases,-8.0,+0.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Health,Mental diseases,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Health,Nutrition,,+11.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Health,Relationships,,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Health,Meaning & joy,-0.1,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Environment,GHG emissions,-7.2,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Environment,Non-GHG emissions,-2.3,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Environment,Scarce natural resources,-1.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Environment,Biodiversity,-6.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HORMEL FOODS,submetric,Environment,Waste,-1.9,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/72d34534-7157-4451-9a8d-dd0cd3510140/Hormel%20Foods/
+HILTON WORLDWIDE,category_total,Society,Society,-1.2,+14.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,category_total,Knowledge,Knowledge,-2.7,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,category_total,Health,Health,-6.4,+4.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,category_total,Environment,Environment,-20.6,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Society,Taxes,,+7.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Society,Jobs,,+5.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Society,Societal infrastructure,,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Society,Equality & human rights,-0.6,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Society,Societal stability,-0.5,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Knowledge,Scarce human capital,-2.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Knowledge,Distributing knowledge,,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Health,Physical diseases,-4.1,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Health,Mental diseases,-1.3,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Health,Nutrition,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Health,Relationships,-0.3,+1.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Health,Meaning & joy,-0.7,+1.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Environment,GHG emissions,-8.9,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Environment,Non-GHG emissions,-2.8,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Environment,Scarce natural resources,-1.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Environment,Biodiversity,-4.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+HILTON WORLDWIDE,submetric,Environment,Waste,-2.5,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/6aa08d95-cfbd-43eb-8a63-3b4100fe85f1/Hilton%20Worldwide/
+J. B. HUNT,category_total,Society,Society,-0.6,+17.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,category_total,Knowledge,Knowledge,-2.4,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,category_total,Health,Health,-2.1,+0.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,category_total,Environment,Environment,-22.5,+1.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Society,Taxes,,+4.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Society,Jobs,,+3.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Society,Societal infrastructure,,+8.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Society,Equality & human rights,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Society,Societal stability,-0.3,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Knowledge,Scarce human capital,-2.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Knowledge,Creating knowledge,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Health,Physical diseases,-1.7,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Health,Mental diseases,-0.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Health,Nutrition,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Health,Relationships,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Health,Meaning & joy,-0.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Environment,GHG emissions,-11.1,+1.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Environment,Non-GHG emissions,-5.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Environment,Scarce natural resources,-0.8,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Environment,Biodiversity,-3.9,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+J. B. HUNT,submetric,Environment,Waste,-1.5,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/09493926-ccfe-4187-8966-658e1556e954/J.%20B.%20Hunt/
+CONAGRA BRANDS,category_total,Society,Society,-0.3,+6.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,category_total,Knowledge,Knowledge,-1.5,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,category_total,Health,Health,-6.3,+18.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,category_total,Environment,Environment,-16.7,+1.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Society,Taxes,,+3.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Society,Jobs,,+3.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Society,Societal infrastructure,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Society,Equality & human rights,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Society,Societal stability,-0.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Knowledge,Scarce human capital,-1.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Knowledge,Distributing knowledge,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Health,Physical diseases,-6.2,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Health,Mental diseases,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Health,Nutrition,,+16.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Health,Relationships,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Health,Meaning & joy,-0.1,+1.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Environment,GHG emissions,-5.2,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Environment,Non-GHG emissions,-2.6,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Environment,Scarce natural resources,-0.9,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Environment,Biodiversity,-5.3,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CONAGRA BRANDS,submetric,Environment,Waste,-2.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/923ab1fd-d57d-473a-b7db-28058318424c/Conagra%20Brands/
+CAESARS ENTERTAINMENT,category_total,Society,Society,-4.2,+9.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,category_total,Knowledge,Knowledge,-2.0,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,category_total,Health,Health,-24.0,+6.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,category_total,Environment,Environment,-7.8,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Society,Taxes,,+5.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Society,Jobs,,+3.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Society,Societal infrastructure,,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Society,Equality & human rights,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Society,Societal stability,-3.9,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Knowledge,Scarce human capital,-2.0,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Knowledge,Distributing knowledge,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Health,Physical diseases,-6.0,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Health,Mental diseases,-9.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Health,Nutrition,,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Health,Relationships,-2.2,+2.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Health,Meaning & joy,-6.3,+3.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Environment,GHG emissions,-3.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Environment,Non-GHG emissions,-1.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Environment,Scarce natural resources,-0.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Environment,Biodiversity,-1.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+CAESARS ENTERTAINMENT,submetric,Environment,Waste,-1.6,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/a16ec7ef-132c-4c76-986e-9c85a66e4a6e/Caesars%20Entertainment/
+INTERNATIONAL FLAVORS & FRAGRANCES,category_total,Society,Society,-0.5,+7.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,category_total,Knowledge,Knowledge,-2.3,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,category_total,Health,Health,-4.3,+9.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,category_total,Environment,Environment,-12.9,+1.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Society,Taxes,,+3.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Society,Jobs,,+2.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Society,Societal infrastructure,,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Society,Equality & human rights,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Society,Societal stability,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Knowledge,Scarce human capital,-2.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Knowledge,Distributing knowledge,,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Health,Physical diseases,-3.9,+3.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Health,Mental diseases,-0.3,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Health,Nutrition,,+3.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Health,Relationships,,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Health,Meaning & joy,-0.1,+1.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Environment,GHG emissions,-5.6,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Environment,Non-GHG emissions,-2.4,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Environment,Scarce natural resources,-0.6,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Environment,Biodiversity,-2.6,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+INTERNATIONAL FLAVORS & FRAGRANCES,submetric,Environment,Waste,-1.7,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/cdc9d8e2-956f-4ac2-bfb4-940424d5c80a/International%20Flavors%20%26%20Fragrances/
+VERTEX PHARMACEUTICALS,category_total,Society,Society,-1.2,+6.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,category_total,Knowledge,Knowledge,-3.9,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,category_total,Health,Health,-5.5,+21.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,category_total,Environment,Environment,-9.7,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Society,Taxes,,+4.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Society,Jobs,,+2.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Society,Societal infrastructure,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Society,Equality & human rights,-1.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Society,Societal stability,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Knowledge,Scarce human capital,-3.9,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Health,Physical diseases,-5.3,+19.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Health,Mental diseases,-0.1,+0.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Health,Nutrition,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Health,Relationships,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Health,Meaning & joy,,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Environment,GHG emissions,-4.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Environment,Non-GHG emissions,-2.0,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Environment,Scarce natural resources,-0.8,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Environment,Biodiversity,-1.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/
+VERTEX PHARMACEUTICALS,submetric,Environment,Waste,-1.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/00cb2302-e758-4d5c-bb09-5a85296a8f59/Vertex%20Pharmaceuticals/

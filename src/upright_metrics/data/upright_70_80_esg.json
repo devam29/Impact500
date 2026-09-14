@@ -1,0 +1,1792 @@
+[
+  {
+    "company": "ABBOTT LABORATORIES",
+    "industry": "Pharmaceuticals and Biotechnology",
+    "screener_revenue_musd": "41,950",
+    "largest_cost": "GHG emissions 3.13M tons of GHG emissions",
+    "largest_benefit": "Physical diseases 457k life years",
+    "screener_net_impact_ratio": "+55%",
+    "screener_percentile": "85th percentile",
+    "upright_url": "https://uprightplatform.com/company/bae297bf-d5af-4d2c-95cd-a2840722dec4/Abbott%20Laboratories/",
+    "country_of_hq": "United States of America",
+    "revenue": "41,950.00 M$",
+    "employee_count": "114,000 employees",
+    "net_impact_ratio": "+55%",
+    "rank_top_percent": "16%",
+    "benchmark_percent_lower": "84.17",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Abbott Laboratories uses resources or causes negative impacts mostly in categories GHG emissions, Scarce human capital, and Physical diseases. The largest negative impact of Abbott Laboratories in category GHG emissions seems to be driven mostly by its Infant formula, Dietary supplements, and Diagnostic test kits products.",
+    "top_positive_impact_explanation": "Abbott Laboratories seems to create the most significant positive value in categories Physical diseases, Taxes, and Nutrition. The largest positive contribution comes from its Physical diseases impact, which is mostly driven by its Insulin pumps, Diagnostic test kits, Rapid diagnostic tests, and Influenza vaccines products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.5",
+        "benefit": "+8.5",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-3.1",
+        "benefit": "+1.0",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-2.6",
+        "benefit": "+20.4",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-7.4",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+4.8",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+3.5",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.4",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-3.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+1.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-2.4",
+        "benefit": "+13.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.2",
+        "benefit": "+2.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+3.8",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.1",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-3.1",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-1.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.4",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-1.3",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-1.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:01.098424+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "BEST BUY",
+    "industry": "Retail",
+    "screener_revenue_musd": "41,528",
+    "largest_cost": "GHG emissions 6.02M tons of GHG emissions",
+    "largest_benefit": "Taxes 44.7M days of primary education",
+    "screener_net_impact_ratio": "-25%",
+    "screener_percentile": "22nd percentile",
+    "upright_url": "https://uprightplatform.com/company/8765771b-f4ee-4a48-a191-88a98e4c49ac/Best%20Buy/",
+    "country_of_hq": "United States of America",
+    "revenue": "41,528.00 M$",
+    "employee_count": "85,000 employees",
+    "net_impact_ratio": "-25%",
+    "rank_top_percent": "79%",
+    "benchmark_percent_lower": "21.74",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Best Buy uses resources or causes negative impacts mostly in categories GHG emissions, Scarce human capital, and Waste. The largest negative impact of Best Buy in category GHG emissions seems to be driven mostly by its Physical retail of home appliances, Online retail of home electrical appliances, Online retail of kitchen appliances for homes, Physical retail of gym machines, Online retail of gym machines, and Physical retail of tablet computers products.",
+    "top_positive_impact_explanation": "Best Buy seems to create the most significant positive value in categories Taxes, Jobs, and Societal infrastructure. The positive contribution in the Societal infrastructure impact category is mostly driven by its Physical retail of home appliances, Online retail of home electrical appliances, Online retail of kitchen appliances for homes, and Physical retail of gym machines products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.6",
+        "benefit": "+12.6",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-4.9",
+        "benefit": "+1.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-3.5",
+        "benefit": "+2.6",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-13.3",
+        "benefit": "+0.8",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+6.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+4.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+1.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.5",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-4.8",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+1.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "-0.1",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-1.7",
+        "benefit": "+1.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-1.3",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "-0.1",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.3",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-6.0",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-1.7",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.9",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-2.0",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-2.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:04.496068+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "LYONDELLBASELL INDUSTRIES",
+    "industry": "Chemicals",
+    "screener_revenue_musd": "40,734",
+    "largest_cost": "GHG emissions 10.7M tons of GHG emissions",
+    "largest_benefit": "Societal infrastructure 42.9M long-haul train rides",
+    "screener_net_impact_ratio": "-132%",
+    "screener_percentile": "3rd percentile",
+    "upright_url": "https://uprightplatform.com/company/2c6e53da-9b61-47e5-96c4-6aceeb2688ef/LyondellBasell%20Industries/",
+    "country_of_hq": "United Kingdom",
+    "revenue": "40,734.00 M$",
+    "employee_count": "18,970 employees",
+    "net_impact_ratio": "-132%",
+    "rank_top_percent": "98%",
+    "benchmark_percent_lower": "2.39",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "LyondellBasell Industries uses resources or causes negative impacts mostly in categories GHG emissions, Physical diseases, and Non-GHG emissions. The largest negative impact of LyondellBasell Industries in category GHG emissions seems to be driven mostly by its Alkenes, Polypropylene, Synthetic resins, Polyolefins, Epoxyethane (Ethylene oxide), and Gasoline products.",
+    "top_positive_impact_explanation": "LyondellBasell Industries seems to create the most significant positive value in categories Societal infrastructure, Taxes, and Jobs. The largest positive contribution comes from its Societal infrastructure impact, which is mostly driven by its Low sulphur fuel oil, Gasoline, Diesel, and Kerosene jet fuel products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.8",
+        "benefit": "+9.5",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-2.2",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-4.4",
+        "benefit": "+1.6",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-20.9",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+3.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+2.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+3.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.2",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-2.2",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-3.8",
+        "benefit": "+1.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.2",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.3",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-10.9",
+        "benefit": "+0.5",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-3.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.8",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-3.0",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-2.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:07.963196+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "DOLLAR GENERAL",
+    "industry": "Retail",
+    "screener_revenue_musd": "40,612",
+    "largest_cost": "Physical diseases 303k life years",
+    "largest_benefit": "Taxes 42.4M days of primary education",
+    "screener_net_impact_ratio": "-70%",
+    "screener_percentile": "10th percentile",
+    "upright_url": "https://uprightplatform.com/company/b0bba363-48ba-4fc0-9491-097e5ffe6d4e/Dollar%20General/",
+    "country_of_hq": "United States of America",
+    "revenue": "40,612.00 M$",
+    "employee_count": "194,200 employees",
+    "net_impact_ratio": "-70%",
+    "rank_top_percent": "91%",
+    "benchmark_percent_lower": "9.65",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Dollar General uses resources or causes negative impacts mostly in categories Physical diseases, GHG emissions, and Scarce human capital. The largest negative impact of Dollar General in category Physical diseases seems to be driven mostly by its Physical retail of tobacco products at a discount store, Physical retail of ready-meals and snack foods at a discount store, and Physical retail of alcoholic beverages at a discount store products.",
+    "top_positive_impact_explanation": "Dollar General seems to create the most significant positive value in categories Taxes, Jobs, and Nutrition. The positive contribution in the Nutrition impact category is mostly driven by its Physical retail of ready-meals and snack foods at a discount store, Physical retail of bread, and Physical retail of cereal products at a discount store products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.8",
+        "benefit": "+11.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-3.6",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-12.8",
+        "benefit": "+6.0",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-14.9",
+        "benefit": "+0.9",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+6.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+4.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+1.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.2",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.7",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-3.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-9.1",
+        "benefit": "+1.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-2.7",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+3.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "-0.1",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.8",
+        "benefit": "+0.8",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-6.9",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-2.2",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-2.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-2.5",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:11.618664+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "WARNER BROS. DISCOVERY",
+    "industry": "Media",
+    "screener_revenue_musd": "39,321",
+    "largest_cost": "Scarce human capital 21.6k scarce worker years",
+    "largest_benefit": "Taxes 33.1M days of primary education",
+    "screener_net_impact_ratio": "+9%",
+    "screener_percentile": "41st percentile",
+    "upright_url": "https://uprightplatform.com/company/99ef7c3d-5b55-4c21-898d-89d94cde4508/Warner%20Bros.%20Discovery/",
+    "country_of_hq": "United States of America",
+    "revenue": "39,321.00 M$",
+    "employee_count": "35,000 employees",
+    "net_impact_ratio": "+9%",
+    "rank_top_percent": "60%",
+    "benchmark_percent_lower": "40.75",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Warner Bros. Discovery uses resources or causes negative impacts mostly in categories Scarce human capital, Physical diseases, and GHG emissions. The negative contribution in the Physical diseases impact category seems to be driven mostly by its Television broadcasting, TV show streaming services, and Movie streaming services products.",
+    "top_positive_impact_explanation": "Warner Bros. Discovery seems to create the most significant positive value in categories Taxes, Jobs, and Meaning & joy. The positive contribution in the Meaning & joy impact category is mostly driven by its Television broadcasting, TV show streaming services, and Movie streaming services products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.2",
+        "benefit": "+9.1",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-3.4",
+        "benefit": "+0.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-6.2",
+        "benefit": "+4.9",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-3.8",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+4.9",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+3.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.1",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-3.3",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "-0.1",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-3.1",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-1.3",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "-1.3",
+        "benefit": "+1.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.5",
+        "benefit": "+3.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-1.8",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-0.4",
+        "benefit": "+0.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-0.4",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-0.5",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:15.016040+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "SALESFORCE",
+    "industry": "Computer Software",
+    "screener_revenue_musd": "37,895",
+    "largest_cost": "Scarce human capital 38.1k scarce worker years",
+    "largest_benefit": "Taxes 43.9M days of primary education",
+    "screener_net_impact_ratio": "+35%",
+    "screener_percentile": "64th percentile",
+    "upright_url": "https://uprightplatform.com/company/71233f77-d7e1-4403-94ac-2bf4ab356b86/Salesforce/",
+    "country_of_hq": "United States of America",
+    "revenue": "37,895.00 M$",
+    "employee_count": "83,334 employees",
+    "net_impact_ratio": "+35%",
+    "rank_top_percent": "37%",
+    "benchmark_percent_lower": "63.49",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Salesforce uses resources or causes negative impacts mostly in categories Scarce human capital, GHG emissions, and Waste. The negative contribution in the GHG emissions impact category seems to be driven mostly by its E-commerce order fulfillment services, Sustainability management software for the automotive industry, Sales pipeline software for the energy industry, Customer experience research software for the energy industry, CRM systems for the automotive industry, and CRM systems for the energy industry products.",
+    "top_positive_impact_explanation": "Salesforce seems to create the most significant positive value in categories Taxes, Jobs, and Creating knowledge. The positive contribution in the Creating knowledge impact category is mostly driven by its Sustainability management software for the automotive industry, Sustainability management software, Sustainability management software for the manufacturing industry, Sustainability management software for the health industry, Sustainability management software for the technology industry, and Sustainability management software for the media industry products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.4",
+        "benefit": "+13.3",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-6.1",
+        "benefit": "+4.6",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-1.4",
+        "benefit": "+2.4",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-5.5",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+6.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+4.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+1.9",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.2",
+        "benefit": "+0.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.2",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-6.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+2.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "+1.8",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-1.0",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.3",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "-0.0",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.2",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-2.8",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-0.7",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.5",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-0.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-1.0",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:18.623570+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "MONDELEZ",
+    "industry": "Food and Beverage",
+    "screener_revenue_musd": "36,441",
+    "largest_cost": "Physical diseases 348k life years",
+    "largest_benefit": "Taxes 23.0M days of primary education",
+    "screener_net_impact_ratio": "-131%",
+    "screener_percentile": "3rd percentile",
+    "upright_url": "https://uprightplatform.com/company/731a2224-3710-4eef-9625-1e57f4f69172/Mondelez/",
+    "country_of_hq": "United States of America",
+    "revenue": "36,441.00 M$",
+    "employee_count": "90,000 employees",
+    "net_impact_ratio": "-131%",
+    "rank_top_percent": "98%",
+    "benchmark_percent_lower": "2.49",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Mondelez uses resources or causes negative impacts mostly in categories Physical diseases, Biodiversity, and GHG emissions. The largest negative impact of Mondelez in category Physical diseases seems to be driven mostly by its Chocolate, Salted crackers, and Sweet baked goods products.",
+    "top_positive_impact_explanation": "Mondelez seems to create the most significant positive value in categories Taxes, Jobs, and Meaning & joy. The positive contribution in the Meaning & joy impact category is mostly driven by its Chocolate, Salted crackers, and Sweet baked goods products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.3",
+        "benefit": "+6.7",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-1.6",
+        "benefit": "+0.0",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-12.3",
+        "benefit": "+6.5",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-17.1",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+3.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+3.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.2",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-1.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-11.7",
+        "benefit": "+0.8",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+2.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.1",
+        "benefit": "+2.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-4.5",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-2.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-1.0",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-5.9",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-3.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:21.957152+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "STARBUCKS",
+    "industry": "Food and Beverage",
+    "screener_revenue_musd": "36,176",
+    "largest_cost": "Physical diseases 302k life years",
+    "largest_benefit": "Jobs 240k direct or indirect jobs",
+    "screener_net_impact_ratio": "-85%",
+    "screener_percentile": "8th percentile",
+    "upright_url": "https://uprightplatform.com/company/522999b6-e702-427b-a439-9b65fc8c0ab1/Starbucks/",
+    "country_of_hq": "United States of America",
+    "revenue": "36,176.00 M$",
+    "employee_count": "361,000 employees",
+    "net_impact_ratio": "-85%",
+    "rank_top_percent": "93%",
+    "benchmark_percent_lower": "7.06",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Starbucks uses resources or causes negative impacts mostly in categories Physical diseases, Biodiversity, and GHG emissions. The largest negative impact of Starbucks in category Physical diseases seems to be driven mostly by its Cold coffee drinks with added sugar, Sugar-sweetened soft drinks, and Sweet baked goods products.",
+    "top_positive_impact_explanation": "Starbucks seems to create the most significant positive value in categories Jobs, Taxes, and Meaning & joy. The positive contribution in the Meaning & joy impact category is mostly driven by its Cold coffee drinks with added sugar, Ice tea, Sweet baked goods, and Sugar-sweetened soft drinks products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.2",
+        "benefit": "+9.9",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-1.5",
+        "benefit": "+0.0",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-11.0",
+        "benefit": "+6.7",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-18.6",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+4.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+5.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-1.5",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-10.2",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+3.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "-0.2",
+        "benefit": "+3.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-5.4",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-3.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-1.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-5.7",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-3.3",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:25.076667+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "VISA",
+    "industry": "Financial Services",
+    "screener_revenue_musd": "35,926",
+    "largest_cost": "Scarce human capital 31.9k scarce worker years",
+    "largest_benefit": "Taxes 23.3M days of primary education",
+    "screener_net_impact_ratio": "+17%",
+    "screener_percentile": "48th percentile",
+    "upright_url": "https://uprightplatform.com/company/3a340c69-583e-4dba-9377-df1c4fc2d2dc/Visa/",
+    "country_of_hq": "United States of America",
+    "revenue": "35,926.00 M$",
+    "employee_count": "31,600 employees",
+    "net_impact_ratio": "+17%",
+    "rank_top_percent": "53%",
+    "benchmark_percent_lower": "47.87",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "Visa uses resources or causes negative impacts mostly in categories Scarce human capital, GHG emissions, and Scarce natural resources. The negative contribution in the GHG emissions impact category seems to be driven mostly by its Cryptocurrency wallets, Card payment software, Mobile payment software, and Tokenization services products.",
+    "top_positive_impact_explanation": "Visa seems to create the most significant positive value in categories Taxes, Societal infrastructure, and Jobs. The positive contribution in the Societal infrastructure impact category is mostly driven by its Card payment software, Cross border payment processing software, and Prepaid payment cards products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.4",
+        "benefit": "+9.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-5.4",
+        "benefit": "+0.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-0.2",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-3.1",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+3.8",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+2.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+3.5",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.3",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-5.4",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+0.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "+0.7",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-0.1",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "",
+        "benefit": "+0.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-1.6",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-0.2",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.5",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-0.3",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-0.4",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:28.163299+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  },
+  {
+    "company": "CBRE",
+    "industry": "Real Estate",
+    "screener_revenue_musd": "35,767",
+    "largest_cost": "GHG emissions 4.49M tons of GHG emissions",
+    "largest_benefit": "Taxes 32.9M days of primary education",
+    "screener_net_impact_ratio": "+24%",
+    "screener_percentile": "54th percentile",
+    "upright_url": "https://uprightplatform.com/company/4124cab7-62a3-4cd1-9170-705eb28e4812/CBRE/",
+    "country_of_hq": "United States of America",
+    "revenue": "35,767.00 M$",
+    "employee_count": "140,000 employees",
+    "net_impact_ratio": "+24%",
+    "rank_top_percent": "47%",
+    "benchmark_percent_lower": "53.89",
+    "model_release": "1.12.0",
+    "top_negative_impact_explanation": "CBRE uses resources or causes negative impacts mostly in categories GHG emissions, Scarce human capital, and Biodiversity. The largest negative impact of CBRE in category GHG emissions seems to be driven mostly by its Property management services of commercial buildings, Construction project management, and Warehouse logistics products.",
+    "top_positive_impact_explanation": "CBRE seems to create the most significant positive value in categories Taxes, Societal infrastructure, and Jobs. The positive contribution in the Societal infrastructure impact category is mostly driven by its Construction project management, Property management services of commercial buildings, and Warehouse logistics products.",
+    "category_totals": {
+      "Society": {
+        "cost": "-0.3",
+        "benefit": "+13.9",
+        "unit": "cents per dollar of revenue"
+      },
+      "Knowledge": {
+        "cost": "-3.5",
+        "benefit": "+2.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Health": {
+        "cost": "-0.8",
+        "benefit": "+0.8",
+        "unit": "cents per dollar of revenue"
+      },
+      "Environment": {
+        "cost": "-9.5",
+        "benefit": "+1.0",
+        "unit": "cents per dollar of revenue"
+      }
+    },
+    "metrics": [
+      {
+        "category": "Society",
+        "metric": "Taxes",
+        "cost": "",
+        "benefit": "+5.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Jobs",
+        "cost": "",
+        "benefit": "+3.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal infrastructure",
+        "cost": "",
+        "benefit": "+5.0",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Equality & human rights",
+        "cost": "-0.2",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Society",
+        "metric": "Societal stability",
+        "cost": "-0.1",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Scarce human capital",
+        "cost": "-3.5",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Knowledge infrastructure",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Creating knowledge",
+        "cost": "",
+        "benefit": "+0.4",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Knowledge",
+        "metric": "Distributing knowledge",
+        "cost": "",
+        "benefit": "+2.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Physical diseases",
+        "cost": "-0.6",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Mental diseases",
+        "cost": "-0.1",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Nutrition",
+        "cost": "",
+        "benefit": "+0.1",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Relationships",
+        "cost": "",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Health",
+        "metric": "Meaning & joy",
+        "cost": "",
+        "benefit": "+0.3",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "GHG emissions",
+        "cost": "-5.2",
+        "benefit": "+0.6",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Non-GHG emissions",
+        "cost": "-1.1",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Scarce natural resources",
+        "cost": "-0.4",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Biodiversity",
+        "cost": "-1.6",
+        "benefit": "",
+        "unit": "cents per dollar of revenue"
+      },
+      {
+        "category": "Environment",
+        "metric": "Waste",
+        "cost": "-1.2",
+        "benefit": "+0.2",
+        "unit": "cents per dollar of revenue"
+      }
+    ],
+    "scraped_at_utc": "2026-09-13T02:02:31.447636+00:00",
+    "source_index": "S&P 500 ESG",
+    "source_url": "https://uprightplatform.com/?companyPreset=SP500ESG"
+  }
+]

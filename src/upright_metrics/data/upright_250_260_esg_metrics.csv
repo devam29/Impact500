@@ -1,0 +1,231 @@
+company,row_type,category,metric,cost,benefit,unit,model_release,upright_url
+WELLTOWER,category_total,Society,Society,-0.6,+22.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,category_total,Knowledge,Knowledge,-2.3,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,category_total,Health,Health,-1.5,+6.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,category_total,Environment,Environment,-7.7,+1.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Society,Taxes,,+6.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Society,Jobs,,+8.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Society,Societal infrastructure,,+8.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Society,Equality & human rights,-0.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Society,Societal stability,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Knowledge,Scarce human capital,-2.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Health,Physical diseases,-1.1,+2.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Health,Mental diseases,-0.3,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Health,Nutrition,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Health,Relationships,,+2.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Health,Meaning & joy,-0.1,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Environment,GHG emissions,-3.7,+0.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Environment,Non-GHG emissions,-0.8,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Environment,Scarce natural resources,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Environment,Biodiversity,-1.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+WELLTOWER,submetric,Environment,Waste,-1.8,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b9c97c5b-2b1d-444b-ac93-549176ea36a6/Welltower/
+NASDAQ,category_total,Society,Society,-0.6,+6.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,category_total,Knowledge,Knowledge,-6.2,+3.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,category_total,Health,Health,-0.3,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,category_total,Environment,Environment,-1.6,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Society,Taxes,,+3.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Society,Jobs,,+1.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Society,Societal infrastructure,,+1.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Society,Equality & human rights,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Society,Societal stability,-0.4,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Knowledge,Scarce human capital,-6.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Knowledge,Creating knowledge,,+1.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Knowledge,Distributing knowledge,,+2.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Health,Physical diseases,-0.2,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Health,Mental diseases,-0.0,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Health,Nutrition,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Health,Relationships,-0.0,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Health,Meaning & joy,-0.0,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Environment,GHG emissions,-0.7,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Environment,Non-GHG emissions,-0.2,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Environment,Scarce natural resources,-0.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Environment,Biodiversity,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+NASDAQ,submetric,Environment,Waste,-0.2,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/ad8d405a-80cc-41b2-b6c1-e3f9a3c279cd/Nasdaq/
+T. ROWE PRICE,category_total,Society,Society,-1.1,+5.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,category_total,Knowledge,Knowledge,-9.5,+2.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,category_total,Health,Health,-0.2,+0.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,category_total,Environment,Environment,-1.5,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Society,Taxes,,+3.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Society,Jobs,,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Society,Societal infrastructure,,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Society,Equality & human rights,-0.9,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Society,Societal stability,-0.2,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Knowledge,Scarce human capital,-9.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Knowledge,Distributing knowledge,,+2.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Health,Physical diseases,-0.1,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Health,Mental diseases,,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Health,Nutrition,,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Health,Relationships,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Health,Meaning & joy,,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Environment,GHG emissions,-0.6,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Environment,Non-GHG emissions,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Environment,Scarce natural resources,-0.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Environment,Biodiversity,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+T. ROWE PRICE,submetric,Environment,Waste,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/077850ba-b1be-4bdb-b788-51a24a5316e5/T.%20Rowe%20Price/
+ON SEMICONDUCTOR,category_total,Society,Society,-0.3,+9.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,category_total,Knowledge,Knowledge,-3.0,+2.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,category_total,Health,Health,-1.2,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,category_total,Environment,Environment,-7.7,+0.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Society,Taxes,,+4.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Society,Jobs,,+2.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Society,Societal infrastructure,,+1.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Society,Equality & human rights,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Society,Societal stability,-0.2,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Knowledge,Scarce human capital,-3.0,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Knowledge,Knowledge infrastructure,,+1.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Knowledge,Creating knowledge,,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Knowledge,Distributing knowledge,,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Health,Physical diseases,-0.7,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Health,Mental diseases,-0.4,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Health,Nutrition,,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Health,Relationships,-0.0,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Health,Meaning & joy,-0.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Environment,GHG emissions,-3.4,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Environment,Non-GHG emissions,-1.0,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Environment,Scarce natural resources,-1.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Environment,Biodiversity,-0.8,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+ON SEMICONDUCTOR,submetric,Environment,Waste,-1.3,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4f44c6e6-ac68-40d1-ac2c-5d1d22932f7d/On%20Semiconductor/
+INVESCO,category_total,Society,Society,-0.5,+6.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,category_total,Knowledge,Knowledge,-5.0,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,category_total,Health,Health,-0.5,+1.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,category_total,Environment,Environment,-2.6,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Society,Taxes,,+2.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Society,Jobs,,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Society,Societal infrastructure,,+3.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Society,Equality & human rights,-0.2,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Society,Societal stability,-0.3,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Knowledge,Scarce human capital,-5.0,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Knowledge,Knowledge infrastructure,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Knowledge,Creating knowledge,,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Knowledge,Distributing knowledge,,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Health,Physical diseases,-0.3,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Health,Mental diseases,-0.1,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Health,Nutrition,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Health,Relationships,-0.0,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Health,Meaning & joy,-0.1,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Environment,GHG emissions,-1.2,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Environment,Non-GHG emissions,-0.4,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Environment,Scarce natural resources,-0.2,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Environment,Biodiversity,-0.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+INVESCO,submetric,Environment,Waste,-0.4,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/34ebed8e-0bab-4881-afe8-75331e28ba4f/Invesco/
+SIMON PROPERTY,category_total,Society,Society,-0.2,+14.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,category_total,Knowledge,Knowledge,-3.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,category_total,Health,Health,-1.4,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,category_total,Environment,Environment,-10.5,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Society,Taxes,,+5.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Society,Jobs,,+5.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Society,Societal infrastructure,,+3.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Society,Equality & human rights,-0.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Society,Societal stability,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Knowledge,Scarce human capital,-3.1,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Knowledge,Creating knowledge,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Knowledge,Distributing knowledge,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Health,Physical diseases,-1.1,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Health,Mental diseases,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Health,Nutrition,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Health,Relationships,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Health,Meaning & joy,-0.1,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Environment,GHG emissions,-5.5,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Environment,Non-GHG emissions,-2.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Environment,Scarce natural resources,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Environment,Biodiversity,-1.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+SIMON PROPERTY,submetric,Environment,Waste,-1.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/8aa6a9a2-657e-4674-95a3-d7854ed7329f/Simon%20Property/
+FORTIVE,category_total,Society,Society,-0.4,+10.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,category_total,Knowledge,Knowledge,-3.5,+3.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,category_total,Health,Health,-1.2,+3.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,category_total,Environment,Environment,-6.8,+0.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Society,Taxes,,+5.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Society,Jobs,,+3.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Society,Societal infrastructure,,+1.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Society,Equality & human rights,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Society,Societal stability,-0.2,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Knowledge,Scarce human capital,-3.5,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Knowledge,Knowledge infrastructure,,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Knowledge,Creating knowledge,,+2.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Knowledge,Distributing knowledge,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Health,Physical diseases,-0.8,+2.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Health,Mental diseases,-0.2,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Health,Nutrition,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Health,Relationships,-0.1,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Health,Meaning & joy,-0.1,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Environment,GHG emissions,-3.1,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Environment,Non-GHG emissions,-1.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Environment,Scarce natural resources,-0.7,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Environment,Biodiversity,-0.8,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+FORTIVE,submetric,Environment,Waste,-1.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/b6db51ca-cf28-4d52-951c-ec7a7a278664/Fortive/
+IRON MOUNTAIN,category_total,Society,Society,-0.3,+15.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,category_total,Knowledge,Knowledge,-3.3,+1.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,category_total,Health,Health,-0.8,+1.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,category_total,Environment,Environment,-6.9,+2.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Society,Taxes,,+6.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Society,Jobs,,+7.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Society,Societal infrastructure,,+2.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Society,Equality & human rights,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Society,Societal stability,-0.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Knowledge,Scarce human capital,-3.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Knowledge,Knowledge infrastructure,,+0.6,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Knowledge,Creating knowledge,,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Knowledge,Distributing knowledge,,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Health,Physical diseases,-0.6,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Health,Mental diseases,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Health,Nutrition,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Health,Relationships,,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Health,Meaning & joy,-0.1,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Environment,GHG emissions,-3.2,+1.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Environment,Non-GHG emissions,-0.8,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Environment,Scarce natural resources,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Environment,Biodiversity,-1.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+IRON MOUNTAIN,submetric,Environment,Waste,-1.4,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/71cd85f6-eb95-4f64-bd53-13503de00f48/Iron%20Mountain/
+MOODY'S,category_total,Society,Society,-0.6,+8.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,category_total,Knowledge,Knowledge,-5.4,+5.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,category_total,Health,Health,-1.2,+1.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,category_total,Environment,Environment,-3.5,+0.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Society,Taxes,,+3.8,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Society,Jobs,,+1.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Society,Societal infrastructure,,+2.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Society,Equality & human rights,-0.1,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Society,Societal stability,-0.5,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Knowledge,Scarce human capital,-5.4,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Knowledge,Knowledge infrastructure,,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Knowledge,Creating knowledge,,+1.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Knowledge,Distributing knowledge,,+3.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Health,Physical diseases,-0.7,+0.7,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Health,Mental diseases,-0.2,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Health,Nutrition,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Health,Relationships,-0.1,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Health,Meaning & joy,-0.3,+0.3,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Environment,GHG emissions,-1.8,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Environment,Non-GHG emissions,-0.5,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Environment,Scarce natural resources,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Environment,Biodiversity,-0.6,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+MOODY'S,submetric,Environment,Waste,-0.4,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/897349b3-a402-4509-bf93-60f827af6d98/Moody's/
+EDWARDS LIFESCIENCES,category_total,Society,Society,-0.3,+9.4,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,category_total,Knowledge,Knowledge,-2.6,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,category_total,Health,Health,-3.5,+11.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,category_total,Environment,Environment,-3.6,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Society,Taxes,,+5.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Society,Jobs,,+4.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Society,Societal infrastructure,,+0.2,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Society,Equality & human rights,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Society,Societal stability,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Knowledge,Scarce human capital,-2.6,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Knowledge,Knowledge infrastructure,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Knowledge,Creating knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Knowledge,Distributing knowledge,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Health,Physical diseases,-3.4,+8.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Health,Mental diseases,-0.1,+1.9,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Health,Nutrition,,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Health,Relationships,,+1.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Health,Meaning & joy,-0.0,+0.5,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Environment,GHG emissions,-1.5,+0.1,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Environment,Non-GHG emissions,-0.4,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Environment,Scarce natural resources,-0.2,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Environment,Biodiversity,-0.3,,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/
+EDWARDS LIFESCIENCES,submetric,Environment,Waste,-1.2,+0.0,cents per dollar of revenue,1.12.0,https://uprightplatform.com/company/4b1d8ade-fba7-47e5-9309-fd76a074c260/Edwards%20Lifesciences/

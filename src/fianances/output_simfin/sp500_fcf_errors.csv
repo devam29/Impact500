@@ -1,0 +1,52 @@
+ticker,company,sector,industry,status
+AES,AES Corporation,Utilities,Independent Power Producers & Energy Traders,missing no USD annual SimFin records
+AFL,Aflac,Financials,Life & Health Insurance,missing capital expenditure
+ALL,Allstate,Financials,Property & Casualty Insurance,missing no USD annual SimFin records
+GOOGL,Alphabet Inc. (Class A),Communication Services,Interactive Media & Services,missing no USD annual SimFin records
+AIG,American International Group,Financials,Multi-line Insurance,missing capital expenditure
+ACGL,Arch Capital Group,Financials,Property & Casualty Insurance,missing capital expenditure
+BAC,Bank of America,Financials,Diversified Banks,missing capital expenditure
+BRK.B,Berkshire Hathaway,Financials,Multi-Sector Holdings,missing no USD annual SimFin records
+XYZ,"Block, Inc.",Financials,Transaction & Payment Processing Services,missing no USD annual SimFin records
+BNY,BNY Mellon,Financials,Asset Management & Custody Banks,missing no USD annual SimFin records
+BF.B,Brown–Forman,Consumer Staples,Distillers & Vintners,missing no USD annual SimFin records
+CB,Chubb Limited,Financials,Property & Casualty Insurance,missing capital expenditure
+CPAY,Corpay,Financials,Transaction & Payment Processing Services,missing no USD annual SimFin records
+DD,DuPont,Industrials,Industrial Conglomerates,missing no USD annual SimFin records
+EG,Everest Group,Financials,Reinsurance,missing capital expenditure
+FDXF,FedEx Freight,Industrials,Cargo Ground Transportation,missing no USD annual SimFin records
+FERG,Ferguson Enterprises,Industrials,Trading Companies & Distributors,missing no USD annual SimFin records
+FISV,Fiserv,Financials,Transaction & Payment Processing Services,missing no USD annual SimFin records
+F,Ford Motor Company,Consumer Discretionary,Automobile Manufacturers,missing capital expenditure
+FOXA,Fox Corporation (Class A),Communication Services,Broadcasting,missing no USD annual SimFin records
+GEV,GE Vernova,Industrials,Heavy Electrical Equipment,missing no USD annual SimFin records
+HONA,Honeywell Aerospace,Industrials,Aerospace & Defense,missing no USD annual SimFin records
+JPM,JPMorgan Chase,Financials,Diversified Banks,missing capital expenditure
+KIM,Kimco Realty,Real Estate,Retail REITs,missing no USD annual SimFin records
+KKR,KKR & Co.,Financials,Asset Management & Custody Banks,missing no USD annual SimFin records
+MRSH,Marsh McLennan,Financials,Insurance Brokers,missing no USD annual SimFin records
+MRVL,Marvell Technology,Information Technology,Semiconductors,missing no USD annual SimFin records
+MET,MetLife,Financials,Life & Health Insurance,missing capital expenditure
+NWSA,News Corp (Class A),Communication Services,Publishing,missing no USD annual SimFin records
+OKE,Oneok,Energy,Oil & Gas Storage & Transportation,missing no USD annual SimFin records
+PSKY,Paramount Skydance Corporation,Communication Services,Movies & Entertainment,missing no USD annual SimFin records
+PNC,PNC Financial Services,Financials,Diversified Banks,missing capital expenditure
+PFG,Principal Financial Group,Financials,Life & Health Insurance,missing capital expenditure
+PRU,Prudential Financial,Financials,Life & Health Insurance,missing capital expenditure
+Q,Qnity Electronics,Information Technology,Semiconductor Materials & Equipment,missing no USD annual SimFin records
+RDDT,Reddit,Communication Services,Interactive Media & Services,missing no USD annual SimFin records
+RF,Regions Financial Corporation,Financials,Regional Banks,missing capital expenditure
+RVTY,Revvity,Health Care,Health Care Equipment,missing no USD annual SimFin records
+SW,Smurfit Westrock,Materials,Paper & Plastic Packaging Products & Materials,missing no USD annual SimFin records
+SOLV,Solventum,Health Care,Health Care Technology,missing no USD annual SimFin records
+SO,Southern Company,Utilities,Electric Utilities,missing no USD annual SimFin records
+SYF,Synchrony Financial,Financials,Consumer Finance,missing capital expenditure
+TKO,TKO Group Holdings,Communication Services,Movies & Entertainment,missing no USD annual SimFin records
+TRV,Travelers Companies (The),Financials,Property & Casualty Insurance,missing capital expenditure
+USB,U.S. Bancorp,Financials,Diversified Banks,missing capital expenditure
+UHS,Universal Health Services,Health Care,Health Care Facilities,missing no USD annual SimFin records
+VLTO,Veralto,Industrials,Environmental & Facilities Services,missing no USD annual SimFin records
+VZ,Verizon,Communication Services,Integrated Telecommunication Services,missing no USD annual SimFin records
+VMRK,Vivmark Residential,Real Estate,Multi-Family Residential REITs,missing no USD annual SimFin records
+WFC,Wells Fargo,Financials,Diversified Banks,missing capital expenditure
+XEL,Xcel Energy,Utilities,Multi-Utilities,missing capital expenditure
